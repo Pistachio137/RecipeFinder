@@ -1,0 +1,6 @@
+bin/
+*.ser
+RecipeSets/
+*.csv
+*.dll
+Dependencies/

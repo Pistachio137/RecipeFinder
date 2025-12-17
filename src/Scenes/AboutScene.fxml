@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="aboutSceneBackButton" mnemonicParsing="false" onAction="#homepage" text="Back" />
+            <Button fx:id="getAboutText" mnemonicParsing="false" onAction="#aboutText" text="Button" />
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <TextArea fx:id="aboutText" editable="false" prefHeight="700.0" prefWidth="970.0" text="&#9;Welcome to PantryForge! This a minimalist app designed for functionality over appearance :). &#10;Here is a quick rundown of what you can do with this app -&#10;&#10;1. Search recipes - Lookup recipes according to various filters and restrictions. View or save them for later.&#10;&#10;2. Add items to your virtual pantry - Add or remove up to 29000 different ingredients from your virtual pantry.&#10;Then you can optionally search for recipes only containing the ingredients in your pantry.&#10;&#10;3. Add a dietary restrictions filter - Add items to a filter which optionally automatically hides recipes during a search.&#10;&#10;4. Submit your own recipes - You can submit your own recipe here. User submitted recipes are available in their&#10;own section in the &quot;Search Recipes&quot; section.&#10;&#10;5. Saved/Favorited recipes - View your saved recipes here. You can favorite them if you want to put them&#10;in their own special section. You can also remove saved/favorited recipes.&#10;&#10;6. Settings - Just a placeholder for now, but in the future you will be able to customize the app's appearance.&#10;&#10;7. Toolbar/Welcome screen functions -&#10;&#9;Back - Takes you back to homepage or the login screen, depending on where you were.&#10;&#9;Logout - Logs you out of your account and takes you back to the welcome screen.&#10;&#9;Login - Log into your account and access your data stored in the cloud. &#10;&#9;Create Account - Lets you create an account so that you can save and access your data across devices.&#10;&#9;Continue Offline - Continue to use the app without logging in or creating an account. " BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </TextArea>
+   </center>
+</BorderPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="savedBackButton" mnemonicParsing="false" onAction="#homepage" text="Back" />
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.5" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ScrollPane>
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Pagination fx:id="savedPG1" prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane>
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Pagination fx:id="savedPG2" prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <BorderPane fx:id="savedBP1" prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <VBox fx:id="savedVBox3" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ToolBar prefHeight="40.0" prefWidth="200.0">
+                          <items>
+                            <Button fx:id="saved" mnemonicParsing="false" text="Close overlay" />
+                          </items>
+                        </ToolBar>
+                        <Label fx:id="savedLabel3" text="Label" />
+                        <TextArea fx:id="savedTA1" prefHeight="200.0" prefWidth="200.0" />
+                        <TextArea fx:id="savedTA2" prefHeight="200.0" prefWidth="200.0" />
+                        <Hyperlink fx:id="savedURLLink" text="Hyperlink" />
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </items>
+      </SplitPane>
+   </center>
+</BorderPane>

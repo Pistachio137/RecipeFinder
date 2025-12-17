@@ -1,0 +1,3321 @@
+salt:spices and dried herbs
+sugar:flours, sugars, other dry baking ingredients
+flour:flours, sugars, other dry baking ingredients
+eggs:other animal products
+butter:fresh or frozen dairy products
+onion:fresh or frozen produce + herbs
+milk:fresh or frozen dairy products
+vanilla:spices and dried herbs
+water:beverages
+margarine:fresh or frozen dairy products
+pepper:spices and dried herbs
+brown sugar:flours, sugars, other dry baking ingredients
+egg:other animal products
+baking powder:flours, sugars, other dry baking ingredients
+cream cheese:fresh or frozen dairy products
+cinnamon:spices and dried herbs
+sour cream:fresh or frozen dairy products
+nuts:nuts, seeds, and dried fruit
+celery:fresh or frozen produce + herbs
+cheddar cheese:fresh or frozen dairy products
+pineapple:fresh or frozen produce + herbs
+pecans:nuts, seeds, and dried fruit
+tomatoes:fresh or frozen produce + herbs
+baking soda:flours, sugars, other dry baking ingredients
+oil:pantry liquids (oils, broths, wines, etc.)
+lemon juice:pantry liquids (oils, broths, wines, etc.)
+garlic:fresh or frozen produce + herbs
+onions:fresh or frozen produce + herbs
+mayonnaise:condiments
+soda:beverages
+vinegar:pantry liquids (oils, broths, wines, etc.)
+green pepper:fresh or frozen produce + herbs
+ground beef:fresh or frozen meats
+chicken:fresh or frozen meats
+shortening:pantry liquids (oils, broths, wines, etc.)
+potatoes:fresh or frozen produce + herbs
+worcestershire sauce:condiments
+rice:rices, pastas, breads, grains
+cream of mushroom soup:canned goods
+carrots:fresh or frozen produce + herbs
+parsley:fresh or frozen produce + herbs
+parmesan cheese:fresh or frozen dairy products
+cream of chicken soup:canned goods
+mushrooms:fresh or frozen produce + herbs
+powdered sugar:flours, sugars, other dry baking ingredients
+nutmeg:spices and dried herbs
+oleo:fresh or frozen dairy products
+raisins:nuts, seeds, and dried fruit
+bacon:fresh or frozen meats
+cocoa:flours, sugars, other dry baking ingredients
+buttermilk:fresh or frozen dairy products
+coconut:nuts, seeds, and dried fruit
+boiling water:beverages
+mustard:condiments
+bread crumbs:rices, pastas, breads, grains
+tomato sauce:canned goods
+vegetable oil:pantry liquids (oils, broths, wines, etc.)
+cornstarch:flours, sugars, other dry baking ingredients
+peanut butter:other pantry goods
+walnuts:nuts, seeds, and dried fruit
+oregano:spices and dried herbs
+bananas:fresh or frozen produce + herbs
+chicken breasts:fresh or frozen meats
+green onions:fresh or frozen produce + herbs
+paprika:spices and dried herbs
+chocolate chips:candy and chocolate
+chicken broth:pantry liquids (oils, broths, wines, etc.)
+marshmallows:snack food
+cheese:fresh or frozen dairy products
+garlic powder:spices and dried herbs
+chili powder:spices and dried herbs
+soy sauce:condiments
+clove garlic:fresh or frozen produce + herbs
+apples:fresh or frozen produce + herbs
+olive oil:pantry liquids (oils, broths, wines, etc.)
+mozzarella cheese:fresh or frozen dairy products
+black pepper:spices and dried herbs
+orange juice:beverages
+hamburger:fresh or frozen meats
+broccoli:fresh or frozen produce + herbs
+bread:rices, pastas, breads, grains
+grated cheese:fresh or frozen dairy products
+bell pepper:fresh or frozen produce + herbs
+white sugar:flours, sugars, other dry baking ingredients
+zucchini:fresh or frozen produce + herbs
+egg whites:other animal products
+dry mustard:spices and dried herbs
+corn:fresh or frozen produce + herbs
+cloves:spices and dried herbs
+cold water:beverages
+garlic salt:spices and dried herbs
+basil:spices and dried herbs
+confectioners sugar:flours, sugars, other dry baking ingredients
+catsup:condiments
+condensed milk:canned goods
+yeast:flours, sugars, other dry baking ingredients
+egg yolks:other animal products
+honey:flours, sugars, other dry baking ingredients
+vanilla extract:spices and dried herbs
+salad oil:pantry liquids (oils, broths, wines, etc.)
+crackers:snack food
+cottage cheese:fresh or frozen dairy products
+sausage:fresh or frozen meats
+ginger:spices and dried herbs
+velveeta cheese:fresh or frozen dairy products
+beans:canned goods
+cabbage:fresh or frozen produce + herbs
+tomato soup:canned goods
+red pepper:spices and dried herbs
+thyme:spices and dried herbs
+shrimp:fresh or frozen meats
+pineapple juice:beverages
+ketchup:condiments
+almonds:nuts, seeds, and dried fruit
+tomato paste:canned goods
+cooking oil:pantry liquids (oils, broths, wines, etc.)
+lemon:fresh or frozen produce + herbs
+all-purpose:flours, sugars, other dry baking ingredients
+noodles:rices, pastas, breads, grains
+crisco:pantry liquids (oils, broths, wines, etc.)
+pumpkin:fresh or frozen produce + herbs
+mushroom soup:canned goods
+green beans:fresh or frozen produce + herbs
+green peppers:fresh or frozen produce + herbs
+cream of celery soup:canned goods
+whipping cream:fresh or frozen dairy products
+onion soup:canned goods
+tomato:fresh or frozen produce + herbs
+ham:fresh or frozen meats
+swiss cheese:fresh or frozen dairy products
+water chestnuts:canned goods
+peanuts:nuts, seeds, and dried fruit
+cherry pie filling:canned goods
+oats:rices, pastas, breads, grains
+dates:nuts, seeds, and dried fruit
+allspice:spices and dried herbs
+cream of tartar:flours, sugars, other dry baking ingredients
+graham cracker crumbs:rices, pastas, breads, grains
+peaches:fresh or frozen produce + herbs
+pimento:canned goods
+oatmeal:rices, pastas, breads, grains
+ground cinnamon:spices and dried herbs
+mandarin oranges:canned goods
+kidney beans:canned goods
+green chilies:canned goods
+cream:fresh or frozen dairy products
+molasses:flours, sugars, other dry baking ingredients
+green onion:fresh or frozen produce + herbs
+pork:fresh or frozen meats
+bisquick:flours, sugars, other dry baking ingredients
+stalks celery:fresh or frozen produce + herbs
+olives:canned goods
+strawberries:fresh or frozen produce + herbs
+macaroni:rices, pastas, breads, grains
+parsley flakes:spices and dried herbs
+shell:other pantry goods
+bay leaf:spices and dried herbs
+yellow cake mix:flours, sugars, other dry baking ingredients
+whole kernel corn:canned goods
+black olives:canned goods
+beef:fresh or frozen meats
+american cheese:fresh or frozen dairy products
+frozen strawberries:other frozen food
+carrot:fresh or frozen produce + herbs
+cucumbers:fresh or frozen produce + herbs
+maraschino cherries:canned goods
+cayenne pepper:spices and dried herbs
+frozen broccoli:other frozen food
+semi-sweet chocolate chips:candy and chocolate
+white vinegar:pantry liquids (oils, broths, wines, etc.)
+chocolate:candy and chocolate
+white wine:pantry liquids (oils, broths, wines, etc.)
+heavy cream:fresh or frozen dairy products
+shredded cheese:fresh or frozen dairy products
+vanilla pudding:other pantry goods
+flaked coconut:nuts, seeds, and dried fruit
+light corn syrup:flours, sugars, other dry baking ingredients
+tabasco sauce:condiments
+pork chops:fresh or frozen meats
+peas:fresh or frozen produce + herbs
+crescent rolls:rices, pastas, breads, grains
+tomato juice:beverages
+vanilla wafers:snack food
+almond extract:spices and dried herbs
+curry powder:spices and dried herbs
+ground cloves:spices and dried herbs
+ginger ale:beverages
+cider vinegar:pantry liquids (oils, broths, wines, etc.)
+dill weed:spices and dried herbs
+graham crackers:snack food
+salad dressing:condiments
+light brown sugar:flours, sugars, other dry baking ingredients
+cornmeal:rices, pastas, breads, grains
+strawberry jello:other pantry goods
+warm water:beverages
+horseradish:condiments
+cracker crumbs:snack food
+spaghetti sauce:condiments
+head lettuce:fresh or frozen produce + herbs
+cauliflower:fresh or frozen produce + herbs
+yellow cake:flours, sugars, other dry baking ingredients
+frozen peas:other frozen food
+cake flour:flours, sugars, other dry baking ingredients
+wesson oil:pantry liquids (oils, broths, wines, etc.)
+lean ground beef:fresh or frozen meats
+ground chuck:fresh or frozen meats
+tuna:canned goods
+rice krispies:snack food
+oranges:fresh or frozen produce + herbs
+corn syrup:flours, sugars, other dry baking ingredients
+pimentos:canned goods
+corn flakes:snack food
+graham cracker crust:other pantry goods
+whipped cream:fresh or frozen dairy products
+barbecue sauce:condiments
+miracle:condiments
+sherry:pantry liquids (oils, broths, wines, etc.)
+syrup:flours, sugars, other dry baking ingredients
+chili sauce:condiments
+apple:fresh or frozen produce + herbs
+ground ginger:spices and dried herbs
+vanilla ice cream:other frozen food
+sweet potatoes:fresh or frozen produce + herbs
+dill:spices and dried herbs
+bay leaves:spices and dried herbs
+italian dressing:condiments
+cherries:canned goods
+cake mix:flours, sugars, other dry baking ingredients
+red onion:fresh or frozen produce + herbs
+applesauce:canned goods
+cucumber:fresh or frozen produce + herbs
+celery salt:spices and dried herbs
+sharp cheese:fresh or frozen dairy products
+sweet milk:fresh or frozen dairy products
+fresh mushrooms:fresh or frozen produce + herbs
+flour tortillas:rices, pastas, breads, grains
+salsa:condiments
+fruit cocktail:canned goods
+orange:fresh or frozen produce + herbs
+sage:spices and dried herbs
+o:other pantry goods
+cumin:spices and dried herbs
+cranberries:fresh or frozen produce + herbs
+corn meal:rices, pastas, breads, grains
+cake:flours, sugars, other dry baking ingredients
+blueberries:fresh or frozen produce + herbs
+vanilla instant pudding:other pantry goods
+crust:other pantry goods
+chives:fresh or frozen produce + herbs
+peppers:fresh or frozen produce + herbs
+ground nutmeg:spices and dried herbs
+condensed cream:canned goods
+cold milk:fresh or frozen dairy products
+vanilla flavoring:spices and dried herbs
+egg noodles:rices, pastas, breads, grains
+pie shell:other pantry goods
+chocolate cake:flours, sugars, other dry baking ingredients
+beef broth:pantry liquids (oils, broths, wines, etc.)
+instant vanilla pudding:other pantry goods
+ro-tel tomatoes:canned goods
+spinach:fresh or frozen produce + herbs
+onion powder:spices and dried herbs
+pinto beans:canned goods
+whole wheat flour:flours, sugars, other dry baking ingredients
+pepperoni:fresh or frozen meats
+dressing:condiments
+cranberry sauce:canned goods
+white pepper:spices and dried herbs
+hot sauce:condiments
+white bread:rices, pastas, breads, grains
+crab meat:other animal products
+elbow macaroni:rices, pastas, breads, grains
+sauerkraut:canned goods
+italian seasoning:spices and dried herbs
+ricotta cheese:fresh or frozen dairy products
+banana:fresh or frozen produce + herbs
+mixed vegetables:canned goods
+poppy seed:nuts, seeds, and dried fruit
+turmeric:spices and dried herbs
+salmon:canned goods
+ground cumin:spices and dried herbs
+lasagna noodles:rices, pastas, breads, grains
+onion salt:spices and dried herbs
+lemons:fresh or frozen produce + herbs
+mayo:condiments
+lemon jello:other pantry goods
+taco seasoning:spices and dried herbs
+fresh strawberries:fresh or frozen produce + herbs
+potato chips:snack food
+worcestershire:condiments
+accent:spices and dried herbs
+unsweetened chocolate:candy and chocolate
+taco:other pantry goods
+green bell pepper:fresh or frozen produce + herbs
+ground meat:fresh or frozen meats
+frozen lemonade:other frozen food
+rolled oats:rices, pastas, breads, grains
+sour milk:fresh or frozen dairy products
+lemon rind:fresh or frozen produce + herbs
+turkey:fresh or frozen meats
+scallions:fresh or frozen produce + herbs
+pecan halves:nuts, seeds, and dried fruit
+red wine vinegar:pantry liquids (oils, broths, wines, etc.)
+lemon extract:spices and dried herbs
+topping:other pantry goods
+pretzels:snack food
+cream-style corn:canned goods
+tortilla chips:snack food
+light cream:fresh or frozen dairy products
+poultry seasoning:spices and dried herbs
+corn tortillas:rices, pastas, breads, grains
+lime juice:pantry liquids (oils, broths, wines, etc.)
+fresh parsley:fresh or frozen produce + herbs
+pork sausage:fresh or frozen meats
+dream whip:other pantry goods
+rosemary:spices and dried herbs
+cream-style:canned goods
+picante sauce:condiments
+butterscotch chips:candy and chocolate
+crabmeat:other animal products
+head cabbage:fresh or frozen produce + herbs
+meal:rices, pastas, breads, grains
+lime:fresh or frozen produce + herbs
+eggplant:fresh or frozen produce + herbs
+pet milk:fresh or frozen dairy products
+unflavored gelatin:other pantry goods
+bell peppers:fresh or frozen produce + herbs
+apple juice:beverages
+spaghetti:rices, pastas, breads, grains
+cheddar:fresh or frozen dairy products
+egg yolk:other animal products
+marshmallow cream:other pantry goods
+orange jello:other pantry goods
+cereal:snack food
+taco sauce:condiments
+caramels:candy and chocolate
+hot water:beverages
+rhubarb:fresh or frozen produce + herbs
+red wine:pantry liquids (oils, broths, wines, etc.)
+crisco oil:pantry liquids (oils, broths, wines, etc.)
+pimiento:canned goods
+liquid smoke:condiments
+onion soup mix:other pantry goods
+red kidney beans:canned goods
+cheddar cheese soup:canned goods
+lime jello:other pantry goods
+yellow squash:fresh or frozen produce + herbs
+pastry shell:other pantry goods
+fryer:fresh or frozen meats
+strawberry:fresh or frozen produce + herbs
+orange rind:fresh or frozen produce + herbs
+red:fresh or frozen produce + herbs
+pizza sauce:condiments
+taco seasoning mix:spices and dried herbs
+cheddar cheese soup:canned goods
+marjoram:spices and dried herbs
+sauce:condiments
+potato:fresh or frozen produce + herbs
+candied cherries:canned goods
+stuffing mix:other pantry goods
+bacon bits:other pantry goods
+frozen hash browns:other frozen food
+frozen spinach:other frozen food
+philadelphia cream cheese:fresh or frozen dairy products
+biscuit mix:flours, sugars, other dry baking ingredients
+pasta:rices, pastas, breads, grains
+corn oil:pantry liquids (oils, broths, wines, etc.)
+wine vinegar:pantry liquids (oils, broths, wines, etc.)
+sesame seed:nuts, seeds, and dried fruit
+white corn syrup:flours, sugars, other dry baking ingredients
+long grain rice:rices, pastas, breads, grains
+lemon pepper:spices and dried herbs
+cornflakes:snack food
+shredded lettuce:fresh or frozen produce + herbs
+croutons:snack food
+rum:pantry liquids (oils, broths, wines, etc.)
+chocolate syrup:condiments
+gelatin:other pantry goods
+marshmallow creme:other pantry goods
+active dry yeast:flours, sugars, other dry baking ingredients
+white karo syrup:flours, sugars, other dry baking ingredients
+pecan:nuts, seeds, and dried fruit
+pastry:other pantry goods
+coffee:beverages
+red food coloring:edible decorations
+yogurt:fresh or frozen dairy products
+vegetables:fresh or frozen produce + herbs
+ro-tel:canned goods
+cilantro:fresh or frozen produce + herbs
+hearts:unconventional foods
+unsalted butter:fresh or frozen dairy products
+chicken stock:pantry liquids (oils, broths, wines, etc.)
+green chiles:canned goods
+beer:beverages
+ground turkey:fresh or frozen meats
+baking potatoes:fresh or frozen produce + herbs
+whole cloves:spices and dried herbs
+lard:pantry liquids (oils, broths, wines, etc.)
+semi-sweet chocolate:candy and chocolate
+chocolate pudding:other pantry goods
+white cake mix:flours, sugars, other dry baking ingredients
+corn muffin:pastries and breakfast food
+fresh basil:fresh or frozen produce + herbs
+italian salad dressing:condiments
+red bell pepper:fresh or frozen produce + herbs
+tarragon:spices and dried herbs
+enchilada sauce:condiments
+crunchy peanut butter:other pantry goods
+avocado:fresh or frozen produce + herbs
+jalapeno peppers:fresh or frozen produce + herbs
+regular:other pantry goods
+chicken breast:fresh or frozen meats
+corn chips:snack food
+green olives:canned goods
+hot sausage:fresh or frozen meats
+chicken bouillon cubes:other pantry goods
+biscuits:rices, pastas, breads, grains
+oreo cookies:snack food
+pumpkin pie spice:spices and dried herbs
+tapioca:flours, sugars, other dry baking ingredients
+green tomatoes:fresh or frozen produce + herbs
+ground black pepper:spices and dried herbs
+grapes:fresh or frozen produce + herbs
+corned beef:fresh or frozen meats
+coloring:edible decorations
+avocados:fresh or frozen produce + herbs
+apple cider:beverages
+italian sausage:fresh or frozen meats
+fresh broccoli:fresh or frozen produce + herbs
+pineapple tidbits:canned goods
+onion flakes:spices and dried herbs
+caraway seed:nuts, seeds, and dried fruit
+clams:canned goods
+lemon flavoring:spices and dried herbs
+black beans:canned goods
+mozzarella:fresh or frozen dairy products
+ground pork:fresh or frozen meats
+cranberry juice:beverages
+parmesan:fresh or frozen dairy products
+shredded monterey jack cheese:fresh or frozen dairy products
+brandy:pantry liquids (oils, broths, wines, etc.)
+butter beans:canned goods
+hamburg:fresh or frozen meats
+beef bouillon:other pantry goods
+okra:fresh or frozen produce + herbs
+vegetable shortening:pantry liquids (oils, broths, wines, etc.)
+red peppers:fresh or frozen produce + herbs
+angel:other pantry goods
+veg-all:canned goods
+doritos:snack food
+fruit:fresh or frozen produce + herbs
+corn bread:rices, pastas, breads, grains
+bean sprouts:fresh or frozen produce + herbs
+graham cracker pie crust:other pantry goods
+paraffin:other pantry goods
+blueberry pie filling:canned goods
+almond flavoring:spices and dried herbs
+mix:other pantry goods
+pepper sauce:condiments
+cherry:fresh or frozen produce + herbs
+cayenne:spices and dried herbs
+celery stalks:fresh or frozen produce + herbs
+fresh spinach:fresh or frozen produce + herbs
+pie crust:other pantry goods
+white syrup:flours, sugars, other dry baking ingredients
+tater:other frozen food
+ground red pepper:spices and dried herbs
+jello:other pantry goods
+bran:rices, pastas, breads, grains
+freshly ground pepper:spices and dried herbs
+ground pepper:spices and dried herbs
+cooking oats:rices, pastas, breads, grains
+green peas:fresh or frozen produce + herbs
+wine:pantry liquids (oils, broths, wines, etc.)
+freshly ground pepper:spices and dried herbs
+broth:pantry liquids (oils, broths, wines, etc.)
+granulated sugar:flours, sugars, other dry baking ingredients
+beets:fresh or frozen produce + herbs
+tortillas:rices, pastas, breads, grains
+semi-sweet chocolate morsels:candy and chocolate
+cream of chicken:canned goods
+chocolate cake mix:flours, sugars, other dry baking ingredients
+jello:other pantry goods
+red potatoes:fresh or frozen produce + herbs
+lemon jell-o:other pantry goods
+frozen whipped topping:other frozen food
+coffee:beverages
+chicken bouillon:other pantry goods
+yellow cornmeal:rices, pastas, breads, grains
+candied pineapple:canned goods
+food coloring:edible decorations
+cinnamon sticks:spices and dried herbs
+celery soup:canned goods
+hot peppers:fresh or frozen produce + herbs
+romano cheese:fresh or frozen dairy products
+buns:rices, pastas, breads, grains
+gelatine:other pantry goods
+canola oil:pantry liquids (oils, broths, wines, etc.)
+maple syrup:flours, sugars, other dry baking ingredients
+plain yogurt:fresh or frozen dairy products
+powdered milk:flours, sugars, other dry baking ingredients
+frozen hash brown potatoes:other frozen food
+chili beans:canned goods
+instant tea:beverages
+buttered bread crumbs:rices, pastas, breads, grains
+sugar:flours, sugars, other dry baking ingredients
+slivered almonds:nuts, seeds, and dried fruit
+mix:other pantry goods
+cherry jello:other pantry goods
+ground allspice:spices and dried herbs
+apricot preserves:condiments
+apricots:nuts, seeds, and dried fruit
+apple cider vinegar:pantry liquids (oils, broths, wines, etc.)
+fresh cranberries:fresh or frozen produce + herbs
+white cake:flours, sugars, other dry baking ingredients
+cream of mushroom:canned goods
+semi-sweet chocolate pieces:candy and chocolate
+vegetable soup:canned goods
+steak:fresh or frozen meats
+squash:fresh or frozen produce + herbs
+sunflower seeds:nuts, seeds, and dried fruit
+sesame oil:pantry liquids (oils, broths, wines, etc.)
+white:fresh or frozen produce + herbs
+cashews:nuts, seeds, and dried fruit
+skinless:fresh or frozen meats
+roll:other pantry goods
+white rice:rices, pastas, breads, grains
+bisquick baking mix:flours, sugars, other dry baking ingredients
+stuffing:other pantry goods
+raspberry jello:other pantry goods
+broccoli flowerets:fresh or frozen produce + herbs
+popcorn:snack food
+carnation milk:fresh or frozen dairy products
+germ:other pantry goods
+pimientos:canned goods
+tomato puree:canned goods
+prunes:nuts, seeds, and dried fruit
+instant coffee:beverages
+tabasco:condiments
+chocolate instant pudding:other pantry goods
+golden raisins:nuts, seeds, and dried fruit
+radishes:fresh or frozen produce + herbs
+sweet pickles:canned goods
+chunky peanut butter:other pantry goods
+frozen:other frozen food
+mashed sweet potatoes:fresh or frozen produce + herbs
+vegetable cooking spray:other pantry goods
+stew meat:fresh or frozen meats
+hash browns:other frozen food
+bisquick mix:flours, sugars, other dry baking ingredients
+instant chocolate pudding:other pantry goods
+pie shells:other pantry goods
+milk chocolate chips:candy and chocolate
+lemon cake mix:flours, sugars, other dry baking ingredients
+cream of potato soup:canned goods
+shallots:fresh or frozen produce + herbs
+unsweetened cocoa:flours, sugars, other dry baking ingredients
+hot pepper sauce:condiments
+fat:other pantry goods
+black walnuts:nuts, seeds, and dried fruit
+club soda:beverages
+chili:canned goods
++:other pantry goods
+freshly ground black pepper:spices and dried herbs
+strawberry gelatin:other pantry goods
+raspberry:other pantry goods
+hot pepper:fresh or frozen produce + herbs
+oysters:canned goods
+bran:rices, pastas, breads, grains
+steak sauce:condiments
+parmesan cheese:fresh or frozen dairy products
+white flour:flours, sugars, other dry baking ingredients
+black-eyed peas:canned goods
+alum:other pantry goods
+orange juice concentrate:beverages
+cool whip:other frozen food
+apple pie filling:canned goods
+mace:spices and dried herbs
+italian bread crumbs:rices, pastas, breads, grains
+fritos:snack food
+oyster crackers:snack food
+sweet basil:spices and dried herbs
+unsweetened applesauce:canned goods
+bourbon:pantry liquids (oils, broths, wines, etc.)
+lemon peel:fresh or frozen produce + herbs
+orange slices:fresh or frozen produce + herbs
+cookies:snack food
+rolls:rices, pastas, breads, grains
+frozen coconut:nuts, seeds, and dried fruit
+instant rice:rices, pastas, breads, grains
+velveeta:fresh or frozen dairy products
+graham cracker crusts:other pantry goods
+purple onion:fresh or frozen produce + herbs
+ground round:fresh or frozen meats
+angel food cake:pastries and breakfast food
+green:fresh or frozen produce + herbs
+cornbread mix:flours, sugars, other dry baking ingredients
+kernel corn:canned goods
+milk chocolate:candy and chocolate
+orange sherbet:other frozen food
+vodka:pantry liquids (oils, broths, wines, etc.)
+capers:condiments
+golden mushroom soup:canned goods
+bacon drippings:other pantry goods
+almond:nuts, seeds, and dried fruit
+thin:other pantry goods
+mein noodles:rices, pastas, breads, grains
+orange jell-o:other pantry goods
+olive:canned goods
+warm milk:fresh or frozen dairy products
+chuck roast:fresh or frozen meats
+shredded coconut:nuts, seeds, and dried fruit
+grape jelly:condiments
+white onions:fresh or frozen produce + herbs
+layer:other pantry goods
+yellow corn meal:rices, pastas, breads, grains
+white wine vinegar:pantry liquids (oils, broths, wines, etc.)
+meat:fresh or frozen meats
+green grapes:fresh or frozen produce + herbs
+white onion:fresh or frozen produce + herbs
+muffins:pastries and breakfast food
+apricot nectar:beverages
+frozen corn:other frozen food
+white chocolate:candy and chocolate
+longhorn cheese:fresh or frozen dairy products
+tart apples:fresh or frozen produce + herbs
+orange marmalade:condiments
+white karo:flours, sugars, other dry baking ingredients
+pickling spice:spices and dried herbs
+yellow onion:fresh or frozen produce + herbs
+red beans:canned goods
+chicken soup:canned goods
+beef consomme:canned goods
+cherry tomatoes:fresh or frozen produce + herbs
+brownie mix:flours, sugars, other dry baking ingredients
+white raisins:nuts, seeds, and dried fruit
+miracle whip:condiments
+pickle relish:condiments
+sweet red pepper:fresh or frozen produce + herbs
+bulk sausage:fresh or frozen meats
+fresh cilantro:fresh or frozen produce + herbs
+dill pickles:canned goods
+peanut oil:pantry liquids (oils, broths, wines, etc.)
+flour:flours, sugars, other dry baking ingredients
+breadcrumbs:rices, pastas, breads, grains
+wild rice:rices, pastas, breads, grains
+grated sharp:fresh or frozen dairy products
+shell macaroni:rices, pastas, breads, grains
+bread cubes:rices, pastas, breads, grains
+mashed ripe bananas:fresh or frozen produce + herbs
+pistachio instant pudding:other pantry goods
+provolone cheese:fresh or frozen dairy products
+chopped spinach:fresh or frozen produce + herbs
+rice:rices, pastas, breads, grains
+garbanzo beans:canned goods
+strawberry jell-o:other pantry goods
+currants:nuts, seeds, and dried fruit
+orange peel:fresh or frozen produce + herbs
+milk:fresh or frozen dairy products
+pickles:canned goods
+feta cheese:fresh or frozen dairy products
+mushroom stems:fresh or frozen produce + herbs
+mushroom:fresh or frozen produce + herbs
+mozzarella cheese:fresh or frozen dairy products
+cooking sherry:pantry liquids (oils, broths, wines, etc.)
+cooking apples:fresh or frozen produce + herbs
+nonfat yogurt:fresh or frozen dairy products
+chocolate bits:candy and chocolate
+salt pork:fresh or frozen meats
+peppercorns:spices and dried herbs
+regular rice:rices, pastas, breads, grains
+lemonade:beverages
+ginger root:fresh or frozen produce + herbs
+frozen raspberries:other frozen food
+fresh blueberries:fresh or frozen produce + herbs
+sweet onion:fresh or frozen produce + herbs
+hot milk:fresh or frozen dairy products
+frozen lemonade concentrate:other frozen food
+jalapenos:fresh or frozen produce + herbs
+lettuce leaves:fresh or frozen produce + herbs
+all-purpose flour:flours, sugars, other dry baking ingredients
+oreos:snack food
+colby cheese:fresh or frozen dairy products
+nonfat dry milk:flours, sugars, other dry baking ingredients
+fish:fresh or frozen meats
+egg substitute:other animal products
+low-fat cottage cheese:fresh or frozen dairy products
+pistachio pudding:other pantry goods
+campbell's cream:canned goods
+pears:fresh or frozen produce + herbs
+green bell peppers:fresh or frozen produce + herbs
+cubes:other pantry goods
+thin spaghetti:rices, pastas, breads, grains
+butterscotch morsels:candy and chocolate
+english peas:fresh or frozen produce + herbs
+frozen mixed vegetables:other frozen food
+yams:fresh or frozen produce + herbs
+onion rings:fresh or frozen produce + herbs
+linguine:rices, pastas, breads, grains
+artichokes:canned goods
+green chili peppers:canned goods
+hot dogs:fresh or frozen meats
+unbaked pie shell:other pantry goods
+chinese noodles:rices, pastas, breads, grains
+wieners:fresh or frozen meats
+cheerios:snack food
+whole allspice:spices and dried herbs
+lima beans:canned goods
+crab:other animal products
+lemon slices:fresh or frozen produce + herbs
+peeled apples:fresh or frozen produce + herbs
+bouillon cubes:other pantry goods
+containers:other pantry goods
+n
+cream of coconut:other pantry goods
+herb stuffing mix:other pantry goods
+frozen green peas:other frozen food
+cranberry juice cocktail:beverages
+onion:fresh or frozen produce + herbs
+wide noodles:rices, pastas, breads, grains
+mixed nuts:nuts, seeds, and dried fruit
+stew beef:fresh or frozen meats
+hominy:canned goods
+lemon gelatin:other pantry goods
+coconut flavoring:spices and dried herbs
+berries:fresh or frozen produce + herbs
+saltines:snack food
+bread flour:flours, sugars, other dry baking ingredients
+fresh fruit:fresh or frozen produce + herbs
+onion juice:fresh or frozen produce + herbs
+tarragon vinegar:pantry liquids (oils, broths, wines, etc.)
+vanilla flavor:spices and dried herbs
+uncle ben's:other pantry goods
+whipped topping:other frozen food
+bean dip:condiments
+seasoning salt:spices and dried herbs
+chickpeas:canned goods
+ripe olives:canned goods
+cornbread:rices, pastas, breads, grains
+cocktail sauce:condiments
+bowl:other pantry goods
+grits:rices, pastas, breads, grains
+head cauliflower:fresh or frozen produce + herbs
+instant vanilla pudding mix:other pantry goods
+bay seasoning:spices and dried herbs
+grated monterey:fresh or frozen dairy products
+peach pie filling:canned goods
+cake yeast:flours, sugars, other dry baking ingredients
+light:other pantry goods
+chickens:fresh or frozen meats
+vermicelli:rices, pastas, breads, grains
+stack:other pantry goods
+nut meats:nuts, seeds, and dried fruit
+caramel ice cream topping:condiments
+english cheese:fresh or frozen dairy products
+chunky salsa:condiments
+eggs:other animal products
+fresh green beans:fresh or frozen produce + herbs
+light karo syrup:flours, sugars, other dry baking ingredients
+beef stew meat:fresh or frozen meats
+spareribs:fresh or frozen meats
+green food coloring:edible decorations
+yellow mustard:condiments
+kahlua:pantry liquids (oils, broths, wines, etc.)
+frankfurters:fresh or frozen meats
+balsamic vinegar:pantry liquids (oils, broths, wines, etc.)
+asparagus:fresh or frozen produce + herbs
+peg corn:canned goods
+cream of celery:canned goods
+red cabbage:fresh or frozen produce + herbs
+wax beans:canned goods
+jalapeno pepper:fresh or frozen produce + herbs
+jack cheese:fresh or frozen dairy products
+crushed ice:other pantry goods
+curry:spices and dried herbs
+ricotta:fresh or frozen dairy products
+lemon instant pudding:other pantry goods
+coffee:beverages
+stove top stuffing:canned goods
+barley:rices, pastas, breads, grains
+instant pudding:other pantry goods
+nutmeats:nuts, seeds, and dried fruit
+worcestershire sauce:condiments
+fresh ginger:fresh or frozen produce + herbs
+beef roast:fresh or frozen meats
+liquid:other pantry goods
+semi-sweet chocolate bits:candy and chocolate
+beef stock:pantry liquids (oils, broths, wines, etc.)
+dark molasses:flours, sugars, other dry baking ingredients
+equal:flours, sugars, other dry baking ingredients
+herb stuffing:other pantry goods
+frozen vegetables:other frozen food
+whiskey:pantry liquids (oils, broths, wines, etc.)
+sweet chocolate:candy and chocolate
+butterscotch:other pantry goods
+sweet pepper:fresh or frozen produce + herbs
+white potatoes:fresh or frozen produce + herbs
+lime gelatin:other pantry goods
+flank steak:fresh or frozen meats
+garlic:fresh or frozen produce + herbs
+canning salt:spices and dried herbs
+butterscotch pudding:other pantry goods
+peppermint:spices and dried herbs
+cornflake crumbs:snack food
+pickling salt:spices and dried herbs
+cantaloupe:fresh or frozen produce + herbs
+carnation:fresh or frozen dairy products
+leeks:fresh or frozen produce + herbs
+pear halves:canned goods
+seasoning:spices and dried herbs
+teriyaki sauce:condiments
+vanilla wafer crumbs:snack food
+ground pecans:nuts, seeds, and dried fruit
+vanilla:spices and dried herbs
+egg beaters:other animal products
+browns:other frozen food
+pepper:spices and dried herbs
+peach halves:canned goods
+corn flake crumbs:snack food
+fresh ground pepper:spices and dried herbs
+italian bread:rices, pastas, breads, grains
+cocoa powder:flours, sugars, other dry baking ingredients
+green cabbage:fresh or frozen produce + herbs
+mushroom pieces:fresh or frozen produce + herbs
+french dressing:condiments
+pie filling:canned goods
+refrigerated biscuits:rices, pastas, breads, grains
+red onions:fresh or frozen produce + herbs
+instant chicken:other pantry goods
+roast:fresh or frozen meats
+lentils:canned goods
+orange gelatin:other pantry goods
+snow peas:fresh or frozen produce + herbs
+kielbasa:fresh or frozen meats
+pudding:other pantry goods
+sweet pickle:canned goods
+ham bone:fresh or frozen meats
+butter flavor:spices and dried herbs
+hen:fresh or frozen meats
+blanched almonds:nuts, seeds, and dried fruit
+string beans:fresh or frozen produce + herbs
+dressing mix:other pantry goods
+taco chips:snack food
+preserves:condiments
+uncle ben:other pantry goods
+salad supreme:spices and dried herbs
+ground mustard:spices and dried herbs
+smooth peanut butter:other pantry goods
+lean hamburger:fresh or frozen meats
+brown gravy mix:other pantry goods
+pork roast:fresh or frozen meats
+scallops:fresh or frozen meats
+low-fat milk:fresh or frozen dairy products
+sweet butter:fresh or frozen dairy products
+chocolate morsels:candy and chocolate
+strawberry glaze:condiments
+bacon grease:other pantry goods
+apricot jello:other pantry goods
+kitchen:other pantry goods
+boneless chicken:fresh or frozen meats
+apple juice concentrate:beverages
+sesame seeds:nuts, seeds, and dried fruit
+t:other pantry goods
+no:other pantry goods
+red hots:candy and chocolate
+red apples:fresh or frozen produce + herbs
+ramen noodles:rices, pastas, breads, grains
+extra virgin olive oil:pantry liquids (oils, broths, wines, etc.)
+tuna fish:canned goods
+apricot:nuts, seeds, and dried fruit
+lean beef:fresh or frozen meats
+pancake mix:flours, sugars, other dry baking ingredients
+swiss:fresh or frozen dairy products
+blackberries:fresh or frozen produce + herbs
+parsley sprigs:fresh or frozen produce + herbs
+cider:beverages
+grape juice:beverages
+chicken breast halves:fresh or frozen meats
+sweet relish:condiments
+raspberries:fresh or frozen produce + herbs
+clam juice:pantry liquids (oils, broths, wines, etc.)
+bamboo shoots:canned goods
+romaine lettuce:fresh or frozen produce + herbs
+crisp rice cereal:snack food
+mexicorn:canned goods
+chips:snack food
+salami:fresh or frozen meats
+ground ham:fresh or frozen meats
+duncan:other pantry goods
+water:beverages
+orange sections:fresh or frozen produce + herbs
+baking cocoa:flours, sugars, other dry baking ingredients
+grape-nuts:snack food
+navy beans:canned goods
+kisses:candy and chocolate
+realemon juice:pantry liquids (oils, broths, wines, etc.)
+red cherries:canned goods
+dark brown sugar:flours, sugars, other dry baking ingredients
+lime sherbet:other frozen food
+sherry wine:pantry liquids (oils, broths, wines, etc.)
+coconut extract:spices and dried herbs
+currant jelly:condiments
+beef chuck:fresh or frozen meats
+frozen limeade:other frozen food
+strawberry preserves:condiments
+tomato catsup:condiments
+bottles:other pantry goods
+raspberry gelatin:other pantry goods
+frozen cauliflower:other frozen food
+crescent dinner rolls:rices, pastas, breads, grains
+dill pickle:canned goods
+fresh tomatoes:fresh or frozen produce + herbs
+spaghetti sauce mix:other pantry goods
+vanilla yogurt:fresh or frozen dairy products
+white beans:canned goods
+refrigerator biscuits:rices, pastas, breads, grains
+pickling spices:spices and dried herbs
+orange segments:fresh or frozen produce + herbs
+herb seasoned stuffing mix:other pantry goods
+orange extract:spices and dried herbs
+rum flavoring:spices and dried herbs
+hot cooked rice:rices, pastas, breads, grains
+coca-cola:beverages
+hash brown potatoes:other frozen food
+hamburger meat:fresh or frozen meats
+italian dressing mix:other pantry goods
+vanilla instant pudding mix:other pantry goods
+apricot halves:canned goods
+frozen green beans:other frozen food
+bran cereal:snack food
+concentrate:other pantry goods
+brisket:fresh or frozen meats
+baking chocolate:candy and chocolate
+graham cracker pie shell:other pantry goods
+sherbet:other frozen food
+low-fat:other pantry goods
+lemonade mix:other pantry goods
+candied fruit:canned goods
+fish fillets:fresh or frozen meats
+red bell peppers:fresh or frozen produce + herbs
+hormel chili:canned goods
+sweet red peppers:fresh or frozen produce + herbs
+prepared mustard:condiments
+lemon pudding:other pantry goods
+jell-o:other pantry goods
+chopped ripe olives:canned goods
+chicken livers:fresh or frozen meats
+chicken pieces:fresh or frozen meats
+dish pie shell:other pantry goods
+beef cubes:fresh or frozen meats
+maple flavoring:spices and dried herbs
+heavy whipping cream:fresh or frozen dairy products
+round steak:fresh or frozen meats
+lesueur peas:canned goods
+rice vinegar:pantry liquids (oils, broths, wines, etc.)
+chili peppers:fresh or frozen produce + herbs
+chicken cutlets:fresh or frozen meats
+sweet peas:fresh or frozen produce + herbs
+ready:other pantry goods
+graham cracker pie crusts:other pantry goods
+soda crackers:snack food
+cream style corn:canned goods
+pork tenderloin:fresh or frozen meats
+del monte:other pantry goods
+sweet peppers:fresh or frozen produce + herbs
+veal:fresh or frozen meats
+chocolate frosting:condiments
+liquid sweetener:flours, sugars, other dry baking ingredients
+guacamole:condiments
+center:other pantry goods
+choice:other pantry goods
+graham cracker crumb crust:other pantry goods
+coriander:spices and dried herbs
+light molasses:flours, sugars, other dry baking ingredients
+great northern beans:canned goods
+light cream cheese:fresh or frozen dairy products
+cream of broccoli soup:canned goods
+liter:other pantry goods
+chicken flavor:other pantry goods
+ground sausage:fresh or frozen meats
+ground sage:spices and dried herbs
+baby carrots:fresh or frozen produce + herbs
+sugar substitute:flours, sugars, other dry baking ingredients
+saltine crackers:snack food
+poppy seeds:nuts, seeds, and dried fruit
+shells:other pantry goods
+sweet:flours, sugars, other dry baking ingredients
+pink salmon:canned goods
+vanilla pudding mix:other pantry goods
+nacho chips:snack food
+turkey breast:fresh or frozen meats
+fruit juice:beverages
+bouillon:other pantry goods
+red and:fresh or frozen produce + herbs
+yellow onions:fresh or frozen produce + herbs
+party rye bread:rices, pastas, breads, grains
+fresh asparagus:fresh or frozen produce + herbs
+lemon wedges:fresh or frozen produce + herbs
+paraffin wax:other pantry goods
+fresh chives:fresh or frozen produce + herbs
+bran:snack food
+almond bark:candy and chocolate
+lemon-lime:beverages
+lean pork:fresh or frozen meats
+crawfish tails:fresh or frozen meats
+unflavored gelatine:other pantry goods
+shredded sharp cheddar cheese:fresh or frozen dairy products
+lasagne noodles:rices, pastas, breads, grains
+cherry gelatin:other pantry goods
+persimmon pulp:fresh or frozen produce + herbs
+red grapes:fresh or frozen produce + herbs
+strawberry pie filling:canned goods
+long grain:rices, pastas, breads, grains
+apple jelly:condiments
+lobster:fresh or frozen meats
+vidalia onions:fresh or frozen produce + herbs
+fresh shrimp:fresh or frozen meats
+baking apples:fresh or frozen produce + herbs
+buttermilk baking mix:flours, sugars, other dry baking ingredients
+caramel topping:condiments
+chili pepper:fresh or frozen produce + herbs
+well:other pantry goods
+chipped beef:fresh or frozen meats
+dark red kidney beans:canned goods
+frozen lima beans:other frozen food
+rotini:rices, pastas, breads, grains
+bacon fat:other pantry goods
+apple pie spice:spices and dried herbs
+ladyfingers:snack food
+tomato ketchup:condiments
+celery stalk:fresh or frozen produce + herbs
+level:other pantry goods
+generous:other pantry goods
+cream-style cottage cheese:fresh or frozen dairy products
+lasagna:rices, pastas, breads, grains
+instant pistachio pudding:other pantry goods
+yellow rice:rices, pastas, breads, grains
+double-acting baking powder:flours, sugars, other dry baking ingredients
+maple:flours, sugars, other dry baking ingredients
+fresh apples:fresh or frozen produce + herbs
+english muffins:rices, pastas, breads, grains
+cooking wine:pantry liquids (oils, broths, wines, etc.)
+fresh dill:fresh or frozen produce + herbs
+chicken:fresh or frozen meats
+dinner rolls:rices, pastas, breads, grains
+cold butter:fresh or frozen dairy products
+vegetable soup mix:other pantry goods
+campbell's tomato soup:canned goods
+white sauce:condiments
+cajun seasoning:spices and dried herbs
+beef brisket:fresh or frozen meats
+unpeeled apples:fresh or frozen produce + herbs
+grated coconut:nuts, seeds, and dried fruit
+cream of shrimp soup:canned goods
+cooking spray:other pantry goods
+dark rum:pantry liquids (oils, broths, wines, etc.)
+pine nuts:nuts, seeds, and dried fruit
+egg:other animal products
+dried beef:fresh or frozen meats
+mixed fruit:canned goods
+your choice:other pantry goods
+hot mashed potatoes:fresh or frozen produce + herbs
+tea:beverages
+hot coffee:beverages
+butterfinger:candy and chocolate
+cornbread crumbs:rices, pastas, breads, grains
+blackberry jam:condiments
+mincemeat:canned goods
+lemon zest:fresh or frozen produce + herbs
+fresh mint:fresh or frozen produce + herbs
+herbs:spices and dried herbs
+cream of tomato soup:canned goods
+fruit pie filling:canned goods
+fryers:fresh or frozen meats
+light mayonnaise:condiments
+fennel seed:spices and dried herbs
+sweet onions:fresh or frozen produce + herbs
+coarse salt:spices and dried herbs
+monde:other pantry goods
+red kidney:canned goods
+ground walnuts:nuts, seeds, and dried fruit
+chili with beans:canned goods
+ground nuts:nuts, seeds, and dried fruit
+green chillies:canned goods
+citron:other pantry goods
+dish pie crust:other pantry goods
+white corn:canned goods
+cream of onion soup:canned goods
+baking mix:flours, sugars, other dry baking ingredients
+roll garlic:fresh or frozen produce + herbs
+walnut halves:nuts, seeds, and dried fruit
+ground coriander:spices and dried herbs
+cinnamon:spices and dried herbs
+corn kernels:fresh or frozen produce + herbs
+fresh vegetables:fresh or frozen produce + herbs
+peach jello:other pantry goods
+gumdrops:candy and chocolate
+raspberry sherbet:other frozen food
+freshly grated parmesan cheese:fresh or frozen dairy products
+parkay margarine:fresh or frozen dairy products
+figs:nuts, seeds, and dried fruit
+regular oats:rices, pastas, breads, grains
+rabbits:fresh or frozen meats
+lemon pie filling:canned goods
+white chicken:fresh or frozen meats
+ground oregano:spices and dried herbs
+biscuit baking mix:flours, sugars, other dry baking ingredients
+mango:fresh or frozen produce + herbs
+red salmon:canned goods
+fresh peaches:fresh or frozen produce + herbs
+muenster cheese:fresh or frozen dairy products
+sugar cookie:snack food
+anise:spices and dried herbs
+chili seasoning:canned goods
+chronicles:other pantry goods
+italian tomatoes:canned goods
+condensed beef broth:canned goods
+baking soda:flours, sugars, other dry baking ingredients
+niblets corn:canned goods
+milky:other pantry goods
+kosher salt:spices and dried herbs
+cartons:other pantry goods
+consomme:canned goods
+angel hair pasta:rices, pastas, breads, grains
+linguini:rices, pastas, breads, grains
+jumbo shells:other pantry goods
+pasta shells:other pantry goods
+mild cheese:fresh or frozen dairy products
+shredded mozzarella:fresh or frozen dairy products
+ham hocks:fresh or frozen meats
+button mushrooms:fresh or frozen produce + herbs
+kiwi:fresh or frozen produce + herbs
+sirloin:fresh or frozen meats
+nahum:other pantry goods
+milk powder:flours, sugars, other dry baking ingredients
+english cheese spread:fresh or frozen dairy products
+yellow pepper:fresh or frozen produce + herbs
+stalk celery:fresh or frozen produce + herbs
+ground:other pantry goods
+shoyu:condiments
+beet juice:beverages
+ground white pepper:spices and dried herbs
+coconut milk:fresh or frozen dairy products
+very warm water:beverages
+process cheese:fresh or frozen dairy products
+vegetable:fresh or frozen produce + herbs
+cold:other pantry goods
+vidalia onion:fresh or frozen produce + herbs
+ham hock:fresh or frozen meats
+doritos chips:snack food
+egg white:other animal products
+cashew nuts:nuts, seeds, and dried fruit
+dark raisins:nuts, seeds, and dried fruit
+nonfat milk:fresh or frozen dairy products
+anchovies:canned goods
+yellow beans:canned goods
+baking powder:flours, sugars, other dry baking ingredients
+monosodium glutamate:spices and dried herbs
+red apple:fresh or frozen produce + herbs
+gruyere cheese:fresh or frozen dairy products
+fresh corn:fresh or frozen produce + herbs
+rye bread:rices, pastas, breads, grains
+mixed candied fruit:canned goods
+dried basil:spices and dried herbs
+broccoli spears:fresh or frozen produce + herbs
+stock:pantry liquids (oils, broths, wines, etc.)
+white grapes:fresh or frozen produce + herbs
+bologna:fresh or frozen meats
+frozen okra:other frozen food
+lettuce:fresh or frozen produce + herbs
+extra lean ground beef:fresh or frozen meats
+season:spices and dried herbs
+garlic cheese:fresh or frozen dairy products
+tomato wedges:fresh or frozen produce + herbs
+brown gravy:condiments
+processed cheese:fresh or frozen dairy products
+sausages:fresh or frozen meats
+bacon strips:fresh or frozen meats
+chicken parts:fresh or frozen meats
+brown mustard:condiments
+sirloin steak:fresh or frozen meats
+butternut squash:fresh or frozen produce + herbs
+chicken gravy:condiments
+sprite:beverages
+fresh garlic:fresh or frozen produce + herbs
+yellow food coloring:edible decorations
+lime jell-o:other pantry goods
+rye flour:flours, sugars, other dry baking ingredients
+frozen broccoli cuts:other frozen food
+lamb:fresh or frozen meats
+chicken gumbo soup:canned goods
+instant chocolate pudding mix:other pantry goods
+coconut flakes:nuts, seeds, and dried fruit
+peach:fresh or frozen produce + herbs
+spring onions:fresh or frozen produce + herbs
+safflower oil:pantry liquids (oils, broths, wines, etc.)
+saffron:spices and dried herbs
+beef tenderloin:fresh or frozen meats
+grapefruit juice:beverages
+chili mix:canned goods
+dried mustard:spices and dried herbs
+herb dressing:condiments
+frozen broccoli spears:other frozen food
+brown sugar:flours, sugars, other dry baking ingredients
+ground turmeric:spices and dried herbs
+dijon mustard:condiments
+new potatoes:fresh or frozen produce + herbs
+season-all:spices and dried herbs
+orange slice candy:candy and chocolate
+oyster sauce:condiments
+red sweet peppers:fresh or frozen produce + herbs
+sweet pickle juice:condiments
+bread dough:other pantry goods
+italian:spices and dried herbs
+pineapple sherbet:other frozen food
+graham cracker pie shells:other pantry goods
+lemon flavor:spices and dried herbs
+catfish fillets:fresh or frozen meats
+twinkies:snack food
+marsala wine:pantry liquids (oils, broths, wines, etc.)
+chicken rice soup:canned goods
+chutney:condiments
+low-fat sour cream:fresh or frozen dairy products
+cream soup:canned goods
+fresh oregano:fresh or frozen produce + herbs
+beef gravy:condiments
+cream cheese:fresh or frozen dairy products
+chocolate wafers:snack food
+pork loin:fresh or frozen meats
+scallion:fresh or frozen produce + herbs
+tamales:canned goods
+red cinnamon:candy and chocolate
+twinkies:snack food
+green lima beans:canned goods
+pineapple chunks:canned goods
+whole wheat bread:rices, pastas, breads, grains
+relish:condiments
+light rum:pantry liquids (oils, broths, wines, etc.)
+ground thyme:spices and dried herbs
+cold coffee:beverages
+potato flakes:other pantry goods
+sweet potato:fresh or frozen produce + herbs
+cooked sweet potatoes:fresh or frozen produce + herbs
+very ripe bananas:fresh or frozen produce + herbs
+loaves:other pantry goods
+chocolate sandwich cookies:snack food
+pack:other pantry goods
+cherry juice:beverages
+margarine:fresh or frozen dairy products
+butter cake mix:flours, sugars, other dry baking ingredients
+packet:other pantry goods
+powdered ginger:spices and dried herbs
+wide egg noodles:rices, pastas, breads, grains
+white shoe peg corn:canned goods
+liquid butter:other pantry goods
+instant lemon pudding:other pantry goods
+white cornmeal:flours, sugars, other dry baking ingredients
+cooking rice:rices, pastas, breads, grains
+packets equal:flours, sugars, other dry baking ingredients
+salad supreme seasoning:spices and dried herbs
+crescent dinner:rices, pastas, breads, grains
+irish potatoes:fresh or frozen produce + herbs
+cumin powder:spices and dried herbs
+drops red food coloring:edible decorations
+numbers:other pantry goods
+cake paraffin:other pantry goods
+instant beef bouillon:other pantry liquids (oils, broths, wines, etc.)
+butterscotch bits:candy and chocolate
+flaky biscuits:rices, pastas, breads, grains
+light karo:flours, sugars, other dry baking ingredients
+sweet italian sausage:fresh or frozen meats
+angel food cake mix:flours, sugars, other dry baking ingredients
+fresh herbs:fresh or frozen produce + herbs
+chuck:fresh or frozen meats
+consomme soup:canned goods
+mayonnaise:condiments
+apple butter:condiments
+cheese slices:fresh or frozen dairy products
+beef round steak:fresh or frozen meats
+green sweet peppers:fresh or frozen produce + herbs
+light sour cream:fresh or frozen dairy products
+hot red pepper:fresh or frozen produce + herbs
+stewing beef:fresh or frozen meats
+all-bran:snack food
+frozen tater:other frozen food
+lemon-lime soda:beverages
+buttered crumbs:snack food
+pimento cheese:fresh or frozen dairy products
+chops:fresh or frozen meats
+anise seed:spices and dried herbs
+frozen shrimp:fresh or frozen meats
+bay scallops:fresh or frozen meats
+white grape juice:beverages
+mint sprigs:fresh or frozen produce + herbs
+leaf lettuce:fresh or frozen produce + herbs
+bing cherries:fresh or frozen produce + herbs
+tapioca pudding:other pantry goods
+yellow wax beans:canned goods
+crumbs:snack food
+sweet green peppers:fresh or frozen produce + herbs
+white vinegar:pantry liquids (oils, broths, wines, etc.)
+white almond bark:candy and chocolate
+cakes yeast:flours, sugars, other dry baking ingredients
+flavoring:spices and dried herbs
+hawaiian punch:beverages
+powdered alum:other pantry goods
+marshmallow:snack food
+potato soup:canned goods
+saltine cracker crumbs:snack food
+gummy worms:candy and chocolate
+uncle ben's rice:rices, pastas, breads, grains
+bac*os:other pantry goods
+celery flakes:spices and dried herbs
+marjoram leaves:spices and dried herbs
+chili seasoning mix:spices and dried herbs
+mix:other pantry goods
+bermuda onion:fresh or frozen produce + herbs
+honey:flours, sugars, other dry baking ingredients
+strawberry jam:condiments
+pumpkin spice:spices and dried herbs
+love:other pantry goods
+chicken thighs:fresh or frozen meats
+lemon supreme cake mix:flours, sugars, other dry baking ingredients
+rigatoni:rices, pastas, breads, grains
+dark syrup:flours, sugars, other dry baking ingredients
+handful:other pantry goods
+chopped meat:fresh or frozen meats
+instant pistachio pudding mix:other pantry goods
+summer:other pantry goods
+bouillon cube:other pantry goods
+light syrup:flours, sugars, other dry baking ingredients
+head broccoli:fresh or frozen produce + herbs
+fresh okra:fresh or frozen produce + herbs
+bitter chocolate:candy and chocolate
+lean pork chops:fresh or frozen meats
+spray:other pantry goods
+filling:other pantry goods
+chicken bouillon granules:other pantry goods
+elephant:other pantry goods
+salad greens:fresh or frozen produce + herbs
+chili hot beans:canned goods
+orange zest:fresh or frozen produce + herbs
+strawberry ice cream:other frozen food
+worcestershire sauce:condiments
+pickle juice:condiments
+orange flavoring:spices and dried herbs
+fresh ground black pepper:spices and dried herbs
+brown:other pantry goods
+black:other pantry goods
+lemonade concentrate:other frozen food
+coffee creamer:other pantry goods
+champagne:pantry liquids (oils, broths, wines, etc.)
+vegetable broth:pantry liquids (oils, broths, wines, etc.)
+baby food:other pantry goods
+green cherries:canned goods
+oil:pantry liquids (oils, broths, wines, etc.)
+shallot:fresh or frozen produce + herbs
+coffee cream:fresh or frozen dairy products
+liquid shortening:pantry liquids (oils, broths, wines, etc.)
+green chili:canned goods
+brussels:other frozen food
+mixed pickling:spices and dried herbs
+paprika:spices and dried herbs
+soft shortening:pantry liquids (oils, broths, wines, etc.)
+sour cream:fresh or frozen dairy products
+swiss cheese:fresh or frozen dairy products
+fully cooked ham:fresh or frozen meats
+instant chocolate:other pantry goods
+fettuccine:rices, pastas, breads, grains
+bacon:fresh or frozen meats
+cheese soup:canned goods
+fresh raspberries:fresh or frozen produce + herbs
+freshly squeezed lemon juice:pantry liquids (oils, broths, wines, etc.)
+butternut flavoring:spices and dried herbs
+rump roast:fresh or frozen meats
+spanish rice:rices, pastas, breads, grains
+snickers:candy and chocolate
+colored marshmallows:snack food
+red jello:other pantry goods
+tenderizer:other pantry goods
+regular marshmallows:snack food
+tequila:pantry liquids (oils, broths, wines, etc.)
+marinara sauce:condiments
+ground sirloin:fresh or frozen meats
+cheddar cheese:fresh or frozen dairy products
+semi-sweet morsels:candy and chocolate
+fresh carrots:fresh or frozen produce + herbs
+cornmeal mix:flours, sugars, other dry baking ingredients
+nonfat sour cream:fresh or frozen dairy products
+bar:other pantry goods
+peeled shrimp:fresh or frozen meats
+lemon flavored gelatin:other pantry goods
+pasta sauce:condiments
+yellow cheese:fresh or frozen dairy products
+sweet cream:fresh or frozen dairy products
+bunches broccoli:fresh or frozen produce + herbs
+pork loin chops:fresh or frozen meats
+color:edible decorations
+kellogg:other pantry goods
+velveeta cheese:fresh or frozen dairy products
+grated apples:fresh or frozen produce + herbs
+beef bouillon granules:other pantry goods
+pork spareribs:fresh or frozen meats
+black coffee:beverages
+hot chili beans:canned goods
+ground cranberries:fresh or frozen produce + herbs
+lean ground meat:fresh or frozen meats
+pear:fresh or frozen produce + herbs
+party rolls:rices, pastas, breads, grains
+stove top stuffing mix:other pantry goods
+red food color:edible decorations
+mashed ripe banana:fresh or frozen produce + herbs
+romano:fresh or frozen dairy products
+jalapeno:fresh or frozen produce + herbs
+packets:other pantry goods
+very hot water:beverages
+macaroni shells:rices, pastas, breads, grains
+cubed cheese:fresh or frozen dairy products
+chocolate ice cream:other frozen food
+mostaccioli:rices, pastas, breads, grains
+flavor:spices and dried herbs
+bottles ginger ale:beverages
+nonfat plain yogurt:fresh or frozen dairy products
+limeade:beverages
+sprinkles:edible decorations
+anchovy:condiments
+dried apricots:nuts, seeds, and dried fruit
+cognac:pantry liquids (oils, broths, wines, etc.)
+cukes:fresh or frozen produce + herbs
+sour cherries:canned goods
+long grain white rice:rices, pastas, breads, grains
+cauliflowerets:fresh or frozen produce + herbs
+lean ground pork:fresh or frozen meats
+caraway:spices and dried herbs
+italian parsley:fresh or frozen produce + herbs
+corn starch:flours, sugars, other dry baking ingredients
+suet:other pantry goods
+butter chips:fresh or frozen dairy products
+peanut:nuts, seeds, and dried fruit
+lime peel:fresh or frozen produce + herbs
+cocktail peanuts:nuts, seeds, and dried fruit
+loin pork chops:fresh or frozen meats
+pared:other pantry goods
+rabbit:fresh or frozen meats
+tortellini:rices, pastas, breads, grains
+trout:fresh or frozen meats
+instant coconut pudding:other pantry goods
+lemon juice from concentrate:pantry liquids (oils, broths, wines, etc.)
+walnut pieces:nuts, seeds, and dried fruit
+extra sharp:fresh or frozen dairy products
+raspberry preserves:condiments
+skor:candy and chocolate
+homogenized milk:fresh or frozen dairy products
+celery:fresh or frozen produce + herbs
+sweet cherries:canned goods
+cream corn:canned goods
+rice cereal:snack food
+amount:other pantry goods
+chiles:canned goods
+bars:candy and chocolate
+regular milk:fresh or frozen dairy products
+chachere:other pantry goods
+vanilla bean:spices and dried herbs
+pearl onions:fresh or frozen produce + herbs
+fettucini:rices, pastas, breads, grains
+fettucine:rices, pastas, breads, grains
+veal cutlets:fresh or frozen meats
+tomatoes:fresh or frozen produce + herbs
+sweetener:flours, sugars, other dry baking ingredients
+ground veal:fresh or frozen meats
+cold margarine:fresh or frozen dairy products
+stewing chicken:fresh or frozen meats
+italian seasoned bread crumbs:rices, pastas, breads, grains
+raspberry jam:condiments
+leaf oregano:spices and dried herbs
+flounder:fresh or frozen meats
+condensed mushroom soup:canned goods
+ham slices:fresh or frozen meats
+creme:fresh or frozen dairy products
+grated rind:fresh or frozen produce + herbs
+i:other pantry goods
+nonstick cooking spray:other pantry goods
+beef stew:fresh or frozen meats
+parmesan cheese:fresh or frozen dairy products
+oregano leaves:spices and dried herbs
+gold medal flour:flours, sugars, other dry baking ingredients
+fresh coconut:nuts, seeds, and dried fruit
+italian plum tomatoes:canned goods
+ground venison:fresh or frozen meats
+nondairy whipped topping:other frozen food
+mint leaves:fresh or frozen produce + herbs
+active yeast:flours, sugars, other dry baking ingredients
+parsley:fresh or frozen produce + herbs
+seafood seasoning:spices and dried herbs
+pineapple:fresh or frozen produce + herbs
+haddock:fresh or frozen meats
+sorghum:flours, sugars, other dry baking ingredients
+chestnuts:nuts, seeds, and dried fruit
+salad seasoning:spices and dried herbs
+salad olives:canned goods
+graham cracker:snack food
+cornbread stuffing:other pantry goods
+rapidrise yeast:flours, sugars, other dry baking ingredients
+caramel:candy and chocolate
+chocolate milk:fresh or frozen dairy products
+powdered mustard:spices and dried herbs
+solid pack pumpkin:canned goods
+ground lean beef:fresh or frozen meats
+cocoa:flours, sugars, other dry baking ingredients
+white corn meal:rices, pastas, breads, grains
+frosting:condiments
+ground mace:spices and dried herbs
+chopped lettuce:fresh or frozen produce + herbs
+boneless pork:fresh or frozen meats
+creole seasoning:spices and dried herbs
+eggnog:beverages
+coffee powder:beverages
+red candied cherries:candy and chocolate
+grated carrot:fresh or frozen produce + herbs
+hot roll:rices, pastas, breads, grains
+boiled ham:fresh or frozen meats
+isaiah:other pantry goods
+pearl barley:rices, pastas, breads, grains
+jumbo shrimp:fresh or frozen meats
+mixed spices:spices and dried herbs
+potatoes:fresh or frozen produce + herbs
+sesame:nuts, seeds, and dried fruit
+blackberry:fresh or frozen produce + herbs
+buttermilk biscuits:rices, pastas, breads, grains
+flake coconut:nuts, seeds, and dried fruit
+swans:other pantry goods
+red delicious apples:fresh or frozen produce + herbs
+rotini pasta:rices, pastas, breads, grains
+fine cracker crumbs:snack food
+dark karo:flours, sugars, other dry baking ingredients
+salad:condiments
+solid shortening:pantry liquids (oils, broths, wines, etc.)
+onions:fresh or frozen produce + herbs
+white hominy:canned goods
+chunky pineapple:canned goods
+hot dog buns:rices, pastas, breads, grains
+broccoli cuts:other frozen food
+unbaked pie crusts:other pantry goods
+deli:fresh or frozen meats
+coffee granules:beverages
+tenderloin:fresh or frozen meats
+jalapeno cheez whiz:fresh or frozen dairy products
+fennel:spices and dried herbs
+red sweet pepper:fresh or frozen produce + herbs
+seedless grapes:fresh or frozen produce + herbs
+jalapeno cheese:fresh or frozen dairy products
+sausage meat:fresh or frozen meats
+refrigerator crescent rolls:rices, pastas, breads, grains
+yellow hominy:canned goods
+cinnamon stick:spices and dried herbs
+cola:beverages
+ground round steak:fresh or frozen meats
+pie crusts:other pantry goods
+lemon juice:pantry liquids (oils, broths, wines, etc.)
+turkey broth:pantry liquids (oils, broths, wines, etc.)
+cream chicken soup:canned goods
+mushroom caps:fresh or frozen produce + herbs
+toppings:other pantry goods
+hoisin sauce:condiments
+cheese:fresh or frozen dairy products
+mashed banana:fresh or frozen produce + herbs
+chocolate kisses:candy and chocolate
+head red cabbage:fresh or frozen produce + herbs
+condensed chicken broth:canned goods
+lump crabmeat:other animal products
+spanish peanuts:nuts, seeds, and dried fruit
+imitation crabmeat:other animal products
+horseradish sauce:condiments
+spice:spices and dried herbs
+faith:other pantry goods
+sweet corn:fresh or frozen produce + herbs
+strawberry flavored gelatin:other pantry goods
+realemon:pantry liquids (oils, broths, wines, etc.)
+apple slices:fresh or frozen produce + herbs
+stove top dressing:other pantry goods
+whole strawberries:fresh or frozen produce + herbs
+white chocolate chips:candy and chocolate
+tahini:condiments
+all-bran cereal:snack food
+coarse black pepper:spices and dried herbs
+regular flour:flours, sugars, other dry baking ingredients
+fresh crabmeat:other animal products
+chocolate pieces:candy and chocolate
+baby lima beans:canned goods
+crushed strawberries:fresh or frozen produce + herbs
+corn oil margarine:fresh or frozen dairy products
+grand marnier:pantry liquids (oils, broths, wines, etc.)
+buttered cracker crumbs:snack food
+chocolate icing:condiments
+ground onions:fresh or frozen produce + herbs
+frosting:condiments
+crawfish:fresh or frozen meats
+ground almonds:nuts, seeds, and dried fruit
+crescent roll:rices, pastas, breads, grains
+creamer:other pantry goods
+graham flour:flours, sugars, other dry baking ingredients
+peach slices:canned goods
+ground lamb:fresh or frozen meats
+black cherry jello:other pantry goods
+chervil:spices and dried herbs
+white syrup:flours, sugars, other dry baking ingredients
+fresh spinach:fresh or frozen produce + herbs
+ground red pepper:spices and dried herbs
+cooking oats:rices, pastas, breads, grains
+ground pepper:spices and dried herbs
+pie crust:other pantry goods
+green peas:fresh or frozen produce + herbs
+tater:other frozen food
+wine:pantry liquids (oils, broths, wines, etc.)
+freshly ground pepper:spices and dried herbs
+broth:pantry liquids (oils, broths, wines, etc.)
+granulated sugar:flours, sugars, other dry baking ingredients
+beets:fresh or frozen produce + herbs
+tortillas:rices, pastas, breads, grains
+semi-sweet chocolate morsels:candy and chocolate
+cream of chicken:canned goods
+chocolate cake mix:flours, sugars, other dry baking ingredients
+jello:other pantry goods
+red potatoes:fresh or frozen produce + herbs
+lemon jell-o:other pantry goods
+frozen whipped topping:other frozen food
+coffee:beverages
+chicken bouillon:other pantry goods
+yellow cornmeal:rices, pastas, breads, grains
+candied pineapple:canned goods
+food coloring:edible decorations
+cinnamon sticks:spices and dried herbs
+celery soup:canned goods
+hot peppers:fresh or frozen produce + herbs
+romano cheese:fresh or frozen dairy products
+buns:rices, pastas, breads, grains
+gelatine:other pantry goods
+canola oil:pantry liquids (oils, broths, wines, etc.)
+maple syrup:flours, sugars, other dry baking ingredients
+plain yogurt:fresh or frozen dairy products
+powdered milk:flours, sugars, other dry baking ingredients
+frozen hash brown potatoes:other frozen food
+chili beans:canned goods
+instant tea:beverages
+buttered bread crumbs:rices, pastas, breads, grains
+sugar:flours, sugars, other dry baking ingredients
+slivered almonds:nuts, seeds, and dried fruit
+mix:other pantry goods
+cherry jello:other pantry goods
+ground allspice:spices and dried herbs
+apricot preserves:condiments
+apricots:nuts, seeds, and dried fruit
+apple cider vinegar:pantry liquids (oils, broths, wines, etc.)
+fresh cranberries:fresh or frozen produce + herbs
+white cake:flours, sugars, other dry baking ingredients
+cream of mushroom:canned goods
+semi-sweet chocolate pieces:candy and chocolate
+vegetable soup:canned goods
+steak:fresh or frozen meats
+squash:fresh or frozen produce + herbs
+sunflower seeds:nuts, seeds, and dried fruit
+sesame oil:pantry liquids (oils, broths, wines, etc.)
+white:fresh or frozen produce + herbs
+cashews:nuts, seeds, and dried fruit
+skinless:fresh or frozen meats
+roll:other pantry goods
+white rice:rices, pastas, breads, grains
+bisquick baking mix:flours, sugars, other dry baking ingredients
+stuffing:other pantry goods
+raspberry jello:other pantry goods
+broccoli flowerets:fresh or frozen produce + herbs
+popcorn:other pantry goods
+carnation milk:fresh or frozen dairy products
+germ:other pantry goods
+pimientos:canned goods
+tomato puree:canned goods
+prunes:nuts, seeds, and dried fruit
+instant coffee:beverages
+tabasco:condiments
+chocolate instant pudding:other pantry goods
+golden raisins:nuts, seeds, and dried fruit
+radishes:fresh or frozen produce + herbs
+sweet pickles:canned goods
+chunky peanut butter:other pantry goods
+frozen:other frozen food
+mashed sweet potatoes:fresh or frozen produce + herbs
+vegetable cooking spray:other pantry goods
+stew meat:fresh or frozen meats
+hash browns:other frozen food
+bisquick mix:flours, sugars, other dry baking ingredients
+instant chocolate pudding:other pantry goods
+pie shells:other pantry goods
+milk chocolate chips:candy and chocolate
+lemon cake mix:flours, sugars, other dry baking ingredients
+cream of potato soup:canned goods
+shallots:fresh or frozen produce + herbs
+unsweetened cocoa:flours, sugars, other dry baking ingredients
+hot pepper sauce:condiments
+fat:other pantry goods
+black walnuts:nuts, seeds, and dried fruit
+club soda:beverages
+chili:canned goods
++:other pantry goods
+freshly ground black pepper:spices and dried herbs
+strawberry gelatin:other pantry goods
+raspberry:other pantry goods
+hot pepper:fresh or frozen produce + herbs
+oysters:canned goods
+bran:rices, pastas, breads, grains
+steak sauce:condiments
+parmesan cheese:fresh or frozen dairy products
+white flour:flours, sugars, other dry baking ingredients
+black-eyed peas:canned goods
+alum:other pantry goods
+orange juice concentrate:beverages
+cool whip:other frozen food
+apple pie filling:canned goods
+mace:spices and dried herbs
+italian bread crumbs:rices, pastas, breads, grains
+fritos:snack food
+oyster crackers:snack food
+sweet basil:spices and dried herbs
+unsweetened applesauce:canned goods
+bourbon:pantry liquids (oils, broths, wines, etc.)
+lemon peel:fresh or frozen produce + herbs
+orange slices:fresh or frozen produce + herbs
+cookies:snack food
+rolls:rices, pastas, breads, grains
+frozen coconut:nuts, seeds, and dried fruit
+instant rice:rices, pastas, breads, grains
+velveeta:fresh or frozen dairy products
+graham cracker crusts:other pantry goods
+purple onion:fresh or frozen produce + herbs
+ground round:fresh or frozen meats
+mint:spices and dried herbs
+brown rice:rices, pastas, breads, grains
+sweet pickle relish:condiments
+broccoli florets:fresh or frozen produce + herbs
+chilies:canned goods
+angel food cake:pastries and breakfast food
+green:fresh or frozen produce + herbs
+cornbread mix:flours, sugars, other dry baking ingredients
+kernel corn:canned goods
+milk chocolate:candy and chocolate
+orange sherbet:other frozen food
+vodka:pantry liquids (oils, broths, wines, etc.)
+capers:condiments
+golden mushroom soup:canned goods
+bacon drippings:other pantry goods
+almond:nuts, seeds, and dried fruit
+thin:other pantry goods
+mein noodles:rices, pastas, breads, grains
+orange jell-o:other pantry goods
+olive:canned goods
+warm milk:fresh or frozen dairy products
+chuck roast:fresh or frozen meats
+shredded coconut:nuts, seeds, and dried fruit
+grape jelly:condiments
+white onions:fresh or frozen produce + herbs
+layer:other pantry goods
+yellow corn meal:rices, pastas, breads, grains
+white wine vinegar:pantry liquids (oils, broths, wines, etc.)
+meat:fresh or frozen meats
+green grapes:fresh or frozen produce + herbs
+white onion:fresh or frozen produce + herbs
+muffins:pastries and breakfast food
+apricot nectar:beverages
+frozen corn:other frozen food
+white chocolate:candy and chocolate
+longhorn cheese:fresh or frozen dairy products
+tart apples:fresh or frozen produce + herbs
+orange marmalade:condiments
+white karo:flours, sugars, other dry baking ingredients
+pickling spice:spices and dried herbs
+yellow onion:fresh or frozen produce + herbs
+red beans:canned goods
+chicken soup:canned goods
+beef consomme:canned goods
+cherry tomatoes:fresh or frozen produce + herbs
+brownie mix:flours, sugars, other dry baking ingredients
+white raisins:nuts, seeds, and dried fruit
+miracle whip:condiments
+pickle relish:condiments
+sweet red pepper:fresh or frozen produce + herbs
+bulk sausage:fresh or frozen meats
+fresh cilantro:fresh or frozen produce + herbs
+dill pickles:canned goods
+peanut oil:pantry liquids (oils, broths, wines, etc.)
+flour:flours, sugars, other dry baking ingredients
+breadcrumbs:rices, pastas, breads, grains
+wild rice:rices, pastas, breads, grains
+grated sharp:fresh or frozen dairy products
+shell macaroni:rices, pastas, breads, grains
+bread cubes:rices, pastas, breads, grains
+mashed ripe bananas:fresh or frozen produce + herbs
+pistachio instant pudding:other pantry goods
+provolone cheese:fresh or frozen dairy products
+chopped spinach:fresh or frozen produce + herbs
+rice:rices, pastas, breads, grains
+garbanzo beans:canned goods
+strawberry jell-o:other pantry goods
+currants:nuts, seeds, and dried fruit
+orange peel:fresh or frozen produce + herbs
+milk:fresh or frozen dairy products
+pickles:canned goods
+feta cheese:fresh or frozen dairy products
+mushroom stems:fresh or frozen produce + herbs
+mushroom:fresh or frozen produce + herbs
+mozzarella cheese:fresh or frozen dairy products
+cooking sherry:pantry liquids (oils, broths, wines, etc.)
+cooking apples:fresh or frozen produce + herbs
+nonfat yogurt:fresh or frozen dairy products
+chocolate bits:candy and chocolate
+salt pork:fresh or frozen meats
+peppercorns:spices and dried herbs
+regular rice:rices, pastas, breads, grains
+lemonade:beverages
+ginger root:fresh or frozen produce + herbs
+frozen raspberries:other frozen food
+fresh blueberries:fresh or frozen produce + herbs
+sweet onion:fresh or frozen produce + herbs
+hot milk:fresh or frozen dairy products
+frozen lemonade concentrate:other frozen food
+jalapenos:fresh or frozen produce + herbs
+lettuce leaves:fresh or frozen produce + herbs
+all-purpose flour:flours, sugars, other dry baking ingredients
+oreos:snack food
+colby cheese:fresh or frozen dairy products
+nonfat dry milk:flours, sugars, other dry baking ingredients
+fish:fresh or frozen meats
+egg substitute:other animal products
+low-fat cottage cheese:fresh or frozen dairy products
+pistachio pudding:other pantry goods
+campbell's cream:canned goods
+pears:fresh or frozen produce + herbs
+green bell peppers:fresh or frozen produce + herbs
+cubes:other pantry goods
+thin spaghetti:rices, pastas, breads, grains
+butterscotch morsels:candy and chocolate
+english peas:fresh or frozen produce + herbs
+frozen mixed vegetables:other frozen food
+yams:fresh or frozen produce + herbs
+onion rings:fresh or frozen produce + herbs
+linguine:rices, pastas, breads, grains
+artichokes:canned goods
+green chili peppers:canned goods
+hot dogs:fresh or frozen meats
+unbaked pie shell:other pantry goods
+chinese noodles:rices, pastas, breads, grains
+wieners:fresh or frozen meats
+cheerios:snack food
+whole allspice:spices and dried herbs
+lima beans:canned goods
+crab:other animal products
+lemon slices:fresh or frozen produce + herbs
+peeled apples:fresh or frozen produce + herbs
+bouillon cubes:other pantry goods
+containers:other pantry goods
+n:other pantry goods
+cream of coconut:other pantry goods
+herb stuffing mix:other pantry goods
+frozen green peas:other frozen food
+cranberry juice cocktail:beverages
+onion:fresh or frozen produce + herbs
+wide noodles:rices, pastas, breads, grains
+mixed nuts:nuts, seeds, and dried fruit
+stew beef:fresh or frozen meats
+hominy:canned goods
+lemon gelatin:other pantry goods
+coconut flavoring:spices and dried herbs
+berries:fresh or frozen produce + herbs
+saltines:snack food
+bread flour:flours, sugars, other dry baking ingredients
+fresh fruit:fresh or frozen produce + herbs
+onion juice:fresh or frozen produce + herbs
+tarragon vinegar:pantry liquids (oils, broths, wines, etc.)
+vanilla flavor:spices and dried herbs
+uncle ben's:other pantry goods
+whipped topping:other frozen food
+bean dip:condiments
+seasoning salt:spices and dried herbs
+chickpeas:canned goods
+ripe olives:canned goods
+cornbread:rices, pastas, breads, grains
+cocktail sauce:condiments
+bowl:other pantry goods
+grits:rices, pastas, breads, grains
+head cauliflower:fresh or frozen produce + herbs
+instant vanilla pudding mix:other pantry goods
+bay seasoning:spices and dried herbs
+grated monterey:fresh or frozen dairy products
+peach pie filling:canned goods
+cake yeast:flours, sugars, other dry baking ingredients
+light:other pantry goods
+chickens:fresh or frozen meats
+vermicelli:rices, pastas, breads, grains
+stack:other pantry goods
+nut meats:nuts, seeds, and dried fruit
+caramel ice cream topping:condiments
+english cheese:fresh or frozen dairy products
+chunky salsa:condiments
+eggs:other animal products
+fresh green beans:fresh or frozen produce + herbs
+light karo syrup:flours, sugars, other dry baking ingredients
+beef stew meat:fresh or frozen meats
+spareribs:fresh or frozen meats
+green food coloring:edible decorations
+yellow mustard:condiments
+kahlua:pantry liquids (oils, broths, wines, etc.)
+frankfurters:fresh or frozen meats
+balsamic vinegar:pantry liquids (oils, broths, wines, etc.)
+asparagus:fresh or frozen produce + herbs
+peg corn:canned goods
+cream of celery:canned goods
+red cabbage:fresh or frozen produce + herbs
+curry:spices and dried herbs
+ricotta:fresh or frozen dairy products
+lemon instant pudding:other pantry goods
+coffee:beverages
+stove top stuffing:canned goods
+barley:rices, pastas, breads, grains
+instant pudding:other pantry goods
+nutmeats:nuts, seeds, and dried fruit
+worcestershire sauce:condiments
+fresh ginger:fresh or frozen produce + herbs
+beef roast:fresh or frozen meats
+liquid:other pantry goods
+semi-sweet chocolate bits:candy and chocolate
+beef stock:pantry liquids (oils, broths, wines, etc.)
+dark molasses:flours, sugars, other dry baking ingredients
+equal:flours, sugars, other dry baking ingredients
+herb stuffing:other pantry goods
+frozen vegetables:other frozen food
+whiskey:pantry liquids (oils, broths, wines, etc.)
+sweet chocolate:candy and chocolate
+butterscotch:other pantry goods
+sweet pepper:fresh or frozen produce + herbs
+white potatoes:fresh or frozen produce + herbs
+lime gelatin:other pantry goods
+flank steak:fresh or frozen meats
+garlic:fresh or frozen produce + herbs
+canning salt:spices and dried herbs
+butterscotch pudding:other pantry goods
+peppermint:spices and dried herbs
+cornflake crumbs:snack food
+pickling salt:spices and dried herbs
+cantaloupe:fresh or frozen produce + herbs
+carnation:fresh or frozen dairy products
+leeks:fresh or frozen produce + herbs
+pear halves:canned goods
+seasoning:spices and dried herbs
+teriyaki sauce:condiments
+vanilla wafer crumbs:snack food
+ground pecans:nuts, seeds, and dried fruit
+vanilla:spices and dried herbs
+egg beaters:other animal products
+browns:other frozen food
+pepper:spices and dried herbs
+peach halves:canned goods
+corn flake crumbs:snack food
+fresh ground pepper:spices and dried herbs
+italian bread:rices, pastas, breads, grains
+cocoa powder:flours, sugars, other dry baking ingredients
+green cabbage:fresh or frozen produce + herbs
+mushroom pieces:fresh or frozen produce + herbs
+french dressing:condiments
+pie filling:canned goods
+refrigerated biscuits:rices, pastas, breads, grains
+red onions:fresh or frozen produce + herbs
+instant chicken:other pantry goods
+roast:fresh or frozen meats
+lentils:canned goods
+orange gelatin:other pantry goods
+snow peas:fresh or frozen produce + herbs
+kielbasa:fresh or frozen meats
+pudding:other pantry goods
+sweet pickle:canned goods
+ham bone:fresh or frozen meats
+butter flavor:spices and dried herbs
+hen:fresh or frozen meats
+blanched almonds:nuts, seeds, and dried fruit
+string beans:fresh or frozen produce + herbs
+dressing mix:other pantry goods
+taco chips:snack food
+preserves:condiments
+uncle ben:other pantry goods
+salad supreme:spices and dried herbs
+ground mustard:spices and dried herbs
+smooth peanut butter:other pantry goods
+lean hamburger:fresh or frozen meats
+brown gravy mix:other pantry goods
+pork roast:fresh or frozen meats
+scallops:fresh or frozen meats
+low-fat milk:fresh or frozen dairy products
+sweet butter:fresh or frozen dairy products
+chocolate morsels:candy and chocolate
+strawberry glaze:condiments
+bacon grease:other pantry goods
+apricot jello:other pantry goods
+kitchen:other pantry goods
+boneless chicken:fresh or frozen meats
+apple juice concentrate:beverages
+sesame seeds:nuts, seeds, and dried fruit
+t:other pantry goods
+no:other pantry goods
+red hots:candy and chocolate
+red apples:fresh or frozen produce + herbs
+ramen noodles:rices, pastas, breads, grains
+extra virgin olive oil:pantry liquids (oils, broths, wines, etc.)
+tuna fish:canned goods
+apricot:nuts, seeds, and dried fruit
+lean beef:fresh or frozen meats
+pancake mix:flours, sugars, other dry baking ingredients
+swiss:fresh or frozen dairy products
+blackberries:fresh or frozen produce + herbs
+parsley sprigs:fresh or frozen produce + herbs
+cider:beverages
+grape juice:beverages
+chicken breast halves:fresh or frozen meats
+sweet relish:condiments
+raspberries:fresh or frozen produce + herbs
+clam juice:pantry liquids (oils, broths, wines, etc.)
+bamboo shoots:canned goods
+romaine lettuce:fresh or frozen produce + herbs
+crisp rice cereal:snack food
+mexicorn:canned goods
+chips:snack food
+salami:fresh or frozen meats
+ground ham:fresh or frozen meats
+duncan:other pantry goods
+water:beverages
+orange sections:fresh or frozen produce + herbs
+baking cocoa:flours, sugars, other dry baking ingredients
+grape-nuts:snack food
+navy beans:canned goods
+kisses:candy and chocolate
+realemon juice:pantry liquids (oils, broths, wines, etc.)
+red cherries:canned goods
+dark brown sugar:flours, sugars, other dry baking ingredients
+lime sherbet:other frozen food
+sherry wine:pantry liquids (oils, broths, wines, etc.)
+coconut extract:spices and dried herbs
+currant jelly:condiments
+beef chuck:fresh or frozen meats
+frozen limeade:other frozen food
+eggplants:fresh or frozen produce + herbs
+strawberry preserves:condiments
+tomato catsup:condiments
+bottles:other pantry goods
+raspberry gelatin:other pantry goods
+frozen cauliflower:other frozen food
+crescent dinner rolls:rices, pastas, breads, grains
+dill pickle:canned goods
+fresh tomatoes:fresh or frozen produce + herbs
+spaghetti sauce mix:other pantry goods
+vanilla yogurt:fresh or frozen dairy products
+white beans:canned goods
+refrigerator biscuits:rices, pastas, breads, grains
+pickling spices:spices and dried herbs
+orange segments:fresh or frozen produce + herbs
+herb seasoned stuffing mix:other pantry goods
+orange extract:spices and dried herbs
+rum flavoring:spices and dried herbs
+hot cooked rice:rices, pastas, breads, grains
+coca-cola:beverages
+hash brown potatoes:other frozen food
+hamburger meat:fresh or frozen meats
+italian dressing mix:other pantry goods
+vanilla instant pudding mix:other pantry goods
+apricot halves:canned goods
+frozen green beans:other frozen food
+bran cereal:snack food
+concentrate:other pantry goods
+brisket:fresh or frozen meats
+baking chocolate:candy and chocolate
+graham cracker pie shell:other pantry goods
+sherbet:other frozen food
+low-fat:other pantry goods
+lemonade mix:other pantry goods
+candied fruit:canned goods
+fish fillets:fresh or frozen meats
+red bell peppers:fresh or frozen produce + herbs
+hormel chili:canned goods
+sweet red peppers:fresh or frozen produce + herbs
+prepared mustard:condiments
+lemon pudding:other pantry goods
+jell-o:other pantry goods
+chopped ripe olives:canned goods
+chicken livers:fresh or frozen meats
+chicken pieces:fresh or frozen meats
+dish pie shell:other pantry goods
+beef cubes:fresh or frozen meats
+maple flavoring:spices and dried herbs
+heavy whipping cream:fresh or frozen dairy products
+round steak:fresh or frozen meats
+lesueur peas:canned goods
+rice vinegar:pantry liquids (oils, broths, wines, etc.)
+chili peppers:fresh or frozen produce + herbs
+chicken cutlets:fresh or frozen meats
+sweet peas:fresh or frozen produce + herbs
+ready:other pantry goods
+graham cracker pie crusts:other pantry goods
+soda crackers:snack food
+cream style corn:canned goods
+pork tenderloin:fresh or frozen meats
+del monte:other pantry goods
+sweet peppers:fresh or frozen produce + herbs
+veal:fresh or frozen meats
+chocolate frosting:condiments
+liquid sweetener:flours, sugars, other dry baking ingredients
+guacamole:condiments
+center:other pantry goods
+choice:other pantry goods
+graham cracker crumb crust:other pantry goods
+coriander:spices and dried herbs
+light molasses:flours, sugars, other dry baking ingredients
+great northern beans:canned goods
+light cream cheese:fresh or frozen dairy products
+cream of broccoli soup:canned goods
+liter:other pantry goods
+chicken flavor:other pantry goods
+ground sausage:fresh or frozen meats
+ground sage:spices and dried herbs
+baby carrots:fresh or frozen produce + herbs
+sugar substitute:flours, sugars, other dry baking ingredients
+saltine crackers:snack food
+poppy seeds:nuts, seeds, and dried fruit
+shells:other pantry goods
+sweet:flours, sugars, other dry baking ingredients
+pink salmon:canned goods
+vanilla pudding mix:other pantry goods
+nacho chips:snack food
+turkey breast:fresh or frozen meats
+fruit juice:beverages
+bouillon:other pantry goods
+red and:fresh or frozen produce + herbs
+yellow onions:fresh or frozen produce + herbs
+party rye bread:rices, pastas, breads, grains
+fresh asparagus:fresh or frozen produce + herbs
+lemon wedges:fresh or frozen produce + herbs
+paraffin wax:other pantry goods
+fresh chives:fresh or frozen produce + herbs
+bran:snack food
+almond bark:candy and chocolate
+lemon-lime:beverages
+lean pork:fresh or frozen meats
+crawfish tails:fresh or frozen meats
+unflavored gelatine:other pantry goods
+shredded sharp cheddar cheese:fresh or frozen dairy products
+lasagne noodles:rices, pastas, breads, grains
+cherry gelatin:other pantry goods
+persimmon pulp:fresh or frozen produce + herbs
+red grapes:fresh or frozen produce + herbs
+strawberry pie filling:canned goods
+long grain:rices, pastas, breads, grains
+apple jelly:condiments
+lobster:fresh or frozen meats
+vidalia onions:fresh or frozen produce + herbs
+fresh shrimp:fresh or frozen meats
+baking apples:fresh or frozen produce + herbs
+buttermilk baking mix:flours, sugars, other dry baking ingredients
+caramel topping:condiments
+chili pepper:fresh or frozen produce + herbs
+well:other pantry goods
+chipped beef:fresh or frozen meats
+dark red kidney beans:canned goods
+frozen lima beans:other frozen food
+rotini:rices, pastas, breads, grains
+bacon fat:other pantry goods
+apple pie spice:spices and dried herbs
+ladyfingers:snack food
+tomato ketchup:condiments
+celery stalk:fresh or frozen produce + herbs
+level:other pantry goods
+generous:other pantry goods
+cream-style cottage cheese:fresh or frozen dairy products
+lasagna:rices, pastas, breads, grains
+instant pistachio pudding:other pantry goods
+yellow rice:rices, pastas, breads, grains
+double-acting baking powder:flours, sugars, other dry baking ingredients
+maple:flours, sugars, other dry baking ingredients
+fresh apples:fresh or frozen produce + herbs
+english muffins:rices, pastas, breads, grains
+cooking wine:pantry liquids (oils, broths, wines, etc.)
+fresh dill:fresh or frozen produce + herbs
+chicken:fresh or frozen meats
+dinner rolls:rices, pastas, breads, grains
+cold butter:fresh or frozen dairy products
+vegetable soup mix:other pantry goods
+campbell's tomato soup:canned goods
+white sauce:condiments
+cajun seasoning:spices and dried herbs
+beef brisket:fresh or frozen meats
+unpeeled apples:fresh or frozen produce + herbs
+grated coconut:nuts, seeds, and dried fruit
+cream of shrimp soup:canned goods
+cooking spray:other pantry goods
+dark rum:pantry liquids (oils, broths, wines, etc.)
+pine nuts:nuts, seeds, and dried fruit
+egg:other animal products
+dried beef:fresh or frozen meats
+mixed fruit:canned goods
+your choice:other pantry goods
+hot mashed potatoes:fresh or frozen produce + herbs
+tea:beverages
+hot coffee:beverages
+butterfinger:candy and chocolate
+cornbread crumbs:rices, pastas, breads, grains
+blackberry jam:condiments
+mincemeat:canned goods
+lemon zest:fresh or frozen produce + herbs
+fresh mint:fresh or frozen produce + herbs
+herbs:spices and dried herbs
+cream of tomato soup:canned goods
+fruit pie filling:canned goods
+fryers:fresh or frozen meats
+light mayonnaise:condiments
+fennel seed:spices and dried herbs
+sweet onions:fresh or frozen produce + herbs
+coarse salt:spices and dried herbs
+monde:other pantry goods
+red kidney:canned goods
+ground walnuts:nuts, seeds, and dried fruit
+chili with beans:canned goods
+ground nuts:nuts, seeds, and dried fruit
+green chillies:canned goods
+citron:other pantry goods
+dish pie crust:other pantry goods
+white corn:canned goods
+cream of onion soup:canned goods
+baking mix:flours, sugars, other dry baking ingredients
+roll garlic:fresh or frozen produce + herbs
+walnut halves:nuts, seeds, and dried fruit
+ground coriander:spices and dried herbs
+cinnamon:spices and dried herbs
+corn kernels:fresh or frozen produce + herbs
+fresh vegetables:fresh or frozen produce + herbs
+peach jello:other pantry goods
+gumdrops:candy and chocolate
+raspberry sherbet:other frozen food
+freshly grated parmesan cheese:fresh or frozen dairy products
+parkay margarine:fresh or frozen dairy products
+figs:nuts, seeds, and dried fruit
+regular oats:rices, pastas, breads, grains
+rabbits:fresh or frozen meats
+lemon pie filling:canned goods
+white chicken:fresh or frozen meats
+ground oregano:spices and dried herbs
+biscuit baking mix:flours, sugars, other dry baking ingredients
+mango:fresh or frozen produce + herbs
+red salmon:canned goods
+fresh peaches:fresh or frozen produce + herbs
+muenster cheese:fresh or frozen dairy products
+sugar cookie:snack food
+anise:spices and dried herbs
+chili seasoning:canned goods
+chronicles:other pantry goods
+italian tomatoes:canned goods
+condensed beef broth:canned goods
+baking soda:flours, sugars, other dry baking ingredients
+niblets corn:canned goods
+milky:other pantry goods
+kosher salt:spices and dried herbs
+cartons:other pantry goods
+consomme:canned goods
+angel hair pasta:rices, pastas, breads, grains
+linguini:rices, pastas, breads, grains
+jumbo shells:other pantry goods
+pasta shells:other pantry goods
+mild cheese:fresh or frozen dairy products
+shredded mozzarella:fresh or frozen dairy products
+ham hocks:fresh or frozen meats
+button mushrooms:fresh or frozen produce + herbs
+kiwi:fresh or frozen produce + herbs
+sirloin:fresh or frozen meats
+nahum:other pantry goods
+milk powder:flours, sugars, other dry baking ingredients
+english cheese spread:fresh or frozen dairy products
+yellow pepper:fresh or frozen produce + herbs
+stalk celery:fresh or frozen produce + herbs
+ground:other pantry goods
+shoyu:condiments
+beet juice:beverages
+ground white pepper:spices and dried herbs
+coconut milk:fresh or frozen dairy products
+very warm water:beverages
+process cheese:fresh or frozen dairy products
+vegetable:fresh or frozen produce + herbs
+cold:other pantry goods
+vidalia onion:fresh or frozen produce + herbs
+ham hock:fresh or frozen meats
+doritos chips:snack food
+egg white:other animal products
+cashew nuts:nuts, seeds, and dried fruit
+dark raisins:nuts, seeds, and dried fruit
+nonfat milk:fresh or frozen dairy products
+anchovies:canned goods
+yellow beans:canned goods
+baking powder:flours, sugars, other dry baking ingredients
+monosodium glutamate:spices and dried herbs
+red apple:fresh or frozen produce + herbs
+gruyere cheese:fresh or frozen dairy products
+fresh corn:fresh or frozen produce + herbs
+rye bread:rices, pastas, breads, grains
+mixed candied fruit:canned goods
+dried basil:spices and dried herbs
+broccoli spears:fresh or frozen produce + herbs
+stock:pantry liquids (oils, broths, wines, etc.)
+white grapes:fresh or frozen produce + herbs
+bologna:fresh or frozen meats
+frozen okra:other frozen food
+lettuce:fresh or frozen produce + herbs
+extra lean ground beef:fresh or frozen meats
+season:spices and dried herbs
+garlic cheese:fresh or frozen dairy products
+tomato wedges:fresh or frozen produce + herbs
+brown gravy:condiments
+processed cheese:fresh or frozen dairy products
+sausages:fresh or frozen meats
+bacon strips:fresh or frozen meats
+chicken parts:fresh or frozen meats
+brown mustard:condiments
+sirloin steak:fresh or frozen meats
+butternut squash:fresh or frozen produce + herbs
+chicken gravy:condiments
+sprite:beverages
+fresh garlic:fresh or frozen produce + herbs
+yellow food coloring:edible decorations
+lime jell-o:other pantry goods
+rye flour:flours, sugars, other dry baking ingredients
+frozen broccoli cuts:other frozen food
+lamb:fresh or frozen meats
+chicken gumbo soup:canned goods
+instant chocolate pudding mix:other pantry goods
+coconut flakes:nuts, seeds, and dried fruit
+peach:fresh or frozen produce + herbs
+spring onions:fresh or frozen produce + herbs
+safflower oil:pantry liquids (oils, broths, wines, etc.)
+saffron:spices and dried herbs
+beef tenderloin:fresh or frozen meats
+grapefruit juice:beverages
+chili mix:canned goods
+dried mustard:spices and dried herbs
+herb dressing:condiments
+frozen broccoli spears:other frozen food
+brown sugar:flours, sugars, other dry baking ingredients
+ground turmeric:spices and dried herbs
+dijon mustard:condiments
+new potatoes:fresh or frozen produce + herbs
+season-all:spices and dried herbs
+orange slice candy:candy and chocolate
+oyster sauce:condiments
+red sweet peppers:fresh or frozen produce + herbs
+sweet pickle juice:condiments
+bread dough:other pantry goods
+italian:spices and dried herbs
+pineapple sherbet:other frozen food
+graham cracker pie shells:other pantry goods
+lemon flavor:spices and dried herbs
+fresh oregano:fresh or frozen produce + herbs
+catfish fillets:fresh or frozen meats
+twinkies:snack food
+marsala wine:pantry liquids (oils, broths, wines, etc.)
+chicken rice soup:canned goods
+chutney:condiments
+low-fat sour cream:fresh or frozen dairy products
+cream soup:canned goods
+fresh oregano:fresh or frozen produce + herbs
+beef gravy:condiments
+cream cheese:fresh or frozen dairy products
+chocolate wafers:snack food
+pork loin:fresh or frozen meats
+scallion:fresh or frozen produce + herbs
+tamales:canned goods
+red cinnamon:candy and chocolate
+twinkies:snack food
+green lima beans:canned goods
+pineapple chunks:canned goods
+whole wheat bread:other pantry goods
+relish:condiments
+light rum:pantry liquids (oils, broths, wines, etc.)
+ground thyme:spices and dried herbs
+cold coffee:beverages
+potato flakes:other pantry goods
+sweet potato:fresh or frozen produce + herbs
+cooked sweet potatoes:fresh or frozen produce + herbs
+very ripe bananas:fresh or frozen produce + herbs
+loaves:other pantry goods
+chocolate sandwich cookies:snack food
+pack:other pantry goods
+cherry juice:beverages
+margarine:fresh or frozen dairy products
+butter cake mix:flours, sugars, other dry baking ingredients
+packet:other pantry goods
+powdered ginger:spices and dried herbs
+wide egg noodles:other pantry goods
+white shoe peg corn:canned goods
+liquid butter:other pantry goods
+instant lemon pudding:other pantry goods
+white cornmeal:flours, sugars, other dry baking ingredients
+cooking rice:other pantry goods
+packets equal:flours, sugars, other dry baking ingredients
+salad supreme seasoning:spices and dried herbs
+crescent dinner:other pantry goods
+irish potatoes:fresh or frozen produce + herbs
+cumin powder:spices and dried herbs
+drops red food coloring:edible decorations
+numbers:other pantry goods
+cake paraffin:other pantry goods
+instant beef bouillon:other pantry goods
+butterscotch bits:candy and chocolate
+flaky biscuits:other pantry goods
+light karo:flours, sugars, other dry baking ingredients
+sweet italian sausage:fresh or frozen meats
+angel food cake mix:flours, sugars, other dry baking ingredients
+fresh herbs:fresh or frozen produce + herbs
+chuck:fresh or frozen meats
+consomme soup:canned goods
+mayonnaise:condiments
+apple butter:condiments
+cheese slices:fresh or frozen dairy products
+beef round steak:fresh or frozen meats
+green sweet peppers:fresh or frozen produce + herbs
+light sour cream:fresh or frozen dairy products
+hot red pepper:fresh or frozen produce + herbs
+stewing beef:fresh or frozen meats
+all-bran:snack food
+frozen tater:other frozen food
+lemon-lime soda:beverages
+buttered crumbs:snack food
+pimento cheese:fresh or frozen dairy products
+chops:fresh or frozen meats
+anise seed:spices and dried herbs
+frozen shrimp:fresh or frozen meats
+bay scallops:fresh or frozen meats
+white grape juice:beverages
+mint sprigs:fresh or frozen produce + herbs
+leaf lettuce:fresh or frozen produce + herbs
+bing cherries:fresh or frozen produce + herbs
+tapioca pudding:other pantry goods
+yellow wax beans:canned goods
+crumbs:other pantry goods
+sweet green peppers:fresh or frozen produce + herbs
+white vinegar:pantry liquids (oils, broths, wines, etc.)
+white almond bark:candy and chocolate
+cakes yeast:flours, sugars, other dry baking ingredients
+flavoring:spices and dried herbs
+hawaiian punch:beverages
+powdered alum:other pantry goods
+marshmallow:snack food
+potato soup:canned goods
+saltine cracker crumbs:snack food
+gummy worms:candy and chocolate
+uncle ben's rice:other pantry goods
+bac*os:other pantry goods
+celery flakes:spices and dried herbs
+marjoram leaves:spices and dried herbs
+chili seasoning mix:spices and dried herbs
+mix:other pantry goods
+bermuda onion:fresh or frozen produce + herbs
+honey:flours, sugars, other dry baking ingredients
+strawberry jam:condiments
+pumpkin spice:spices and dried herbs
+love:other pantry goods
+chicken thighs:fresh or frozen meats
+lemon supreme cake mix:flours, sugars, other dry baking ingredients
+rigatoni:other pantry goods
+dark syrup:flours, sugars, other dry baking ingredients
+handful:other pantry goods
+chopped meat:fresh or frozen meats
+instant pistachio pudding mix:other pantry goods
+summer:other pantry goods
+bouillon cube:other pantry goods
+light syrup:flours, sugars, other dry baking ingredients
+head broccoli:fresh or frozen produce + herbs
+fresh okra:fresh or frozen produce + herbs
+bitter chocolate:candy and chocolate
+lean pork chops:fresh or frozen meats
+spray:other pantry goods
+filling:other pantry goods
+chicken bouillon granules:other pantry goods
+elephant:other pantry goods
+salad greens:fresh or frozen produce + herbs
+chili hot beans:canned goods
+orange zest:fresh or frozen produce + herbs
+strawberry ice cream:other frozen food
+worcestershire sauce:condiments
+pickle juice:condiments
+orange flavoring:spices and dried herbs
+fresh ground black pepper:spices and dried herbs
+brown:other pantry goods
+black:other pantry goods
+lemonade concentrate:other frozen food
+coffee creamer:other pantry goods
+champagne:pantry liquids (oils, broths, wines, etc.)
+vegetable broth:pantry liquids (oils, broths, wines, etc.)
+baby food:other pantry goods
+green cherries:canned goods
+oil:pantry liquids (oils, broths, wines, etc.)
+shallot:fresh or frozen produce + herbs
+coffee cream:fresh or frozen dairy products
+liquid shortening:pantry liquids (oils, broths, wines, etc.)
+green chili:canned goods
+brussels:other frozen food
+mixed pickling:spices and dried herbs
+paprika:spices and dried herbs
+soft shortening:pantry liquids (oils, broths, wines, etc.)
+sour cream:fresh or frozen dairy products
+swiss cheese:fresh or frozen dairy products
+fully cooked ham:fresh or frozen meats
+instant chocolate:other pantry goods
+fettuccine:other pantry goods
+bacon:fresh or frozen meats
+cheese soup:canned goods
+fresh raspberries:fresh or frozen produce + herbs
+freshly squeezed lemon juice:pantry liquids (oils, broths, wines, etc.)
+butternut flavoring:spices and dried herbs
+rump roast:fresh or frozen meats
+spanish rice:other pantry goods
+snickers:candy and chocolate
+colored marshmallows:candy and chocolate
+red jello:other pantry goods
+tenderizer:other pantry goods
+regular marshmallows:candy and chocolate
+tequila:pantry liquids (oils, broths, wines, etc.)
+marinara sauce:condiments
+ground sirloin:fresh or frozen meats
+cheddar cheese:fresh or frozen dairy products
+semi-sweet morsels:candy and chocolate
+fresh carrots:fresh or frozen produce + herbs
+cornmeal mix:flours, sugars, other dry baking ingredients
+nonfat sour cream:fresh or frozen dairy products
+bar:other pantry goods
+peeled shrimp:fresh or frozen meats
+lemon flavored gelatin:other pantry goods
+pasta sauce:canned goods
+yellow cheese:fresh or frozen dairy products
+sweet cream:fresh or frozen dairy products
+bunches broccoli:fresh or frozen produce + herbs
+pork loin chops:fresh or frozen meats
+color:edible decorations
+kellogg:other pantry goods
+velveeta cheese:fresh or frozen dairy products
+grated apples:fresh or frozen produce + herbs
+beef bouillon granules:other pantry goods
+pork spareribs:fresh or frozen meats
+black coffee:beverages
+hot chili beans:canned goods
+ground cranberries:fresh or frozen produce + herbs
+lean ground meat:fresh or frozen meats
+pear:fresh or frozen produce + herbs
+party rolls:other pantry goods
+stove top stuffing mix:other pantry goods
+red food color:edible decorations
+mashed ripe banana:fresh or frozen produce + herbs
+romano:fresh or frozen dairy products
+jalapeno:fresh or frozen produce + herbs
+packets:other pantry goods
+very hot water:beverages
+macaroni shells:other pantry goods
+cubed cheese:fresh or frozen dairy products
+chocolate ice cream:other frozen food
+mostaccioli:other pantry goods
+flavor:spices and dried herbs
+bottles ginger ale:beverages
+nonfat plain yogurt:fresh or frozen dairy products
+limeade:beverages
+sprinkles:edible decorations
+anchovy:condiments
+dried apricots:nuts, seeds, and dried fruit
+cognac:pantry liquids (oils, broths, wines, etc.)
+cukes:fresh or frozen produce + herbs
+sour cherries:canned goods
+long grain white rice:other pantry goods
+cauliflowerets:fresh or frozen produce + herbs
+lean ground pork:fresh or frozen meats
+caraway:spices and dried herbs
+italian parsley:fresh or frozen produce + herbs
+suet:other pantry goods
+cocktail peanuts:nuts, seeds, and dried fruit
+bran flakes:snack food
+loin pork chops:fresh or frozen meats
+walnut pieces:nuts, seeds, and dried fruit
+raspberry preserves:condiments
+skor:candy and chocolate
+ham slices:fresh or frozen meats
+rice cereal:snack food
+chiles:fresh or frozen produce + herbs
+vanilla bean:spices and dried herbs
+pearl onions:fresh or frozen produce + herbs
+fettucini:other pantry goods
+veal cutlets:fresh or frozen meats
+tahini:condiments
+pie crusts:other pantry goods
+sweetener:flours, sugars, other dry baking ingredients
+ground veal:fresh or frozen meats
+cold margarine:fresh or frozen dairy products
+stewing chicken:fresh or frozen meats
+italian seasoned bread crumbs:other pantry goods
+raspberry jam:condiments
+leaf oregano:spices and dried herbs
+flounder:fresh or frozen meats
+condensed mushroom soup:canned goods
+grated rind:fresh or frozen produce + herbs
+salad seasoning:spices and dried herbs
+beef stew:fresh or frozen meats
+rapidrise yeast:flours, sugars, other dry baking ingredients
+oregano leaves:spices and dried herbs
+fresh coconut:nuts, seeds, and dried fruit
+ground venison:fresh or frozen meats
+mint leaves:fresh or frozen produce + herbs
+seafood seasoning:spices and dried herbs
+haddock:fresh or frozen meats
+chestnuts:nuts, seeds, and dried fruit
+italian plum tomatoes:canned goods
+jumbo shrimp:fresh or frozen meats
+salad olives:canned goods
+graham cracker:snack food
+cornbread stuffing:other pantry goods
+jalapeno cheese:fresh or frozen dairy products
+caramel:candy and chocolate
+chocolate milk:fresh or frozen dairy products
+powdered mustard:spices and dried herbs
+solid pack pumpkin:canned goods
+ground lean beef:fresh or frozen meats
+white corn meal:flours, sugars, other dry baking ingredients
+french style green beans:canned goods
+ground mace:spices and dried herbs
+chopped lettuce:fresh or frozen produce + herbs
+boneless pork:fresh or frozen meats
+minute rice:other pantry goods
+rotini pasta:other pantry goods
+salad:fresh or frozen produce + herbs
+eggnog:fresh or frozen dairy products
+dough:other pantry goods
+black cherry jello:other pantry goods
+coffee powder:beverages
+red candied cherries:candy and chocolate
+spanish peanuts:nuts, seeds, and dried fruit
+grated carrot:fresh or frozen produce + herbs
+boiled ham:fresh or frozen meats
+pearl barley:other pantry goods
+cheese sauce:condiments
+mixed spices:spices and dried herbs
+sesame:spices and dried herbs
+blackberry:fresh or frozen produce + herbs
+buttermilk biscuits:other pantry goods
+ground round steak:fresh or frozen meats
+fine cracker crumbs:other pantry goods
+hoisin sauce:condiments
+chocolate icing:condiments
+solid shortening:pantry liquids (oils, broths, wines, etc.)
+dark karo:flours, sugars, other dry baking ingredients
+white hominy:canned goods
+chunky pineapple:canned goods
+hot dog buns:other pantry goods
+white shoepeg corn:canned goods
+broccoli cuts:other frozen food
+unbaked pie crusts:other pantry goods
+coffee granules:beverages
+tenderloin:fresh or frozen meats
+imitation crabmeat:fresh or frozen meats
+spice:spices and dried herbs
+fennel:spices and dried herbs
+red sweet pepper:fresh or frozen produce + herbs
+seedless grapes:fresh or frozen produce + herbs
+sausage meat:fresh or frozen meats
+chinese vegetables:fresh or frozen produce + herbs
+stove top dressing:other pantry goods
+italian stewed tomatoes:canned goods
+refrigerator crescent rolls:other pantry goods
+yellow hominy:canned goods
+cinnamon stick:spices and dried herbs
+cola:beverages
+turkey broth:pantry liquids (oils, broths, wines, etc.)
+fresh crabmeat:fresh or frozen meats
+cream chicken soup:canned goods
+mushroom caps:fresh or frozen produce + herbs
+crawfish:fresh or frozen meats
+condensed chicken broth:canned goods
+lump crabmeat:fresh or frozen meats
+horseradish sauce:condiments
+sweet corn:fresh or frozen produce + herbs
+strawberry flavored gelatin:other pantry goods
+hot pork sausage:fresh or frozen meats
+apple slices:fresh or frozen produce + herbs
+whole strawberries:fresh or frozen produce + herbs
+white chocolate chips:candy and chocolate
+coarse black pepper:spices and dried herbs
+grand marnier:pantry liquids (oils, broths, wines, etc.)
+cream of asparagus soup:canned goods
+regular flour:flours, sugars, other dry baking ingredients
+chocolate pieces:candy and chocolate
+lemon cake:fresh or frozen dairy products
+baby lima beans:fresh or frozen produce + herbs
+crushed strawberries:fresh or frozen produce + herbs
+corn oil margarine:fresh or frozen dairy products
+buttered cracker crumbs:other pantry goods
+ground onions:fresh or frozen produce + herbs
+ground almonds:nuts, seeds, and dried fruit
+crescent roll:other pantry goods
+creamer:other pantry goods
+graham flour:flours, sugars, other dry baking ingredients
+peach slices:canned goods
+ground lamb:fresh or frozen meats
+chervil:spices and dried herbs
+cracked black pepper:spices and dried herbs
+rotini noodles:other pantry goods
+green apples:fresh or frozen produce + herbs
+tiny shrimp:fresh or frozen meats
+red seedless grapes:fresh or frozen produce + herbs
+nacho cheese soup:canned goods
+marshmallow fluff:candy and chocolate
+artificial sweetener:flours, sugars, other dry baking ingredients
+cracked wheat:other pantry goods
+black peppercorns:spices and dried herbs
+venison:fresh or frozen meats
+penne:other pantry goods
+clove:spices and dried herbs
+pizza crust:other pantry goods
+cherry pie mix:canned goods
+mandarin orange sections:canned goods
+summer squash:fresh or frozen produce + herbs
+parsnips:fresh or frozen produce + herbs
+fryer chicken:fresh or frozen meats
+hot bulk sausage:fresh or frozen meats
+dijon style mustard:condiments
+chicken base:pantry liquids (oils, broths, wines, etc.)
+strawberry yogurt:fresh or frozen dairy products
+mushroom gravy:condiments
+milk chocolate morsels:candy and chocolate
+cardamon:spices and dried herbs
+yellow bell pepper:fresh or frozen produce + herbs
+mixed pickling spice:spices and dried herbs
+frozen rolls:other frozen food
+banana peppers:fresh or frozen produce + herbs
+whole wheat bread crumbs:other pantry goods
+italian cheese:fresh or frozen dairy products
+broccoli cheese soup:canned goods
+deer meat:fresh or frozen meats
+instant mashed potatoes:other pantry goods
+tofu:other animal products
+northern beans:canned goods
+soy flour:flours, sugars, other dry baking ingredients
+chicken rice:other pantry goods
+hazelnuts:nuts, seeds, and dried fruit
+fresh rosemary:fresh or frozen produce + herbs
+fresh cauliflower:fresh or frozen produce + herbs
+chilled whipping cream:fresh or frozen dairy products
+low-fat mayonnaise:condiments
+green chili salsa:condiments
+vanilla caramels:candy and chocolate
+boneless beef:fresh or frozen meats
+walnut:nuts, seeds, and dried fruit
+ground lean pork:fresh or frozen meats
+fresh chopped parsley:fresh or frozen produce + herbs
+red tomatoes:fresh or frozen produce + herbs
+orzo:other pantry goods
+golden delicious apples:fresh or frozen produce + herbs
+red cayenne pepper:spices and dried herbs
+head of cabbage:fresh or frozen produce + herbs
+garden peas:fresh or frozen produce + herbs
+soda cracker crumbs:other pantry goods
+triple sec:pantry liquids (oils, broths, wines, etc.)
+cinnamon sugar:flours, sugars, other dry baking ingredients
+pineapple rings:canned goods
+grape jello:other pantry goods
+cornish hens:fresh or frozen meats
+pork shoulder:fresh or frozen meats
+taco cheese:fresh or frozen dairy products
+ground hamburger:fresh or frozen meats
+coffee ice cream:other frozen food
+soup:canned goods
+frozen pie crusts:other frozen food
+fresh onion:fresh or frozen produce + herbs
+light raisins:nuts, seeds, and dried fruit
+juice:beverages
+seeded raisins:nuts, seeds, and dried fruit
+glaze:condiments
+olive juice:condiments
+acorn:fresh or frozen produce + herbs
+nacho cheese doritos:snack food
+white cooking wine:pantry liquids (oils, broths, wines, etc.)
+italian salad dressing mix:condiments
+nonfat dry milk powder:flours, sugars, other dry baking ingredients
+frozen artichoke:other frozen food
+almond slivers:nuts, seeds, and dried fruit
+manicotti shells:other pantry goods
+watermelon:fresh or frozen produce + herbs
+walnut meats:nuts, seeds, and dried fruit
+lemon yogurt:fresh or frozen dairy products
+low-fat margarine:fresh or frozen dairy products
+caramel sauce:condiments
+thin noodles:other pantry goods
+chicken flavored bouillon granules:pantry liquids (oils, broths, wines, etc.)
+cream sherry:pantry liquids (oils, broths, wines, etc.)
+nondairy creamer:other pantry goods
+cracked pepper:spices and dried herbs
+cardamom:spices and dried herbs
+caraway seeds:spices and dried herbs
+buttered bread:other pantry goods
+cauliflower flowerets:fresh or frozen produce + herbs
+cannellini beans:canned goods
+salsa sauce:condiments
+hot italian sausage:fresh or frozen meats
+red snapper:fresh or frozen meats
+matzo meal:flours, sugars, other dry baking ingredients
+delicious apples:fresh or frozen produce + herbs
+pumpkin puree:canned goods
+morsels:candy and chocolate
+macaroni noodles:other pantry goods
+pretzel sticks:snack food
+white kidney beans:canned goods
+cole slaw:fresh or frozen produce + herbs
+cold cooked rice:other pantry goods
+low-fat buttermilk:fresh or frozen dairy products
+cheese cracker crumbs:other pantry goods
+rice wine vinegar:pantry liquids (oils, broths, wines, etc.)
+muffin mix:flours, sugars, other dry baking ingredients
+kidney:canned goods
+heavy:fresh or frozen dairy products
+vegetable juice:beverages
+dry wine:pantry liquids (oils, broths, wines, etc.)
+whole wheat pastry flour:flours, sugars, other dry baking ingredients
+pita bread:other pantry goods
+coarse ground pepper:spices and dried herbs
+cornbread stuffing mix:other pantry goods
+burgundy:pantry liquids (oils, broths, wines, etc.)
+picante:condiments
+gravy:condiments
+cakes:other pantry goods
+low-fat yogurt:fresh or frozen dairy products
+coarse pepper:spices and dried herbs
+mussels:fresh or frozen meats
+cinnamon-sugar:flours, sugars, other dry baking ingredients
+cheese tortellini:other pantry goods
+tortilla shells:other pantry goods
+sweet pickle juice:condiments
+bread dough:other pantry goods
+italian:spices and dried herbs
+pineapple sherbet:other frozen food
+graham cracker pie shells:other pantry goods
+lemon flavor:spices and dried herbs
+fresh oregano:fresh or frozen produce + herbs
+catfish fillets:fresh or frozen meats
+twinkies:snack food
+marsala wine:pantry liquids (oils, broths, wines, etc.)
+chicken rice soup:canned goods
+chutney:condiments
+low-fat sour cream:fresh or frozen dairy products
+cream soup:canned goods
+fresh oregano:fresh or frozen produce + herbs
+beef gravy:condiments
+cream cheese:fresh or frozen dairy products
+chocolate wafers:snack food
+pork loin:fresh or frozen meats
+scallion:fresh or frozen produce + herbs
+tamales:canned goods
+red cinnamon:candy and chocolate
+twinkies:snack food
+green lima beans:canned goods
+pineapple chunks:canned goods
+whole wheat bread:other pantry goods
+relish:condiments
+light rum:pantry liquids (oils, broths, wines, etc.)
+ground thyme:spices and dried herbs
+cold coffee:beverages
+potato flakes:other pantry goods
+sweet potato:fresh or frozen produce + herbs
+cooked sweet potatoes:fresh or frozen produce + herbs
+very ripe bananas:fresh or frozen produce + herbs
+loaves:other pantry goods
+chocolate sandwich cookies:snack food
+pack:other pantry goods
+cherry juice:beverages
+margarine:fresh or frozen dairy products
+butter cake mix:flours, sugars, other dry baking ingredients
+packet:other pantry goods
+powdered ginger:spices and dried herbs
+wide egg noodles:other pantry goods
+white shoe peg corn:canned goods
+liquid butter:other pantry goods
+instant lemon pudding:other pantry goods
+white cornmeal:flours, sugars, other dry baking ingredients
+cooking rice:other pantry goods
+packets equal:flours, sugars, other dry baking ingredients
+salad supreme seasoning:spices and dried herbs
+crescent dinner:other pantry goods
+irish potatoes:fresh or frozen produce + herbs
+cumin powder:spices and dried herbs
+drops red food coloring:edible decorations
+numbers:other pantry goods
+cake paraffin:other pantry goods
+instant beef bouillon:other pantry goods
+butterscotch bits:candy and chocolate
+flaky biscuits:other pantry goods
+light karo:flours, sugars, other dry baking ingredients
+sweet italian sausage:fresh or frozen meats
+angel food cake mix:flours, sugars, other dry baking ingredients
+fresh herbs:fresh or frozen produce + herbs
+chuck:fresh or frozen meats
+consomme soup:canned goods
+mayonnaise:condiments
+apple butter:condiments
+cheese slices:fresh or frozen dairy products
+beef round steak:fresh or frozen meats
+green sweet peppers:fresh or frozen produce + herbs
+light sour cream:fresh or frozen dairy products
+hot red pepper:fresh or frozen produce + herbs
+stewing beef:fresh or frozen meats
+all-bran:snack food
+frozen tater:other frozen food
+lemon-lime soda:beverages
+buttered crumbs:snack food
+pimento cheese:fresh or frozen dairy products
+chops:fresh or frozen meats
+anise seed:spices and dried herbs
+frozen shrimp:fresh or frozen meats
+bay scallops:fresh or frozen meats
+white grape juice:beverages
+mint sprigs:fresh or frozen produce + herbs
+leaf lettuce:fresh or frozen produce + herbs
+bing cherries:fresh or frozen produce + herbs
+tapioca pudding:other pantry goods
+yellow wax beans:canned goods
+crumbs:other pantry goods
+sweet green peppers:fresh or frozen produce + herbs
+white vinegar:pantry liquids (oils, broths, wines, etc.)
+white almond bark:candy and chocolate
+cakes yeast:flours, sugars, other dry baking ingredients
+flavoring:spices and dried herbs
+hawaiian punch:beverages
+powdered alum:other pantry goods
+marshmallow:snack food
+potato soup:canned goods
+saltine cracker crumbs:snack food
+gummy worms:candy and chocolate
+uncle ben's rice:other pantry goods
+bac*os:other pantry goods
+celery flakes:spices and dried herbs
+marjoram leaves:spices and dried herbs
+chili seasoning mix:spices and dried herbs
+mix:other pantry goods
+bermuda onion:fresh or frozen produce + herbs
+honey:flours, sugars, other dry baking ingredients
+strawberry jam:condiments
+pumpkin spice:spices and dried herbs
+love:other pantry goods
+chicken thighs:fresh or frozen meats
+lemon supreme cake mix:flours, sugars, other dry baking ingredients
+rigatoni:other pantry goods
+dark syrup:flours, sugars, other dry baking ingredients
+handful:other pantry goods
+chopped meat:fresh or frozen meats
+instant pistachio pudding mix:other pantry goods
+summer:other pantry goods
+bouillon cube:other pantry goods
+light syrup:flours, sugars, other dry baking ingredients
+head broccoli:fresh or frozen produce + herbs
+fresh okra:fresh or frozen produce + herbs
+bitter chocolate:candy and chocolate
+lean pork chops:fresh or frozen meats
+spray:other pantry goods
+filling:other pantry goods
+chicken bouillon granules:other pantry goods
+elephant:other pantry goods
+salad greens:fresh or frozen produce + herbs
+chili hot beans:canned goods
+orange zest:fresh or frozen produce + herbs
+strawberry ice cream:other frozen food
+worcestershire sauce:condiments
+pickle juice:condiments
+orange flavoring:spices and dried herbs
+fresh ground black pepper:spices and dried herbs
+brown:other pantry goods
+black:other pantry goods
+lemonade concentrate:other frozen food
+coffee creamer:other pantry goods
+champagne:pantry liquids (oils, broths, wines, etc.)
+vegetable broth:pantry liquids (oils, broths, wines, etc.)
+baby food:other pantry goods
+green cherries:canned goods
+oil:pantry liquids (oils, broths, wines, etc.)
+shallot:fresh or frozen produce + herbs
+coffee cream:fresh or frozen dairy products
+liquid shortening:pantry liquids (oils, broths, wines, etc.)
+green chili:canned goods
+brussels:other frozen food
+mixed pickling:spices and dried herbs
+paprika:spices and dried herbs
+soft shortening:pantry liquids (oils, broths, wines, etc.)
+sour cream:fresh or frozen dairy products
+swiss cheese:fresh or frozen dairy products
+fully cooked ham:fresh or frozen meats
+instant chocolate:other pantry goods
+fettuccine:other pantry goods
+bacon:fresh or frozen meats
+cheese soup:canned goods
+fresh raspberries:fresh or frozen produce + herbs
+freshly squeezed lemon juice:pantry liquids (oils, broths, wines, etc.)
+butternut flavoring:spices and dried herbs
+rump roast:fresh or frozen meats
+spanish rice:other pantry goods
+snickers:candy and chocolate
+colored marshmallows:candy and chocolate
+red jello:other pantry goods
+tenderizer:other pantry goods
+regular marshmallows:candy and chocolate
+tequila:pantry liquids (oils, broths, wines, etc.)
+marinara sauce:condiments
+ground sirloin:fresh or frozen meats
+cheddar cheese:fresh or frozen dairy products
+semi-sweet morsels:candy and chocolate
+fresh carrots:fresh or frozen produce + herbs
+cornmeal mix:flours, sugars, other dry baking ingredients
+nonfat sour cream:fresh or frozen dairy products
+bar:other pantry goods
+peeled shrimp:fresh or frozen meats
+lemon flavored gelatin:other pantry goods
+pasta sauce:canned goods
+yellow cheese:fresh or frozen dairy products
+sweet cream:fresh or frozen dairy products
+bunches broccoli:fresh or frozen produce + herbs
+pork loin chops:fresh or frozen meats
+color:edible decorations
+kellogg:other pantry goods
+velveeta cheese:fresh or frozen dairy products
+grated apples:fresh or frozen produce + herbs
+beef bouillon granules:other pantry goods
+pork spareribs:fresh or frozen meats
+black coffee:beverages
+hot chili beans:canned goods
+ground cranberries:fresh or frozen produce + herbs
+lean ground meat:fresh or frozen meats
+pear:fresh or frozen produce + herbs
+party rolls:other pantry goods
+stove top stuffing mix:other pantry goods
+red food color:edible decorations
+mashed ripe banana:fresh or frozen produce + herbs
+romano:fresh or frozen dairy products
+jalapeno:fresh or frozen produce + herbs
+packets:other pantry goods
+very hot water:beverages
+macaroni shells:other pantry goods
+cubed cheese:fresh or frozen dairy products
+chocolate ice cream:other frozen food
+mostaccioli:other pantry goods
+flavor:spices and dried herbs
+bottles ginger ale:beverages
+nonfat plain yogurt:fresh or frozen dairy products
+limeade:beverages
+sprinkles:edible decorations
+anchovy:condiments
+dried apricots:nuts, seeds, and dried fruit
+cognac:pantry liquids (oils, broths, wines, etc.)
+cukes:fresh or frozen produce + herbs
+sour cherries:canned goods
+long grain white rice:other pantry goods
+cauliflowerets:fresh or frozen produce + herbs
+lean ground pork:fresh or frozen meats
+caraway:spices and dried herbs
+italian parsley:fresh or frozen produce + herbs
+suet:other pantry goods
+cocktail peanuts:nuts, seeds, and dried fruit
+bran flakes:snack food
+loin pork chops:fresh or frozen meats
+walnut pieces:nuts, seeds, and dried fruit
+raspberry preserves:condiments
+skor:candy and chocolate
+ham slices:fresh or frozen meats
+rice cereal:snack food
+chiles:fresh or frozen produce + herbs
+vanilla bean:spices and dried herbs
+pearl onions:fresh or frozen produce + herbs
+fettucini:other pantry goods
+veal cutlets:fresh or frozen meats
+tahini:condiments
+pie crusts:other pantry goods
+sweetener:flours, sugars, other dry baking ingredients
+ground veal:fresh or frozen meats
+cold margarine:fresh or frozen dairy products
+stewing chicken:fresh or frozen meats
+italian seasoned bread crumbs:other pantry goods
+raspberry jam:condiments
+leaf oregano:spices and dried herbs
+flounder:fresh or frozen meats
+condensed mushroom soup:canned goods
+grated rind:fresh or frozen produce + herbs
+salad seasoning:spices and dried herbs
+beef stew:fresh or frozen meats
+rapidrise yeast:flours, sugars, other dry baking ingredients
+oregano leaves:spices and dried herbs
+fresh coconut:nuts, seeds, and dried fruit
+ground venison:fresh or frozen meats
+mint leaves:fresh or frozen produce + herbs
+seafood seasoning:spices and dried herbs
+haddock:fresh or frozen meats
+chestnuts:nuts, seeds, and dried fruit
+italian plum tomatoes:canned goods
+jumbo shrimp:fresh or frozen meats
+salad olives:canned goods
+graham cracker:snack food
+cornbread stuffing:other pantry goods
+jalapeno cheese:fresh or frozen dairy products
+caramel:candy and chocolate
+chocolate milk:fresh or frozen dairy products
+powdered mustard:spices and dried herbs
+solid pack pumpkin:canned goods
+ground lean beef:fresh or frozen meats
+white corn meal:flours, sugars, other dry baking ingredients
+french style green beans:canned goods
+ground mace:spices and dried herbs
+chopped lettuce:fresh or frozen produce + herbs
+boneless pork:fresh or frozen meats
+minute rice:other pantry goods
+rotini pasta:other pantry goods
+salad:fresh or frozen produce + herbs
+eggnog:fresh or frozen dairy products
+dough:other pantry goods
+black cherry jello:other pantry goods
+coffee powder:beverages
+red candied cherries:candy and chocolate
+spanish peanuts:nuts, seeds, and dried fruit
+grated carrot:fresh or frozen produce + herbs
+boiled ham:fresh or frozen meats
+pearl barley:other pantry goods
+cheese sauce:condiments
+mixed spices:spices and dried herbs
+sesame:spices and dried herbs
+blackberry:fresh or frozen produce + herbs
+buttermilk biscuits:other pantry goods
+ground round steak:fresh or frozen meats
+fine cracker crumbs:other pantry goods
+hoisin sauce:condiments
+chocolate icing:condiments
+solid shortening:pantry liquids (oils, broths, wines, etc.)
+dark karo:flours, sugars, other dry baking ingredients
+white hominy:canned goods
+chunky pineapple:canned goods
+hot dog buns:other pantry goods
+white shoepeg corn:canned goods
+broccoli cuts:other frozen food
+unbaked pie crusts:other pantry goods
+coffee granules:beverages
+tenderloin:fresh or frozen meats
+imitation crabmeat:fresh or frozen meats
+spice:spices and dried herbs
+fennel:spices and dried herbs
+red sweet pepper:fresh or frozen produce + herbs
+seedless grapes:fresh or frozen produce + herbs
+sausage meat:fresh or frozen meats
+chinese vegetables:fresh or frozen produce + herbs
+stove top dressing:other pantry goods
+italian stewed tomatoes:canned goods
+refrigerator crescent rolls:other pantry goods
+yellow hominy:canned goods
+cinnamon stick:spices and dried herbs
+cola:beverages
+turkey broth:pantry liquids (oils, broths, wines, etc.)
+fresh crabmeat:fresh or frozen meats
+cream chicken soup:canned goods
+mushroom caps:fresh or frozen produce + herbs
+crawfish:fresh or frozen meats
+condensed chicken broth:canned goods
+lump crabmeat:fresh or frozen meats
+horseradish sauce:condiments
+sweet corn:fresh or frozen produce + herbs
+strawberry flavored gelatin:other pantry goods
+hot pork sausage:fresh or frozen meats
+apple slices:fresh or frozen produce + herbs
+whole strawberries:fresh or frozen produce + herbs
+white chocolate chips:candy and chocolate
+coarse black pepper:spices and dried herbs
+grand marnier:pantry liquids (oils, broths, wines, etc.)
+cream of asparagus soup:canned goods
+regular flour:flours, sugars, other dry baking ingredients
+chocolate pieces:candy and chocolate
+lemon cake:fresh or frozen dairy products
+baby lima beans:fresh or frozen produce + herbs
+crushed strawberries:fresh or frozen produce + herbs
+corn oil margarine:fresh or frozen dairy products
+buttered cracker crumbs:other pantry goods
+ground onions:fresh or frozen produce + herbs
+ground almonds:nuts, seeds, and dried fruit
+crescent roll:other pantry goods
+creamer:other pantry goods
+graham flour:flours, sugars, other dry baking ingredients
+peach slices:canned goods
+ground lamb:fresh or frozen meats
+chervil:spices and dried herbs
+cracked black pepper:spices and dried herbs
+rotini noodles:other pantry goods
+green apples:fresh or frozen produce + herbs
+tiny shrimp:fresh or frozen meats
+red seedless grapes:fresh or frozen produce + herbs
+nacho cheese soup:canned goods
+marshmallow fluff:candy and chocolate
+artificial sweetener:flours, sugars, other dry baking ingredients
+cracked wheat:other pantry goods
+black peppercorns:spices and dried herbs
+venison:fresh or frozen meats
+penne:other pantry goods
+clove:spices and dried herbs
+pizza crust:other pantry goods
+cherry pie mix:canned goods
+mandarin orange sections:canned goods
+summer squash:fresh or frozen produce + herbs
+parsnips:fresh or frozen produce + herbs
+fryer chicken:fresh or frozen meats
+hot bulk sausage:fresh or frozen meats
+dijon style mustard:condiments
+chicken base:pantry liquids (oils, broths, wines, etc.)
+strawberry yogurt:fresh or frozen dairy products
+mushroom gravy:condiments
+milk chocolate morsels:candy and chocolate
+cardamon:spices and dried herbs
+yellow bell pepper:fresh or frozen produce + herbs
+mixed pickling spice:spices and dried herbs
+frozen rolls:other frozen food
+banana peppers:fresh or frozen produce + herbs
+whole wheat bread crumbs:other pantry goods
+italian cheese:fresh or frozen dairy products
+broccoli cheese soup:canned goods
+deer meat:fresh or frozen meats
+instant mashed potatoes:other pantry goods
+tofu:other animal products
+northern beans:canned goods
+soy flour:flours, sugars, other dry baking ingredients
+chicken rice:other pantry goods
+hazelnuts:nuts, seeds, and dried fruit
+fresh rosemary:fresh or frozen produce + herbs
+fresh cauliflower:fresh or frozen produce + herbs
+chilled whipping cream:fresh or frozen dairy products
+low-fat mayonnaise:condiments
+green chili salsa:condiments
+vanilla caramels:candy and chocolate
+boneless beef:fresh or frozen meats
+walnut:nuts, seeds, and dried fruit
+ground lean pork:fresh or frozen meats
+fresh chopped parsley:fresh or frozen produce + herbs
+red tomatoes:fresh or frozen produce + herbs
+orzo:other pantry goods
+golden delicious apples:fresh or frozen produce + herbs
+red cayenne pepper:spices and dried herbs
+head of cabbage:fresh or frozen produce + herbs
+garden peas:fresh or frozen produce + herbs
+soda cracker crumbs:other pantry goods
+triple sec:pantry liquids (oils, broths, wines, etc.)
+cinnamon sugar:flours, sugars, other dry baking ingredients
+pineapple rings:canned goods
+grape jello:other pantry goods
+cornish hens:fresh or frozen meats
+pork shoulder:fresh or frozen meats
+taco cheese:fresh or frozen dairy products
+ground hamburger:fresh or frozen meats
+coffee ice cream:other frozen food
+soup:canned goods
+frozen pie crusts:other frozen food
+fresh onion:fresh or frozen produce + herbs
+light raisins:nuts, seeds, and dried fruit
+juice:beverages
+seeded raisins:nuts, seeds, and dried fruit
+glaze:condiments
+olive juice:condiments
+acorn:fresh or frozen produce + herbs
+nacho cheese doritos:snack food
+white cooking wine:pantry liquids (oils, broths, wines, etc.)
+italian salad dressing mix:condiments
+nonfat dry milk powder:flours, sugars, other dry baking ingredients
+frozen artichoke:other frozen food
+almond slivers:nuts, seeds, and dried fruit
+manicotti shells:other pantry goods
+watermelon:fresh or frozen produce + herbs
+walnut meats:nuts, seeds, and dried fruit
+lemon yogurt:fresh or frozen dairy products
+low-fat margarine:fresh or frozen dairy products
+caramel sauce:condiments
+thin noodles:other pantry goods
+chicken flavored bouillon granules:pantry liquids (oils, broths, wines, etc.)
+cream sherry:pantry liquids (oils, broths, wines, etc.)
+nondairy creamer:other pantry goods
+cracked pepper:spices and dried herbs
+cardamom:spices and dried herbs
+caraway seeds:spices and dried herbs
+buttered bread:other pantry goods
+cauliflower flowerets:fresh or frozen produce + herbs
+cannellini beans:canned goods
+salsa sauce:condiments
+hot italian sausage:fresh or frozen meats
+red snapper:fresh or frozen meats
+matzo meal:flours, sugars, other dry baking ingredients
+delicious apples:fresh or frozen produce + herbs
+pumpkin puree:canned goods
+morsels:candy and chocolate
+macaroni noodles:other pantry goods
+pretzel sticks:snack food
+white kidney beans:canned goods
+cole slaw:fresh or frozen produce + herbs
+cold cooked rice:other pantry goods
+low-fat buttermilk:fresh or frozen dairy products
+cheese cracker crumbs:other pantry goods
+rice wine vinegar:pantry liquids (oils, broths, wines, etc.)
+muffin mix:flours, sugars, other dry baking ingredients
+kidney:canned goods
+heavy:fresh or frozen dairy products
+vegetable juice:beverages
+dry wine:pantry liquids (oils, broths, wines, etc.)
+whole wheat pastry flour:flours, sugars, other dry baking ingredients
+pita bread:other pantry goods
+coarse ground pepper:spices and dried herbs
+cornbread stuffing mix:other pantry goods
+burgundy:pantry liquids (oils, broths, wines, etc.)
+picante:condiments
+gravy:condiments
+cakes:other pantry goods
+low-fat yogurt:fresh or frozen dairy products
+coarse pepper:spices and dried herbs
+mussels:fresh or frozen meats
+cinnamon-sugar:flours, sugars, other dry baking ingredients
+cheese tortellini:other pantry goods
+tortilla shells:other pantry goods
