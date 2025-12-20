@@ -1,3 +1,5 @@
+package Controllers;
+import app.*;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -33,14 +35,38 @@ public class MainSceneController {
         public FlowPane getRestrictionsFP2() { return restrictionsFP2; }
         public FlowPane getSearchContainingFP() { return searchContainingFP; }
         public FlowPane getSearchEqualsFP() { return searchEqualsFP; }
-    private Stage stage;
-    private Scene scene;
         //Controller class fields, including the serialized fields.
         //#region
         ImageView myImageView;
         //Serialized class object
         Serialized serialized = new Serialized();
-        //Fields obtained from parsing. 
+        //Fields obtained from parsing.
+        static GenericRecipeBlock[] genRecipeArray;
+        static HashMap<String, Integer> genHashMap;
+        static SortedRecipes[] countedGenIngredients;
+        static String[] uniqueIngreds;
+        static {
+        final int NLGSIZE = 2231150;
+        final int NLGINCREMENTS = NLGSIZE / 100;
+        int startPercent = RecipeBoundariesController.getStartNum();
+        int endPercent = RecipeBoundariesController.getEndNum();
+        int startNum = startPercent * NLGINCREMENTS;
+        int endNum = 0;  
+        if (endPercent == 100) {
+            endNum = NLGSIZE;
+        }
+        else {
+            endNum = NLGINCREMENTS * endPercent;
+        }
+        genRecipeArray = StaticGenericThings.ingredientParserArray(startNum, endNum);
+        genHashMap = StaticGenericThings.arrayToHashMap(genRecipeArray, genRecipeArray.length);
+        countedGenIngredients = StaticGenericThings.sortRecipes(genHashMap);
+        uniqueIngreds = StaticGenericThings.uniqueNames(countedGenIngredients);
+        StaticGenericThings.setGenericRecipeArray(genRecipeArray);
+        StaticGenericThings.setGenericHashMap(genHashMap);
+        StaticGenericThings.setCountedGenericIngredients(countedGenIngredients);
+        StaticGenericThings.setUniqueIngredients(uniqueIngreds);
+        }
         static GenericRecipeBlock[] controlGenRecBlock = StaticGenericThings.getGenericRecipeArray();
         static SortedRecipes[] controlGenCountIngreds = StaticGenericThings.getCountedGenericIngredients();
         static String[] controlGenUnGreds = StaticGenericThings.getUniqueIngredients();
@@ -59,7 +85,6 @@ public class MainSceneController {
         String favoritedRecipesBlockPath = "savedData/favoritedRecipesBlock.ser";
         String savedRecipesBlockPath = "savedData/savedRecipesBlock.ser";
         String userRecipesMapPath = "savedData/userRecipesMap.ser";
-        
         FilteredList<String> filteredEqualsItems = new FilteredList<>(obPantrySelections, s -> true);
         FilteredList<String> filteredContainingItems = new FilteredList<>(obPantrySelections, s -> true);
         public static Map<String, Parent> sceneStorer = new HashMap<String, Parent>();
@@ -70,6 +95,7 @@ public class MainSceneController {
         int recipesIPP = 50;
         int paginationTracker = 0;
         int recipeNum = 0;
+
         //Controls for saved recipes scene
         @FXML
         private Button savedRecipesBackButton;
@@ -329,6 +355,10 @@ public class MainSceneController {
     @FXML
     void initialize() {
          //Making scene manager save the scenes to files when the user exits the app
+        //Creating recipes array, String/Integer hashmap of ingredients/occurrences, an array of that hashmap, and
+        //a string array of all the unique ingredients. Then using them to set the static fields in StaticGenericThings for
+        //project-wide access.
+
          SceneManager.saveScenes(obPantryItems, obRestrictionsItems, obContainingItems, obSpecifyItems,
              savedRecipesBlock, favoritedRecipesBlock);
          //Setting the local observable lists to the serialized lists if possible
@@ -354,7 +384,7 @@ public class MainSceneController {
         obContainingItems.clear();
         obSpecifyItems.clear();
         obContainingItems.clear();
-
+    }
 
          /* 
          StaticGenericThingsdeSerializer(obPantryItemsPath, obPantryItems, 1);
@@ -384,10 +414,12 @@ public class MainSceneController {
             public void handle(ActionEvent e) {
                 restrictionsFP2.getChildren().remove(button);
                 obRestrictionsItems.remove(buttonName);
-            }
+        }
         });
-    }*/
-         }
+        }
+    }
+        */
+
     //Search Scene Methods
     //restrictions yes, pantry yes, 4 observable lists, conGenRecBlock, currentRecipeBlock, searchPG1, setPagination searchPG1.setPageFactory((Integer pageIndex) -> createRecipePage(pageIndex, recipesIPP);
     //obPantryItems, obRestrictionsItems, obSpecifyItems, obContainingItems
@@ -469,7 +501,6 @@ public class MainSceneController {
         searchPG1.setPageCount(currentRecipeBlock.size() / recipesIPP);
         System.out.println("Moving to page factory, recipe block size is " + currentRecipeBlock.size());
         searchPG1.setPageFactory((Integer pageIndex) -> createRecipePage(pageIndex, recipesIPP));
-        recipeNum = 0;
     }
     //#region
     
@@ -606,6 +637,7 @@ public class MainSceneController {
     }
     @FXML
     public VBox createRecipePage(int pageIndex, int IPP) {
+        recipeNum = 0;
         VBox vbox = new VBox();
         int page = pageIndex * IPP;
         int exceptionCounter = 0;
@@ -790,7 +822,7 @@ public class MainSceneController {
 
     @FXML 
     void homepage(ActionEvent event) throws IOException {
-        SceneManager.displayRoot("HomepageScene2.fxml");
+        SceneManager.displayRoot("HomepageScene.fxml");
     }
     @FXML 
     void searchRecipes(ActionEvent event) throws IOException {

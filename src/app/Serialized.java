@@ -1,3 +1,4 @@
+package app;
 //This class is designed to serialize and deserialized objects. 
 
 import javafx.application.Platform;
@@ -125,8 +126,6 @@ import javafx.scene.layout.*;
         ol2.setAll(obRestrictionsItems);
         ol3.setAll(obContainingItems);
         ol4.setAll(obSpecifyItems);
-        //blocks1.clear();
-        //blocks1.addAll(currBlocks);
         blocks2.clear();
         blocks2.addAll(savedBlocks);
         blocks3.clear();
@@ -139,9 +138,7 @@ import javafx.scene.layout.*;
         obRestrictionsItems = ol2;
         obContainingItems = ol3;
         obSpecifyItems = ol4;
-        //currBlocks = blocks1;
         savedBlocks = blocks2;
         favoritedBlocks = blocks3;
     }
-
-        }
+}

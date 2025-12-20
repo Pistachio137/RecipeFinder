@@ -1,3 +1,4 @@
+package app;
 
 public class SuperRecipeBlock {
     private String URL;

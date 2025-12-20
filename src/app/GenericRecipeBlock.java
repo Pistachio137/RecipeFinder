@@ -1,3 +1,4 @@
+package app;
 import java.io.Serializable;
 
 public class GenericRecipeBlock extends SuperRecipeBlock implements Serializable {

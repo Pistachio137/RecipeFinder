@@ -4,3 +4,4 @@ RecipeSets/
 *.csv
 *.dll
 Dependencies/
+out/

@@ -1,3 +1,4 @@
+package app;
 public class UserRecipes {
     private String recipeTitle;
     private String recipeContent;

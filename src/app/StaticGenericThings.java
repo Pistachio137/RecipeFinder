@@ -1,3 +1,4 @@
+package app;
 import java.io.*;
 import java.util.*;
 
@@ -59,6 +60,7 @@ public class StaticGenericThings {
     int number = 0;
     char myChar = 'a';
     int g = 0;
+    boolean lineFail = false;
     ArrayList<String> ingredientList = new ArrayList<String>();
     ArrayList<String> instructionList = new ArrayList<String>();
     ArrayList<String> quantityList = new ArrayList<String>();
@@ -69,6 +71,16 @@ public class StaticGenericThings {
         BufferedReader reader = new BufferedReader(new FileReader(genericPath));
         line = reader.readLine();
         for (int i = start; i < end; ++i) {
+            if (lineFail) {
+                System.out.println(numberString);
+            }
+            lineFail = true;
+            URL = "";
+            recipeName = "";
+            numberString = "";
+            ingredientList.clear();
+            quantityList.clear();
+            instructionList.clear();
             try {
             //System.out.println(i + " large loop");
             line = reader.readLine();
@@ -181,15 +193,7 @@ public class StaticGenericThings {
                         break;
                     }
                     genericRecipeBlocks[i] = tempGenericRecipeBlock;
-                    URL = "";
-                    recipeName = "";
-                    numberString = "";
-                    //System.out.println(tempGenericRecipeBlock);
-                    //if (i == 99) {
-                        //System.out.println(tempGenericRecipeBlock.getURL());
-                    ingredientList.clear();
-                    quantityList.clear();
-                    instructionList.clear();
+                    lineFail = false;
                     if ((i % 200000) == 0) {
                         System.out.println(g);
                         System.out.println("total memory in MB" + (Runtime.getRuntime().totalMemory() / 1048576));
@@ -267,9 +271,6 @@ public static SortedRecipes[] sortRecipes(HashMap<String, Integer> hashMap) {
         sortedRecipes[i] = tempRecipe;
     }
     Arrays.sort(sortedRecipes, Collections.reverseOrder());
-    for (int i = 0; i < 100; ++i) {
-        System.out.println(sortedRecipes[i]);
-    }
     return sortedRecipes;
 }
 

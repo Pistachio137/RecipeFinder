@@ -1,3 +1,4 @@
+package app;
 import java.io.Serializable;
 
 public class SortedRecipes implements Comparable<SortedRecipes>, Serializable{

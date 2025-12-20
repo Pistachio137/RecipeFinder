@@ -6,26 +6,86 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "app.App",
+            "vmArgs": [
+                "--module-path",
+                "${workspaceFolder}/src/Dependencies/JavaFX21/lib",
+                "--add-modules",
+                "javafx.controls,javafx.fxml,javafx.base",
+                "--class-path",
+                "${workspaceFolder}/src;${workspaceFolder}/bin",
+                "-Xms1g",
+                "-Xmx4g"
+            ]
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
-            "mainClass": "App",
+            "mainClass": "app.App",
             "projectName": "CookingApp_c5003a2b",
-            "vmArgs": "--module-path \"${workspaceFolder}/src/Dependencies/JavaFX21/lib\" --add-modules javafx.controls,javafx.fxml,javafx.base"
+            "vmArgs": "-Xms1g -Xmx4g"
+        },
+    ]
+}
+/*
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "app.App",
+            "projectName": "CookingApp_c5003a2b",
+            "vmArgs": "-Xms2g -Xmx10g"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "app.App",
+            "projectName": "CookingApp_c5003a2b",
+            "vmArgs": ["--module-path \"${workspaceFolder}/src/Dependencies/JavaFX21/lib\" --add-modules javafx.controls,javafx.fxml,javafx.base", 
+            "--class-path src, bin",
+            "-Xms2g -Xmx10g"]
         },
         {
             "type": "java",
             "name": "Launch App",
             "request": "launch",
-            "mainClass": "App",
-            "projectName": "CookingApp",
-            "vmArgs": "--module-path \"${workspaceFolder}/src/Dependencies/JavaFX21/lib\" --add-modules javafx.controls,javafx.fxml,javafx.base"
+            "mainClass": "app.App",
+            "vmArgs": [
+                "--module-path",
+                "\"${workspaceFolder}/src/Dependencies/JavaFX21/lib\"",
+                "--add-modules",
+                "javafx.controls,javafx.fxml,javafx.base",
+                "--class-path",
+                "\"${workspaceFolder}/src;${workspaceFolder}/bin\"",
+                "-Xms2g",
+                "-Xmx10g"
+            ]
         },
         {
             "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "vmArgs": "--module-path \"${workspaceFolder}/src/Dependencies/JavaFX21/lib\" --add-modules javafx.controls,javafx.fxml,javafx.base"
+            "vmArgs": [
+            "--module-path", 
+            "\"${workspaceFolder}/src/Dependencies/JavaFX21/lib\"", 
+            "--add-modules",
+            "javafx.controls,javafx.fxml,javafx.base",
+            "--class-path", 
+            "src, bin",
+            "-Xms2g -Xmx10g"
+            ]
         }
     ]
 }
+    */

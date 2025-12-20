@@ -1,4 +1,5 @@
-
+package app;
+import Controllers.*;
 import java.util.*;
 import javafx.collections.*;
 
@@ -6,15 +7,24 @@ import javafx.collections.*;
 public class App {
     public static void main(String[] args) {
         //ArrayList<RecipeBlock> recipes = StaticMethods.recipeList("C:\\Tech Stuff\\Computer Science\\recipes.txt");
-        
+        RecipeBoundariesController.launch(RecipeBoundariesController.class, args);
         //The start and end limits for the for loop that parses through the list of recipes. There's 2.2 million recipes in the CSV
         //file. It takes a minute or so to process 1 million recipes, so I've been using a smaller number when developing the app.
-        int start = 0;
-        int end = 400000;
+        /* 
+        int startPercent = RecipeBoundariesController.getStartNum();
+        int endPercent = RecipeBoundariesController.getEndNum();
+        int startNum = startPercent * NLGINCREMENTS;
+        int endNum = 0;  
+        if (endPercent == 100) {
+            endNum = NLGSIZE;
+        }
+        else {
+            endNum = NLGINCREMENTS * endPercent;
+        }
         //Creating recipes array, String/Integer hashmap of ingredients/occurrences, an array of that hashmap, and
         //a string array of all the unique ingredients. Then using them to set the static fields in StaticGenericThings for
         //project-wide access.
-        GenericRecipeBlock[] genRecipeArray = StaticGenericThings.ingredientParserArray(start, end);
+        GenericRecipeBlock[] genRecipeArray = StaticGenericThings.ingredientParserArray(startNum, endNum);
         HashMap<String, Integer> genHashMap = StaticGenericThings.arrayToHashMap(genRecipeArray, genRecipeArray.length);
         SortedRecipes[] countedGenIngredients = StaticGenericThings.sortRecipes(genHashMap);
         String[] uniqueIngreds = StaticGenericThings.uniqueNames(countedGenIngredients);
@@ -22,12 +32,12 @@ public class App {
         StaticGenericThings.setGenericHashMap(genHashMap);
         StaticGenericThings.setCountedGenericIngredients(countedGenIngredients);
         StaticGenericThings.setUniqueIngredients(uniqueIngreds);
+        */
         //GenericRecipeBlock[] genericRecipeArray = StaticGenericThings.ingredientParserArray(end);
         //HashMap<String, Integer> genericHashMap =  StaticGenericThings.arrayToHashMap(genericRecipeArray, genericRecipeArray.length);
        // SortedRecipes[] countedGenericIngredients = StaticGenericThings.sortRecipes(genericHashMap);
         //String[] uniqueIngredients = StaticGenericThings.uniqueNames(genericHashMap);
         //The first scene is launched from FirstScene, and then the MainSceneController class takes it from there.
-        FirstScene.launch(FirstScene.class, args);
         
         /*for (int i = 0; i < end; i+=200) {
             System.out.println(genRecipeArray[i].getIngredientsString() + genRecipeArray[i].getURL() + genRecipeArray[i].getRecipeName() + genRecipeArray[i].getNumOfIngredients());

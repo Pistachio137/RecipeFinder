@@ -1,3 +1,5 @@
+package app;
+import Controllers.*;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -13,9 +15,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import javax.swing.Action;
-
 import javafx.collections.ObservableList;
 
 
@@ -111,7 +111,7 @@ public class SceneManager {
             }
             public static void displayRoot(String name) {
                 System.out.println(ROOTSTORER.size());
-                String rootPath = "Scenes/" + name;
+                String rootPath = "/Scenes/" + name;
                 Parent root = ROOTSTORER.get(rootPath);
                 if (root == null) {
                     URL url = SceneManager.class.getResource(rootPath);
