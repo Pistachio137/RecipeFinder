@@ -15,7 +15,10 @@ public class StaticGenericThings {
     
     //#region
     public static final long serialIUD = (long)1;
-    public static String genericPath = "src/RecipeSets/RecipeNLG_dataset.csv";
+    public static String genericPath;
+    static {
+        genericPath = "/RecipeSets/RecipeNLG_dataset.csv";
+    }
     public static void setGenericRecipeArray(GenericRecipeBlock[] array) {
         genericRecipeArray = array;
     }
@@ -61,15 +64,19 @@ public class StaticGenericThings {
     char myChar = 'a';
     int g = 0;
     boolean lineFail = false;
+    int tracker = 0;
     ArrayList<String> ingredientList = new ArrayList<String>();
     ArrayList<String> instructionList = new ArrayList<String>();
     ArrayList<String> quantityList = new ArrayList<String>();
     ArrayList<Integer> errorCatcher = new ArrayList<Integer>();
-    GenericRecipeBlock[] genericRecipeBlocks = new GenericRecipeBlock[end];
+    GenericRecipeBlock[] genericRecipeBlocks = new GenericRecipeBlock[end - start];
 
     try {
-        BufferedReader reader = new BufferedReader(new FileReader(genericPath));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(StaticGenericThings.class.getResourceAsStream(genericPath)));
+        while (tracker < start) {
         line = reader.readLine();
+        tracker += 1;
+        }
         for (int i = start; i < end; ++i) {
             if (lineFail) {
                 System.out.println(numberString);
@@ -192,7 +199,7 @@ public class StaticGenericThings {
                     if (tempGenericRecipeBlock == null) {
                         break;
                     }
-                    genericRecipeBlocks[i] = tempGenericRecipeBlock;
+                    genericRecipeBlocks[i - start] = tempGenericRecipeBlock;
                     lineFail = false;
                     if ((i % 200000) == 0) {
                         System.out.println(g);
@@ -292,7 +299,7 @@ public static void genericAssimilator() {
     ArrayList<String> tempArrayList = new ArrayList<String>();
 
     try {
-        BufferedReader reader = new BufferedReader(new FileReader(genericPath));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(StaticGenericThings.class.getResourceAsStream(genericPath)));
         for (int i = 0; i < 1000; ++i) {
             line = reader.readLine();
             for (int j = 0; j < line.length(); ++j) {

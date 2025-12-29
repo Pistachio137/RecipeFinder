@@ -5,3 +5,7 @@ RecipeSets/
 *.dll
 Dependencies/
 out/
+dist/
+dist2/
+custom-runtime/
+*.jar

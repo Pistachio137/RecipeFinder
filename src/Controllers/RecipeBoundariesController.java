@@ -20,6 +20,7 @@ import app.SceneManager;
 //from the user
 
 public class RecipeBoundariesController extends Application{
+    Stage stage;
     //Start and end points of the recipe parser as percentiles of the dataset
     private static int recipeBoundariesStartNum;
     private static int recipeBoundariesEndNum;
@@ -62,6 +63,9 @@ public class RecipeBoundariesController extends Application{
             recipeBoundariesHelp();
             return;
         }
+        Button tempButton = (Button)event.getSource();
+        Stage stageHolder = (Stage) tempButton.getScene().getWindow();
+        stageHolder.close();
         SceneManager.displayRoot("WelcomeScene.fxml");
     }
     @FXML
@@ -82,9 +86,12 @@ public class RecipeBoundariesController extends Application{
     }
     @Override
     public void start(Stage firstStage) {
-        Parent root;
         try {
-            SceneManager.displayRoot("RecipeBoundariesScene.fxml");
+            Parent root = FXMLLoader.load(getClass().getResource("/Scenes/RecipeBoundariesScene.fxml"));
+            Scene scene = new Scene(root);
+            stage = new Stage();
+            stage.setScene(scene);
+            stage.show();
         }
         catch (Exception e){
             System.out.println("Exception in FirstScene.java");

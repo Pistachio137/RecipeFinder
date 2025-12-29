@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainSceneController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <Label text="Welcome to PantryForge!" BorderPane.alignment="CENTER" />
    </top>
@@ -19,9 +19,9 @@
          <children>
             <VBox alignment="CENTER" spacing="10.0">
                <children>
-                  <Label prefHeight="31.0" prefWidth="332.0" text="Would you like to login, create an account, or continue offline?" />
-                  <Button id="LOGINBUTTON" fx:id="welcomeLoginButton" mnemonicParsing="false" onAction="#login" text="Login (stub)" />
-                  <Button id="CREATEACCOUNTBUTTON" fx:id="welcomeCreateAccountButton" mnemonicParsing="false" onAction="#createAccount" text="Create Account (stub)" />
+                  <Label prefHeight="31.0" prefWidth="332.0" text="Would you like to login, create an account, or continue offline?" visible="false" />
+                  <Button id="LOGINBUTTON" fx:id="welcomeLoginButton" mnemonicParsing="false" onAction="#login" text="Login (stub)" visible="false" />
+                  <Button id="CREATEACCOUNTBUTTON" fx:id="welcomeCreateAccountButton" mnemonicParsing="false" onAction="#createAccount" text="Create Account (stub)" visible="false" />
                   <Button id="WELCOMEBUTTON3" fx:id="welcomeContinueOfflineButton" mnemonicParsing="false" onAction="#continueOffline" text="Continue Offline" />
                   <Button fx:id="welcomeAboutButton" mnemonicParsing="false" onAction="#about" text="About">
                      <VBox.margin>

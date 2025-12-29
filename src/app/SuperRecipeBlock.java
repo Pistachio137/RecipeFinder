@@ -21,21 +21,5 @@ public class SuperRecipeBlock {
     public String toString() {
         return recipeName;
     }
-    public String getURL() {
-        return URL;
-    }
-    public String getRecipeName() {
-        return recipeName;
-    }
-    public String getIngredientsString() {
-        return "super block ingredients";
-    }
-    public String[] getIngredients() {
-        return ingredients;
-    }
-    public int getNumOfIngredients() {
-        return numOfIngredients;
-    }
-
 }
 

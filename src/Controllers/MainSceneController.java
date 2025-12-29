@@ -18,6 +18,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+import java.util.Optional;
+import java.util.Set;
 import java.util.List;
 
 import javafx.scene.control.*;
@@ -29,27 +31,28 @@ public class MainSceneController {
         //This is a very beefy class that I haven't had time to organize/split into smaller classes. 
         //Also, some of the comments might be wrong or outdated, so sorry about that. It's still in development
         //So I keep some stuff commented out instead of just deleting them. 
-
-        // Public getters for key panes
-        public FlowPane getPantryFP2() { return pantryFP2; }
-        public FlowPane getRestrictionsFP2() { return restrictionsFP2; }
-        public FlowPane getSearchContainingFP() { return searchContainingFP; }
-        public FlowPane getSearchEqualsFP() { return searchEqualsFP; }
-        //Controller class fields, including the serialized fields.
-        //#region
-        ImageView myImageView;
-        //Serialized class object
-        Serialized serialized = new Serialized();
-        //Fields obtained from parsing.
-        static GenericRecipeBlock[] genRecipeArray;
-        static HashMap<String, Integer> genHashMap;
-        static SortedRecipes[] countedGenIngredients;
-        static String[] uniqueIngreds;
-        static {
+        private static MainSceneController ONLYCONTROLLER;
+        public static MainSceneController getController() {
+            return ONLYCONTROLLER;
+        }
+        public static MainSceneController getMainController() {
+            if (ONLYCONTROLLER == null) {
+                ONLYCONTROLLER = new MainSceneController();
+            }
+            return ONLYCONTROLLER;
+        }
+        private MainSceneController() {
+        //instantiating the hashmap that is used to store the scenes and save their nodes
+        sceneStorer = new HashMap<String, Parent>();
+        serialized = new Serialized();
+        //determining the boundaries of the recipe set
         final int NLGSIZE = 2231150;
         final int NLGINCREMENTS = NLGSIZE / 100;
         int startPercent = RecipeBoundariesController.getStartNum();
         int endPercent = RecipeBoundariesController.getEndNum();
+        if (endPercent <= startPercent) {
+            endPercent = startPercent + 1;
+        }
         int startNum = startPercent * NLGINCREMENTS;
         int endNum = 0;  
         if (endPercent == 100) {
@@ -58,44 +61,165 @@ public class MainSceneController {
         else {
             endNum = NLGINCREMENTS * endPercent;
         }
-        genRecipeArray = StaticGenericThings.ingredientParserArray(startNum, endNum);
-        genHashMap = StaticGenericThings.arrayToHashMap(genRecipeArray, genRecipeArray.length);
-        countedGenIngredients = StaticGenericThings.sortRecipes(genHashMap);
-        uniqueIngreds = StaticGenericThings.uniqueNames(countedGenIngredients);
-        StaticGenericThings.setGenericRecipeArray(genRecipeArray);
+        //Getting data by calling methods from StaticGenericThings to parse the recipe set and sort it.
+        //controlGenRecBlock is the parsed generic recipe block array
+        System.out.println("Parsing recipes from " + startNum + " to " + endNum);
+        controlGenRecBlock = StaticGenericThings.ingredientParserArray(startNum, endNum);
+        System.out.println("controlGenRecBlock length: " + (controlGenRecBlock != null ? controlGenRecBlock.length : "null"));
+        //genHashMap is the hashmap that increments the int value by one each time an ingredient key occurs
+        genHashMap = StaticGenericThings.arrayToHashMap(controlGenRecBlock, controlGenRecBlock.length);
+        System.out.println("genHashMap size: " + (genHashMap != null ? genHashMap.size() : "null"));
+        //controlGenCountIngreds uses the SortedRecipes class to sort the ingredients from most to least common
+        controlGenCountIngreds = StaticGenericThings.sortRecipes(genHashMap);
+        //controlGenUnGreds is the string array of the ingredients in the same order they occur in controlGenCountIngreds
+        controlGenUnGreds = StaticGenericThings.uniqueNames(controlGenCountIngreds);
+        //obPantrySelections is the observable list version of controlGenUnGreds
+        obPantrySelections = FXCollections.observableArrayList(controlGenUnGreds);
+        //The number of parsed ingredients and recipes, which are used to determine the number of pages in the paginations
+        numIngreds = controlGenUnGreds.length;
+        numRecipes = controlGenRecBlock.length;
+        //Setting the corresponding fields in static generic things
+        StaticGenericThings.setGenericRecipeArray(controlGenRecBlock);
         StaticGenericThings.setGenericHashMap(genHashMap);
-        StaticGenericThings.setCountedGenericIngredients(countedGenIngredients);
-        StaticGenericThings.setUniqueIngredients(uniqueIngreds);
+        StaticGenericThings.setCountedGenericIngredients(controlGenCountIngreds);
+        StaticGenericThings.setUniqueIngredients(controlGenUnGreds);
+        //instantiating various fields so that they can be set with the de-serialized data from the Serializable object that
+        //is created and called by SceneManager.saveScenes
+        obPantryItems = FXCollections.observableArrayList();
+        obRestrictionsItems = FXCollections.observableArrayList();
+        obSpecifyItems = FXCollections.observableArrayList();
+        obContainingItems = FXCollections.observableArrayList();
+        favoritedRecipesBlock = new ArrayList<GenericRecipeBlock>();
+        savedRecipesBlock = new ArrayList<GenericRecipeBlock>();
+        currentRecipeBlock = new ArrayList<GenericRecipeBlock>();
+        restrictionsHashMap = new HashMap<String, String[]>();
+        restrictionsParentMap = new HashMap<String, RestrictionsObject>();
+        restrictionsSaveSet = new HashSet<String>();
+         
+        //setting these fields with the de-serialized data as previously explained
+         serialized.getAll(obPantryItems, obRestrictionsItems, obContainingItems, obSpecifyItems, 
+             savedRecipesBlock, favoritedRecipesBlock, restrictionsHashMap, restrictionsParentMap, restrictionsSaveSet);
+             
+        //the userRecipesMap follows different serialization logic because it serializes everytime a recipe is submitted, not 
+        //everytime the stage is closed
+        userRecipesMap = Serialized.deSerializer(userRecipesMapPath, 5, new HashMap<String, String>());
+        
+        //Instructing the SceneManager stage call the Serialize() method on these fields when the stage is closed by the user
+        SceneManager.saveScenes(obPantryItems, obRestrictionsItems, obContainingItems, obSpecifyItems, 
+             savedRecipesBlock, favoritedRecipesBlock, restrictionsHashMap, restrictionsParentMap, restrictionsSaveSet);
+        
+             //Instantiating the filtered lists for the combo boxes
+        filteredEqualsItems = new FilteredList<>(obPantrySelections, s -> true);
+        filteredContainingItems = new FilteredList<>(obPantrySelections, s -> true);
+        filteredRestrictionItems = new FilteredList<>(obPantrySelections, s -> true);
+        filteredPantryItems = new FilteredList<>(obPantrySelections, s -> true);
+         System.out.println(restrictionsSaveSet);
+         System.out.println(restrictionsHashMap.keySet());
+         System.out.println(restrictionsParentMap.keySet());
+         //System.out.println(controlGenUnGreds);
         }
-        static GenericRecipeBlock[] controlGenRecBlock = StaticGenericThings.getGenericRecipeArray();
-        static SortedRecipes[] controlGenCountIngreds = StaticGenericThings.getCountedGenericIngredients();
-        static String[] controlGenUnGreds = StaticGenericThings.getUniqueIngredients();
-        static ObservableList<String>obPantrySelections = FXCollections.observableArrayList(controlGenUnGreds);
-        int pantryCounter = 0;
+        
+        // FXML initialize method - called after FXML fields are injected
+        @FXML
+        public void initialize() {
+        //Instantiating the page factories - only for controls present in the current scene
+        restrictionsParentCheck(restrictionsParentMap);
+        if (savedPG1 != null) {
+            savedPG1.setPageCount(0/recipesIPP);
+            savedPG1.setPageFactory((Integer pageIndex) -> createSavedPage(pageIndex, recipesIPP, 0, savedVBox1, 
+                savedRecipesBlock, savedPG1, favoritedRecipesBlock, savedPG2));
+        }
+        if (savedPG2 != null) {
+            savedPG2.setPageCount(0/recipesIPP);
+            savedPG2.setPageFactory((Integer pageIndex) -> createSavedPage(pageIndex, recipesIPP, 0, savedVBox2, 
+                favoritedRecipesBlock, savedPG2, savedRecipesBlock, savedPG1));
+        }
+        if (searchPG1 != null) {
+            searchPG1.setPageCount(numIngreds/recipesIPP);
+        }
+        if (restrictionsPG1 != null) {
+            restrictionsPG1.setPageCount(numIngreds/pantryIPP);
+            restrictionsPG1.setPageFactory((Integer pageIndex) -> createPage(pageIndex, restrictionsFP2, obRestrictionsItems, restrictionsIPP));
+        }
+        if (pantryPG1 != null) {
+            pantryPG1.setPageCount(numIngreds/pantryIPP);
+            pantryPG1.setPageFactory((Integer pageIndex) -> createPage(pageIndex, pantryFP2, obPantryItems, pantryIPP));
+        }
+         
+        //setting up the combo boxes - only for controls present in the current scene
+        if (pantryCB1 != null) {
+            pantryCB1.setItems(obPantrySelections);
+            filterComboBox(pantryCB1, filteredPantryItems);
+        }
+        if (restrictionsChoiceCB1 != null) {
+            restrictionsChoiceCB1.getItems().addAll(restrictionsSaveSet);
+        }
+        if (restrictionsCB1 != null) {
+            restrictionsCB1.setItems(obPantrySelections);
+            filterComboBox(restrictionsCB1, filteredRestrictionItems);
+        }
+        if (searchEqualsCB != null) {
+            searchEqualsCB.setItems(obPantrySelections);
+            filterComboBox(searchEqualsCB, filteredEqualsItems);
+        }
+        if (searchContainingCB != null) {
+            searchContainingCB.setItems(obPantrySelections);
+            filterComboBox(searchContainingCB, filteredContainingItems);
+        }
+        }
+        
+        static HashMap<String, Integer> genHashMap;
+        Serialized serialized;
+
+        static GenericRecipeBlock[] controlGenRecBlock;
+        static SortedRecipes[] controlGenCountIngreds;
+        static String[] controlGenUnGreds;
+        static ArrayList<String> ingredsAL;
+        static ObservableList<String>obPantrySelections;
+        //Fields obtained from parsing.
+        //static initializer
+        //#region
+        //#endregion
+        //#region
         //Serialized/deserialized fields block + some of their paths.
-        ObservableList<String>obPantryItems = FXCollections.observableArrayList();
-        ObservableList<String>obSpecifyItems = FXCollections.observableArrayList();
-        ObservableList<String>obContainingItems = FXCollections.observableArrayList();
-        ObservableList<String> obRestrictionsItems = FXCollections.observableArrayList();
-        Map<String, String> userRecipesMap = new HashMap<String, String>();
-        ArrayList<GenericRecipeBlock> currentRecipeBlock = new ArrayList<GenericRecipeBlock>();
-        ArrayList<GenericRecipeBlock> favoritedRecipesBlock = new ArrayList<GenericRecipeBlock>();
-        ArrayList<GenericRecipeBlock> savedRecipesBlock = new ArrayList<GenericRecipeBlock>();
+        public static Map<String, Parent> sceneStorer;
+        ObservableList<String>obPantryItems;
+        ObservableList<String>obSpecifyItems;
+        ObservableList<String>obContainingItems;
+        ObservableList<String> obRestrictionsItems;
+        Map<String, String> userRecipesMap;
+        //SAVED RECIPES LIBRARY ARRAYLISTS. Stub.
+        ArrayList<GenericRecipeBlock> currentRecipeBlock;
+        ArrayList<GenericRecipeBlock> favoritedRecipesBlock;
+        ArrayList<GenericRecipeBlock> savedRecipesBlock;
+        //Paths for the arraylists and the user recipes map.
         String currentRecipeBlockPath = "savedData/currentRecipeBlock.ser";
         String favoritedRecipesBlockPath = "savedData/favoritedRecipesBlock.ser";
         String savedRecipesBlockPath = "savedData/savedRecipesBlock.ser";
         String userRecipesMapPath = "savedData/userRecipesMap.ser";
-        FilteredList<String> filteredEqualsItems = new FilteredList<>(obPantrySelections, s -> true);
-        FilteredList<String> filteredContainingItems = new FilteredList<>(obPantrySelections, s -> true);
-        public static Map<String, Parent> sceneStorer = new HashMap<String, Parent>();
-        //Pagination block. IPP stands for "Items per page".
-        int numIngreds = controlGenUnGreds.length;
+        FilteredList<String> filteredEqualsItems;
+        FilteredList<String> filteredContainingItems;
+        FilteredList<String> filteredRestrictionItems;
+        FilteredList<String> filteredPantryItems;
+        HashMap<String, String[]> restrictionsHashMap;
+        HashMap<String, RestrictionsObject> restrictionsParentMap;
+        //#endregion
+        //string that's used to hold the value of the queried phrase in restrictionsCB1. When the user clicks "add all"
+        //on the restrictionsQueueFP, a button is assigned with this phrase and added to the restrictionsHashMapFP
+        //which represents all of the phrases that were in the queue pane as buttons
+        private static String restrictionsValue = "none";
+        //ints used to set the pagination controls
+        int numRecipes;
+        int numIngreds;
         int pantryIPP = 150;
         int restrictionsIPP = 150;
         int recipesIPP = 50;
         int paginationTracker = 0;
         int recipeNum = 0;
-
+        int pantryCounter = 0;
+        //FXML controls
+        //#region
+        //#region
         //Controls for saved recipes scene
         @FXML
         private Button savedRecipesBackButton;
@@ -106,9 +230,9 @@ public class MainSceneController {
         @FXML
         private VBox savedVBox3;
         @FXML
-        private Pagination savedPG1 = new Pagination(0/recipesIPP);
+        private Pagination savedPG1;
         @FXML
-        private Pagination savedPG2 = new Pagination(0/recipesIPP);
+        private Pagination savedPG2;
         @FXML
         private Label savedLabel1;
         @FXML
@@ -125,9 +249,15 @@ public class MainSceneController {
         private Button savedVBoxExitButton;
         @FXML
         private Hyperlink savedURLLink;
+        
         //Controls for Search Scene
-        private Boolean restrictionsYesBoolean = false;
         private Boolean pantryYesBoolean = false;
+        @FXML
+        private ComboBox<String> searchRestrictionsCB;
+        @FXML
+        private FlowPane searchRestrictionsFP;
+        @FXML
+        private Button searchHelpButton;
         @FXML
         private Button searchEqualsButton;
         @FXML
@@ -139,13 +269,11 @@ public class MainSceneController {
         @FXML
         private CheckBox searchPantryCB;
         @FXML
-        private CheckBox searchRestrictionsCB;
-        @FXML
         private TextField searchRecipeNamesTF;
         @FXML
         private Button superSearchButton;
         @FXML
-        private Pagination searchPG1 = new Pagination(numIngreds/recipesIPP);
+        private Pagination searchPG1;
         @FXML
         private FlowPane searchEqualsFP;
         @FXML
@@ -260,6 +388,12 @@ public class MainSceneController {
         private Button settingsIMGButton;
         //pantry scene nodes
         //#endregion
+
+        //edit settings controls
+        //#region
+        @FXML
+        private Button settingsBackButton;
+        //#endregion
         //Controls for SubmitRecipeScene, AboutScene, etc.
         //#region
         //SubmitRecipeScene controls
@@ -283,6 +417,14 @@ public class MainSceneController {
         //#endregion
         //Controls for Dietary Preferences
         //#region
+        private static String restrictionsChoiceString = null;
+        private Boolean openRestrictionSheet = false;
+        @FXML
+        private BorderPane restrictionsBP1;
+        @FXML
+        private TextField restrictionsSaveAsTF;
+        @FXML
+        private FlowPane restrictionsHashMapFP;
         @FXML
         private Button restrictionHelpButton;
         @FXML
@@ -290,171 +432,142 @@ public class MainSceneController {
         @FXML
         private Button addRestrictionButton;
         @FXML
-        private ComboBox<String> restrictionsCB1 = new ComboBox<String>();
+        private Button restrictionsAddAllButton;
         @FXML
-        private Pagination restrictionsPG1 = new Pagination(numIngreds/pantryIPP);
+        private Button restrictionsClearAllButton;
+        @FXML
+        private Button restrictionsQueueAllButton;
+        @FXML
+        private ComboBox<String> restrictionsCB1;
+        @FXML
+        private Pagination restrictionsPG1;
         @FXML
         private FlowPane restrictionsFP1;
         @FXML
         private FlowPane restrictionsFP2;
+        @FXML
+        private FlowPane restrictionsQueueFP;
+        //Controls for DietaryRestrictionsChoiceScene
+        private HashSet<String> restrictionsSaveSet;
+        @FXML
+        private ComboBox<String> restrictionsChoiceCB1;
+        @FXML
+        private Button restrictionsChoiceNewButton;
+        @FXML
+        private Button restrictionsChoiceContinueButton;
+        @FXML
+        private Button restrictionsChoiceHelpButton;
+        @FXML
+        private Button restrictionsChoiceBackButton;
         //#endregion
         
         //PantryScene controls
         //#region
         @FXML
-        private ComboBox<String> pantryCB1 = new ComboBox<>();
-        //CheckBox[] checkBoxIngredients = StaticGenericThings.getPantryChArray();
+        private ComboBox<String> pantryCB1;
         @FXML
-        private Pagination pantryPG1 = new Pagination(numIngreds/pantryIPP);
+        private Button pantryHelpButton;
         @FXML
-        private SplitPane pantrySplit2 = new SplitPane();
+        private Pagination pantryPG1;
+        @FXML
+        private SplitPane pantrySplit2;
         @FXML
         private Button pantryBackButton;
         @FXML
-        private FlowPane pantryFP1 = new FlowPane();
+        private FlowPane pantryFP1;
         @FXML
-        private FlowPane pantryFP2 = new FlowPane();
+        private FlowPane pantryFP2;
         @FXML
         private Button testButton2;
         @FXML
-        private Button testButton3 = new Button("Test successful.");
-        @FXML
         private FlowPane testFlowPane;
         @FXML
-        private HBox pantryHBox2 = new HBox();
+        private HBox pantryHBox2;
+        //#endregion
+        //#endregion
         //#endregion
 
-
-    /* 
-    public static void setPantryItems() {
-        try {
-        StaticGenericThings.Serializer(, "src/LocalData/obPantryItems.ser");
-        }
-        catch (Exception e) {
-            e.printStackTrace();;
-            System.out.println("Serialization failed.");
-        }
-    }
-    public ObservableList<String> getPantryItems() {
-        try {
-        obPantryItems = StaticGenericThings.deSerializer("src/LocalData/obPantryItems.ser");
-        return obPantryItems;
-        }
-        catch (Exception e) {
-            e.printStackTrace();;
-            System.out.println("Deserialization failed.");
-        }
-        return FXCollections.observableArrayList();
-    }
-        */
     public ArrayList<String> obToArrayList(ObservableList<String> list) {
-        ArrayList<String> arrayList = new ArrayList();
+        ArrayList<String> arrayList = new ArrayList<String>();
         return arrayList;
     }
-    //Initialize method
-    @FXML
-    void initialize() {
-         //Making scene manager save the scenes to files when the user exits the app
-        //Creating recipes array, String/Integer hashmap of ingredients/occurrences, an array of that hashmap, and
-        //a string array of all the unique ingredients. Then using them to set the static fields in StaticGenericThings for
-        //project-wide access.
-
-         SceneManager.saveScenes(obPantryItems, obRestrictionsItems, obContainingItems, obSpecifyItems,
-             savedRecipesBlock, favoritedRecipesBlock);
-         //Setting the local observable lists to the serialized lists if possible
-         serialized.getAll(obPantryItems, obRestrictionsItems, obContainingItems, obSpecifyItems, 
-             savedRecipesBlock, favoritedRecipesBlock);
-         pantryPG1.setPageFactory((Integer pageIndex) -> createPage(pageIndex, pantryFP2, obPantryItems, pantryIPP));
-         pantryCB1.setItems(obPantrySelections);
-         restrictionsPG1.setPageFactory((Integer pageIndex) -> createPage(pageIndex, restrictionsFP2, obRestrictionsItems, restrictionsIPP));
-         restrictionsCB1.setItems(obPantrySelections);
-         if (searchEqualsCB != null) filterComboBox(searchEqualsCB, filteredEqualsItems);
-         if (searchContainingCB != null) filterComboBox(searchContainingCB, filteredContainingItems);
-         userRecipesMap = Serialized.deSerializer(userRecipesMapPath, 5, new HashMap<String, String>());
-         /*
-         favoritedRecipesBlock = Serialized.deSerializer(favoritedRecipesBlockPath, 6, new ArrayList<GenericRecipeBlock>());
-         savedRecipesBlock = Serialized.deSerializer(savedRecipesBlockPath, 7, new ArrayList<GenericRecipeBlock>());
-         currentRecipeBlock = Serialized.deSerializer(currentRecipeBlockPath, 8, new ArrayList<GenericRecipeBlock>());
-            */
-         savedPG1.setPageFactory((Integer pageIndex) -> createSavedPage(pageIndex, recipesIPP, 0, savedVBox1, 
-            savedRecipesBlock, savedPG1, favoritedRecipesBlock, savedPG2));
-
-        savedPG2.setPageFactory((Integer pageIndex) -> createSavedPage(pageIndex, recipesIPP, 0, savedVBox2, 
-            favoritedRecipesBlock, savedPG2, savedRecipesBlock, savedPG1));
-        obContainingItems.clear();
-        obSpecifyItems.clear();
-        obContainingItems.clear();
+    
+    public FlowPane getPantryFP2() {
+        return pantryFP2;
     }
-
-         /* 
-         StaticGenericThingsdeSerializer(obPantryItemsPath, obPantryItems, 1);
-         StaticGenericThings.deSerializer(obRestrictionsItems, obRestrictionsItemsPath, 2);
-         StaticGenericThings.deSerializer(obSpecifyItems, obSpecifyItemsPath, 3);
-         StaticGenericThings.deSerializer(obContainingItems, obContainingItemsPath, 4);
-         */
-         /* 
-         for (int i = 0; i < obPantryItems.size(); ++i) {
-            String buttonName = obPantryItems.get(i);
-            Button button = new Button(buttonName);
-            pantryFP2.getChildren().add(button);
-            button.setOnAction(new EventHandler<ActionEvent>(){
-            @Override
-            public void handle(ActionEvent e) {
-                pantryFP2.getChildren().remove(button);
-                obPantryItems.remove(buttonName);
-            }
-        });
-    }       
-        for (int i = 0; i < obRestrictionsItems.size(); ++i) {
-            String buttonName = obRestrictionsItems.get(i);
-            Button button = new Button(buttonName);
-            restrictionsFP2.getChildren().add(button);
-            button.setOnAction(new EventHandler<ActionEvent>(){
-            @Override
-            public void handle(ActionEvent e) {
-                restrictionsFP2.getChildren().remove(button);
-                obRestrictionsItems.remove(buttonName);
-        }
-        });
-        }
+    public FlowPane getRestrictionsFP2() {
+        return restrictionsFP2;
     }
-        */
-
+    public FlowPane getSearchEqualsFP() {
+        return searchEqualsFP;
+    }
+    public FlowPane getSearchContainingFP() {
+        return searchContainingFP;
+    }
     //Search Scene Methods
-    //restrictions yes, pantry yes, 4 observable lists, conGenRecBlock, currentRecipeBlock, searchPG1, setPagination searchPG1.setPageFactory((Integer pageIndex) -> createRecipePage(pageIndex, recipesIPP);
-    //obPantryItems, obRestrictionsItems, obSpecifyItems, obContainingItems
+    @FXML
+    void populateFXFromCB(ActionEvent event, Pane pane) {
+        String cbText = (String)((ComboBox)event.getSource()).getValue();
+        Button button = new Button(cbText);
+        pane.getChildren().add(button);
+        button.setOnAction((e) -> {
+            pane.getChildren().remove(button);
+        });
+    }
+    @FXML
+    void populateSearchRestrictionsFP(ActionEvent event) {
+        populateFXFromCB(event, searchRestrictionsFP);
+    }
     @FXML
     void findRecipes() {
+        //remove old search results
         currentRecipeBlock.clear();
         System.out.println("Entering findRecipes()");
+        //used to count the number of caught exceptions
         int errorsNum = 0;
+        //search via name if the user enters something in that textfield
         String nameSearch = searchRecipeNameTF.getText().toLowerCase();
         boolean searchByName = false;
         if ((nameSearch != null) && (!nameSearch.trim().equals(""))) {
             searchByName = true;
             }
+        //add all restricted items to this hashset, given by the save names present on the buttons populating searchRestrictionsFP
+        HashSet<String> restrictionsHashSet = new HashSet<String>();
+        for (int i = 0; i < searchRestrictionsFP.getChildren().size(); ++i) {
+                String saveKey = (String)((Button)searchRestrictionsFP.getChildren().get(i)).getText();
+                RestrictionsObject tempObject = restrictionsParentMap.get(saveKey);
+                HashMap <String, String[]> tempHash = (HashMap <String, String[]>)tempObject.getHashMap().clone();
+                for (String[] stringArray : tempHash.values()) {
+                    for (String string : stringArray) {
+                        restrictionsHashSet.add(string);
+                    }
+                }
+                for (String string : tempObject.getArrayList()) {
+                    restrictionsHashSet.add(string);
+                }
+            }
+        //the loop is named so that the program can continue onto the next iteration using a break statement from an inner loop
         outerLoop:
         for (int i = 0; i < controlGenRecBlock.length; ++i) {
             System.out.println("loop " + i);
             try {
             int specifyCounter = 0;
+            System.out.println("Test z");
             int containingCounter = 0;
+            System.out.println("Test a");
             String recipeName = controlGenRecBlock[i].getRecipeName().toLowerCase();
+            System.out.println("Test b");
             String[] ingredients = controlGenRecBlock[i].getIngredients();
+            System.out.println("Test c");
             HashSet<String> ingredientsSet = new HashSet<String>(Arrays.asList(ingredients));
+            System.out.println("Test d");
             if (searchByName) {
                 if (!recipeName.contains(nameSearch)) {
                     continue outerLoop;
                 }
             }
-            if (restrictionsYesBoolean) {
-                HashSet<String> restrictionsSet = new HashSet<String>(obRestrictionsItems);
-                for (String item : ingredients) {
-                    if (restrictionsSet.contains(item)) {
-                        continue outerLoop;
-                    }
-                }
-                }
+            System.out.println("Test 1");
+            //search stub
             if (pantryYesBoolean) {
                 HashSet<String> pantrySet = new HashSet<String>(obPantryItems);
                 for (String item : ingredients) {
@@ -464,12 +577,12 @@ public class MainSceneController {
                 }
             }
             HashSet<String> specifySet = new HashSet<String>(obSpecifyItems);
-            for (String item : obSpecifyItems) {
+            for (String item : specifySet) {
                 if (!ingredientsSet.contains(item)) {
                     continue outerLoop;
                 }
             }
-            
+            System.out.println("Test 2");
             for (String query : obContainingItems) {
                 for (String item : ingredients) {
                     if (item.contains(query)) {
@@ -478,11 +591,17 @@ public class MainSceneController {
                     }
                 }
             }
+            System.out.println("Test 3");
             if (containingCounter < obContainingItems.size()) {
                 containingCounter = 0;
                 continue outerLoop;
             }
-                
+            System.out.println("Test 4");
+            for (String ingredient : restrictionsHashSet) {
+                if (ingredientsSet.contains(ingredient)) {
+                    continue outerLoop;
+                }
+            }
             currentRecipeBlock.add(controlGenRecBlock[i]);
             System.out.println(currentRecipeBlock.size());
             
@@ -492,6 +611,7 @@ public class MainSceneController {
             errorsNum++;
             if (errorsNum > 49) {
                 System.out.println("Exceptions exceeded. Stopping the process.");
+                e.printStackTrace();
                 return;
 
             }
@@ -513,10 +633,6 @@ public class MainSceneController {
         addToSearch(searchContainingCB, filteredContainingItems, obContainingItems, searchContainingFP);
     }
     @FXML
-    void restrictionsYes() {
-        restrictionsYesBoolean = searchPantryCB.isSelected();
-    }
-    @FXML
     void pantryYes() {
         pantryYesBoolean = searchPantryCB.isSelected();
     }
@@ -524,6 +640,7 @@ public class MainSceneController {
     //Pantry Scene Methods
     //#region
     //Creating page child container
+
     @FXML
     public FlowPane createPage(int pageIndex, Pane pane2, ObservableList<String> observableList, int IPP) {
         FlowPane flowPane = new FlowPane();
@@ -698,7 +815,7 @@ public class MainSceneController {
         System.out.println("Returning vbox");
         return vbox;
     }
-    //building block for adding a button to a pane
+    
     @FXML
     public void addButtonToStock(String buttonName, Pane pane, List<String> itemList) {
         if (!itemList.contains(buttonName)) {
@@ -725,9 +842,223 @@ public class MainSceneController {
     //#endregion
     //Dietary Restrictions Scene Methods
     //#region
+    //To-do - test object assignment
+    //object assignment DOES work for javafx controls
+    public HashMap<String, RestrictionsObject> getParentMap() {
+        return restrictionsParentMap;
+    }
+    @FXML
+    static void restrictionsParentCheck(HashMap<String, RestrictionsObject> objectHashMap) {
+        Set<String> keySet = objectHashMap.keySet();
+        for (String key : keySet) {
+            restrictionsArrayListCheck(objectHashMap.get(key).getArrayList());
+            restrictionsHashMapCheck(objectHashMap.get(key).getHashMap());
+        }
+    }
+    @FXML
+    static void restrictionsArrayListCheck(List<String> list) {
+        if (list.isEmpty()) {
+            System.out.println("list<String> is empty.");
+        }
+        else {
+        System.out.println(list);
+        }
+    }
+    @FXML
+    static void restrictionsHashMapCheck(HashMap<String, String[]> hashMap) {
+        if (hashMap.isEmpty()) System.out.println("HashMap<String, String[]> is empty.");
+        else {
+        System.out.println(hashMap.keySet());
+        for (String[] stringArray : hashMap.values()) {
+            for(String string: stringArray) {
+                System.out.print(string);
+            }
+            System.out.println();
+        }
+    }
+    }
+    //sends the user back to the dietary restrictions choice scene
+    @FXML
+    void restrictionsSelection() {
+        SceneManager.displayRoot("DietaryRestrictionsChoiceScene.fxml");
+        restrictionsChoiceCB1.getItems().clear();
+        restrictionsChoiceCB1.getItems().addAll(restrictionsSaveSet);
+    }
+    @FXML
+    //Adds the current restrictions hashmap and observable list to a parent hashmap, 
+    //which will get serialized using other methods when the gui is closed.
+    void restrictionsSave() {
+        String saveName = restrictionsSaveAsTF.getText();
+        ArrayList<String> obRestAL = new ArrayList<String>(obRestrictionsItems);
+        if (saveName != null && saveName.trim() != "") {
+            RestrictionsObject tempObject = new RestrictionsObject((HashMap<String, String[]>)restrictionsHashMap.clone(), obRestAL);
+            if (restrictionsParentMap.putIfAbsent(saveName, tempObject) != null) {
+                Alert error = new Alert(Alert.AlertType.ERROR);
+                error.setContentText("Error! Save name already in use.");
+                error.showAndWait();
+            }
+            else {
+                System.out.println("Dietary restrictions sheet saved successfully!");
+                restrictionsSaveSet.add(saveName);
+                restrictionsChoiceCB1.setValue(null);
+                restrictionsChoiceCB1.getItems().clear();
+                restrictionsChoiceCB1.getItems().addAll(restrictionsSaveSet);
+            }
+
+        }
+        else {
+            Alert error = new Alert(Alert.AlertType.ERROR);
+                error.setContentText("Please enter a valid save name.");
+                error.showAndWait();
+            
+        }
+        
+    }
+    //Adds every value in the restrictionsQueueFP to the restrictionsHashMapFP, with one button representing a group of ingredients.
+    @FXML
+    void restrictionsAddAll() {
+        int size = restrictionsQueueFP.getChildren().size();
+        String[] array;
+        if (size > 0) {
+            array = new String[size];
+        for (int i = 0; i < size; ++i) {
+            String string = ((Button)restrictionsQueueFP.getChildren().get(i)).getText();
+            array[i] = string;
+        }
+        //keeps the hashmap values from being overwritten
+        while (true) {
+            if (restrictionsHashMap.putIfAbsent(restrictionsValue, array) == null) {
+                break;
+            }
+            restrictionsValue += ".";
+        }
+        Button button = new Button(restrictionsValue);
+        restrictionsHashMapFP.getChildren().add(button);
+        button.setOnAction((e) ->{
+            restrictionsHashMap.remove(button.getText());
+            restrictionsHashMapFP.getChildren().remove(button);
+            });
+    }
+        restrictionsQueueFP.getChildren().clear();
+    }
+    //Removes all the buttons from the restrictionsQueueFP
+    @FXML
+    void restrictionsClearAll() {
+        restrictionsQueueFP.getChildren().clear();
+    }
+    //Moves all the strings in the filteredRestrictionsList to the restrictionsQueuePane as buttons,
+    //provided the conditions are met. Also, gives the buttons an actionevent to remove them when they're
+    //clicked.
+    @FXML
+    void restrictionsQueueAll() {
+        String string = restrictionsCB1.getValue();
+        if (restrictionsCB1 != null && string.length() >= 2) {
+            restrictionsValue = string + "..";
+            for (int i = 0; i < filteredRestrictionItems.size(); ++i) {
+                String ingredient = filteredRestrictionItems.get(i);
+                if (obRestrictionsItems.contains(ingredient)) continue;
+                Button button = new Button(ingredient);
+                restrictionsQueueFP.getChildren().add(button);
+                button.setOnAction((e) -> {
+                    restrictionsQueueFP.getChildren().remove(button);
+                });
+            }
+        }
+    }
+    //Instructions on how to use the Dietary Restrictions Scene
+    @FXML
+    void restrictionsHelp() {
+        Alert resHelpAlert = new Alert(Alert.AlertType.INFORMATION);
+        resHelpAlert.setContentText("This is the page where you can add dietary restrictions. When " +
+            "you search for recipes with the search page, you can avoid every ingredient you add here by " +
+            "ticking the checkbox. You can click an individual ingredient to add it, or you can " + 
+            "use the dropdown menu. " + "If you use the dropdown menu, you'll have the option to add every" +
+            " ingredient that includes the phrase you current have typed in. For example, typing in \"peanuts\""+
+            " and then clicking \"move all\" will transfer every ingredient that includes the phrase \"peanuts\""+
+            "to the \"holding area\". There, you can click an ingredient to clear it from the holding area " +
+            "And you can click the \"Add All\" button to add every ingredient currently in the holding area to " +
+            "the confirmed restrictions area. Or, if you misclicked, you can click \"Clear All\" to clear. "+
+            "When you're done, you can save this page by entering a save name in the text field and then clicking save.");
+        resHelpAlert.showAndWait();
+    }
     @FXML
     void addToRestrictionsCB() {
         addButtonToStockCB(restrictionsCB1, restrictionsFP2, obRestrictionsItems, obPantrySelections);
+    }
+    //#endregion
+    //DietaryRestrictionsChoiceScene methods
+    //#region
+    //Lets the user edit a saved DietaryRestrictionsScene page
+    @FXML
+    void restrictionsChoice() {
+        restrictionsChoiceString = restrictionsChoiceCB1.getValue();
+        //restrictionsChoiceCB1.setValue(null);
+        if (restrictionsChoiceString != null) {
+            //openRestrictionSheet = true;
+            SceneManager.displayRoot("DietaryRestrictionsScene.fxml");
+            ObservableList<String> tempList = FXCollections.observableArrayList();
+            restrictionsFP2.getChildren().clear();
+            restrictionsQueueFP.getChildren().clear();
+            restrictionsHashMapFP.getChildren().clear();
+            restrictionsCB1.setValue(null);
+            RestrictionsObject tempObject = restrictionsParentMap.get(restrictionsChoiceString);
+            obRestrictionsItems.setAll(tempObject.getArrayList());
+            for (int i = 0; i < obRestrictionsItems.size(); ++i) {
+                String name = obRestrictionsItems.get(i);
+                Button button = new Button(name);
+                restrictionsFP2.getChildren().add(button);
+                button.setOnAction((e) -> {
+                    obRestrictionsItems.remove(button.getText());
+                    restrictionsFP2.getChildren().remove(button);
+                });
+            }
+            restrictionsHashMap = (HashMap<String, String[]>)tempObject.getHashMap().clone();
+            Set<String> restrictionsSet = restrictionsHashMap.keySet();
+            for (String label : restrictionsSet) {
+                Button button = new Button(label);
+                restrictionsHashMapFP.getChildren().add(button);
+                button.setOnAction((e) ->{
+                restrictionsHashMap.remove(button.getText());
+                restrictionsHashMapFP.getChildren().remove(button);
+            });
+            }
+            //openRestrictionSheet = false;
+        }
+    }
+    @FXML
+    void clearRestrictionsData() {
+        obRestrictionsItems.clear();
+        restrictionsHashMap.clear();
+        Platform.runLater(() -> {
+            SceneManager.clearPane("restrictionsFP2");
+            SceneManager.clearPane("restrictionsQueueFP");
+            SceneManager.clearPane("restrictionsHashMapFP");
+        });
+    }
+    //Wipes the DietaryRestrictionsScene page clean
+    @FXML
+    void restrictionsChoiceNew() {
+        SceneManager.displayRoot("DietaryRestrictionsScene.fxml");
+        Parent root = SceneManager.getCurrentRoot();
+        Object controller = root.getProperties().get("fx:controller");
+        if (controller instanceof MainSceneController) {
+            MainSceneController newController = (MainSceneController) controller;
+            newController.clearRestrictionsData();
+        }
+    }
+    //Lets the user continue from where they left off
+    @FXML
+    void restrictionsChoiceContinue() {
+        SceneManager.displayRoot("DietaryRestrictionsScene.fxml");
+    }
+    @FXML
+    void restrictionsChoiceHelp() {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setContentText("In the dietary restrictions area, you can save as many individual " +
+            "dietary preference sheets as you want. In this area, you can choose to either edit an exist dietary " +
+            "preference sheet or create a new one. Choose an existing sheet from the drop down menu, or click the " +
+            "\"create a new page\" button.");
+        alert.showAndWait();
     }
     //#endregion
     //Submit Recipe Scene Methods
@@ -795,7 +1126,7 @@ public class MainSceneController {
 
     @FXML
     void continueOffline(ActionEvent event) throws IOException{
-
+        SceneManager.displayRoot("HomepageScene.fxml");
     }
 
     @FXML
@@ -829,12 +1160,13 @@ public class MainSceneController {
         SceneManager.displayRoot("SearchScene.fxml");
         SceneManager.updatePaneInCurrentScene("searchEqualsFP", obSpecifyItems, null);
         SceneManager.updatePaneInCurrentScene("pantryContainingFP", obContainingItems, null);
+        searchRestrictionsCB.getItems().clear();
+        searchRestrictionsCB.getItems().addAll(restrictionsSaveSet);
     }
     @FXML 
     void editPreferences(ActionEvent event) throws IOException {
-        SceneManager.displayRoot("DietaryRestrictionsScene.fxml");
+        SceneManager.displayRoot("DietaryRestrictionsChoiceScene.fxml");
         SceneManager.updatePaneInCurrentScene("restrictionsFP2", obRestrictionsItems, null);
-        
     }
     @FXML 
     void customizePantry(ActionEvent event) throws IOException {
@@ -1029,8 +1361,30 @@ public class MainSceneController {
             });
         }
     }
+    //alert methods
     //#region
-    
-
+    @FXML
+    void pantryHelp() {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setContentText("This is your virtual pantry. You may or may not find it convenient, because it could take a long time " +
+            "to add everything in your actual pantry. But if you do decide to use it, you can choose to search for recipes that only contain " +
+            "the ingredients that you added to your virtual pantry. Click an ingredient button or use the scrolldown menu (accepts typing as well) " +
+            "to add ingredients to your virtual pantry. Click a button to remove that ingredient from your pantry."
+        );
+        alert.showAndWait();
+    }
+    @FXML
+    void searchHelp() {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setContentText("In this section you can search for recipes. You can set search to a combination of your pantry, your dietary restrictions sheets, " +
+            "and/or keywords, or you can search all of the recipes without any filters.");
+        alert.showAndWait();
+    }
+    @FXML
+    void saveHelp() {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setContentText("This is where your saved or favorited recipes are stored.");
+        alert.showAndWait();
+    }
 }
 

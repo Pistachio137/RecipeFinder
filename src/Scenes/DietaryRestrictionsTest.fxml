@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<BorderPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="restrictionsAddAllButton" layoutX="407.0" layoutY="673.0" mnemonicParsing="false" onAction="#restrictionsAddAll" text="Add All" />
+            <Button fx:id="restrictionsQueueAllButton" layoutX="454.0" layoutY="23.0" mnemonicParsing="false" onAction="#restrictionsQueueAll" text="QueueAll" />
+            <ScrollPane layoutX="14.0" layoutY="394.0" prefHeight="279.0" prefWidth="621.0">
+               <content>
+                  <FlowPane fx:id="restrictionsQueueFP" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </ScrollPane>
+            <ScrollPane fx:id="restrictionsSP2" layoutX="799.0" layoutY="59.0" prefHeight="335.0" prefWidth="519.0">
+               <content>
+                  <FlowPane fx:id="restrictionsFP2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+               </content>
+            </ScrollPane>
+            <ToolBar>
+              <items>
+                <Button mnemonicParsing="false" onAction="#homepage" text="Back" />
+                  <Button fx:id="restrictionHelpButton" mnemonicParsing="false" onAction="#restrictionsHelp" text="Help" />
+              </items>
+            </ToolBar>
+            <ComboBox fx:id="restrictionsCB1" editable="true" layoutX="281.0" layoutY="23.0" onAction="#addToRestrictionsCB" promptText="Add items..." />
+            <Button fx:id="restrictionsClearAllButton" layoutX="162.0" layoutY="673.0" mnemonicParsing="false" onAction="#restrictionsClearAll" text="Clear All" />
+            <ScrollPane layoutX="14.0" layoutY="59.0" prefHeight="335.0" prefWidth="785.0">
+               <content>
+                  <FlowPane fx:id="restrictionsFP1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                     <children>
+                        <Pagination fx:id="restrictionsPG1">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Pagination>
+                     </children>
+                  </FlowPane>
+               </content>
+            </ScrollPane>
+            <ScrollPane layoutX="635.0" layoutY="394.0" prefHeight="279.0" prefWidth="681.0">
+               <content>
+                  <FlowPane fx:id="restrictionsHashMapFP" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

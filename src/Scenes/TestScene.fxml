@@ -1,6 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 
-
-<FlowPane fx:id="testFlowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainSceneController" />
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <GridPane alignment="TOP_CENTER" minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="2000.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="403.0" minWidth="10.0" prefWidth="360.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="329.0" minWidth="10.0" prefWidth="275.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="182.0" minHeight="0.0" prefHeight="38.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="314.0" minHeight="10.0" prefHeight="260.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="389.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="389.0" minHeight="10.0" prefHeight="262.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ScrollPane prefHeight="252.0" prefWidth="393.0" GridPane.rowIndex="1">
+               <content>
+                  <FlowPane fx:id="restrictionsQueueFP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="247.0" prefWidth="386.0" />
+               </content>
+            </ScrollPane>
+            <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="266.0" prefWidth="428.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <content>
+                  <FlowPane fx:id="restrictionsHashMapFP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="247.0" prefWidth="322.0" />
+               </content>
+            </ScrollPane>
+            <ScrollPane GridPane.rowIndex="3">
+               <content>
+                  <FlowPane fx:id="restrictionsFP1" prefHeight="175.0" prefWidth="383.0">
+                     <children>
+                        <Pagination fx:id="restrictionsPG1" prefHeight="266.0" prefWidth="383.0" />
+                     </children></FlowPane>
+               </content>
+            </ScrollPane>
+            <ScrollPane prefHeight="210.0" prefWidth="314.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <content>
+                  <FlowPane fx:id="restrictionsFP2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="249.0" prefWidth="319.0" />
+               </content>
+            </ScrollPane>
+            <ToolBar prefHeight="40.0" prefWidth="200.0" GridPane.hgrow="SOMETIMES" GridPane.vgrow="SOMETIMES">
+               <items>
+                  <ComboBox fx:id="restrictionsCB1" editable="true" onAction="#addToRestrictionsCB" prefWidth="150.0" promptText="Add items..." />
+                  <Button fx:id="restrictionsQueueAllButton" mnemonicParsing="false" onAction="#restrictionsQueueAll" text="Queue All" />
+               </items>
+            </ToolBar>
+            <ToolBar GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.vgrow="NEVER">
+              <items>
+                <Button fx:id="restrictionsClearAllButton" mnemonicParsing="false" onAction="#restrictionsClearAll" text="Delete Queue" />
+                  <Button fx:id="restrictionsAddAllButton" mnemonicParsing="false" onAction="#restrictionsAddAll" text="Add All in Queue to Restrictions &gt;&gt;&gt;" />
+              </items>
+            </ToolBar>
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="restrictionsBackButton" mnemonicParsing="false" onAction="#restrictionsSelection" text="Back" />
+            <Button fx:id="restrictionsHelpButton" mnemonicParsing="false" onAction="#restrictionsHelp" text="Help" />
+            <TextField fx:id="restrictionsSaveAsTF" promptText="Save as..." />
+            <Button fx:id="restrictionsSaveButton" mnemonicParsing="false" onAction="#restrictionsSave" text="Save" />
+        </items>
+      </ToolBar>
+   </top>
+</BorderPane>

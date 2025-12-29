@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.Map;
 import javax.swing.Action;
 import javafx.collections.ObservableList;
+import java.util.HashSet;
 
 
 //This is a private singleton that I use to preserve scene data when switching scenes. 
@@ -92,16 +93,24 @@ public class SceneManager {
             private static Pane temporaryPane = new Pane();
             private static final Scene ONLYSCENE = new Scene(temporaryPane);
             private static final Stage ONLYSTAGE = new Stage();
-            private static String local = "/LocalData/obPantryItems.ser";
-            
+            public static Parent getCurrentRoot() {
+                return ONLYSCENE.getRoot();
+            }
+            public static void clearPane(String paneId) {
+                Parent root = ONLYSCENE.getRoot();
+                if (root == null) return;
+                Pane pane = (Pane) root.lookup("#" + paneId);
+                if (pane != null) pane.getChildren().clear();
+            }
             private SceneManager() {
             }
             //Used to serialize scenes.
             public static Serialized saveScenes(ObservableList<String> ol1, ObservableList<String> ol2, ObservableList<String> ol3, ObservableList<String> ol4,
-                 ArrayList<GenericRecipeBlock> blocks2, ArrayList<GenericRecipeBlock> blocks3){
+                 ArrayList<GenericRecipeBlock> blocks2, ArrayList<GenericRecipeBlock> blocks3, HashMap<String, String[]> hash1, 
+         HashMap<String, RestrictionsObject>hash2, HashSet<String> hashset1){
               Serialized serialized = new Serialized();  
               ONLYSTAGE.setOnCloseRequest((e) -> {
-                    serialized.setAll(ol1, ol2, ol3, ol4, blocks2, blocks3);
+                    serialized.setAll(ol1, ol2, ol3, ol4, blocks2, blocks3, hash1, hash2, hashset1);
                     serialized.serializeAll();
                 });
                 return serialized;
@@ -117,7 +126,8 @@ public class SceneManager {
                     URL url = SceneManager.class.getResource(rootPath);
                     try {
                         FXMLLoader loader = new FXMLLoader(url);
-                        root = loader.load();
+                        loader.setController(MainSceneController.getMainController());
+                         root = loader.load();
                         Object controller = loader.getController();
                         if (controller != null) {
                             root.getProperties().put("fx:controller", controller);

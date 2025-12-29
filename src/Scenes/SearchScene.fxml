@@ -17,12 +17,12 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainSceneController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <items>
           <Button fx:id="searchSceneBackButton" mnemonicParsing="false" onAction="#homepage" text="Back" />
-            <Button fx:id="searchSceneHelpButton" mnemonicParsing="false" text="Help" />
+            <Button fx:id="searchHelpButton" mnemonicParsing="false" onAction="#searchHelp" text="Help" />
         </items>
       </ToolBar>
    </top>
@@ -62,8 +62,18 @@
                               <Button fx:id="searchContainingButton" mnemonicParsing="false" onAction="#searchContaining" text="Add" />
                            </children>
                         </FlowPane>
+                        <HBox prefHeight="270.0" prefWidth="636.0">
+                           <children>
+                              <Label text="Add one or more dietary restrictions sheets (optional)" />
+                              <ComboBox fx:id="searchRestrictionsCB" onAction="#populateSearchRestrictionsFP" prefWidth="150.0" promptText="restrictions sheets..." />
+                              <ScrollPane hbarPolicy="NEVER">
+                                 <content>
+                                    <FlowPane fx:id="searchRestrictionsFP" prefHeight="212.0" prefWidth="194.0" />
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </HBox>
                         <CheckBox fx:id="searchPantryCB" mnemonicParsing="false" onAction="#pantryYes" text="Only Use Pantry Ingredients" />
-                        <CheckBox fx:id="searchRestrictionsCB" mnemonicParsing="false" onAction="#restrictionsYes" text="Adhere to Dietary Restrictions" />
                      </children>
                   </VBox>
                   <BorderPane fx:id="recipeVBoxBP" prefHeight="200.0" prefWidth="200.0" visible="false">
