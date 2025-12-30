@@ -11,7 +11,7 @@
             "mainClass": "app.App",
             "vmArgs": [
                 "--module-path",
-                "${workspaceFolder}/src/Dependencies/JavaFX21/lib",
+                "${workspaceFolder}/src/Dependencies/javafx-sdk-21/lib",
                 "--add-modules",
                 "javafx.controls,javafx.fxml,javafx.base",
                 "--class-path",

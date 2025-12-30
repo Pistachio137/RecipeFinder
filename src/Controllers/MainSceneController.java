@@ -152,7 +152,10 @@ public class MainSceneController {
             filterComboBox(pantryCB1, filteredPantryItems);
         }
         if (restrictionsChoiceCB1 != null) {
-            restrictionsChoiceCB1.getItems().addAll(restrictionsSaveSet);
+            restrictionsChoiceCB1.getItems().setAll(restrictionsSaveSet);
+        }
+        if (restrictionsDeleteSaveCB != null) {
+            restrictionsDeleteSaveCB.getItems().setAll(restrictionsSaveSet);
         }
         if (restrictionsCB1 != null) {
             restrictionsCB1.setItems(obPantrySelections);
@@ -394,9 +397,9 @@ public class MainSceneController {
         @FXML
         private Button settingsBackButton;
         //#endregion
-        //Controls for SubmitRecipeScene, AboutScene, etc.
+        //Controls for Submit Recipe Scene, About Scene, etc.
         //#region
-        //SubmitRecipeScene controls
+        //Submit Recipe Scene controls
         @FXML
         private TextField submitRecipeNameTF;
         @FXML
@@ -415,10 +418,9 @@ public class MainSceneController {
         @FXML
         private Button getAboutText;
         //#endregion
-        //Controls for Dietary Preferences
+        //Controls for Dietary Restrictions Scene
         //#region
         private static String restrictionsChoiceString = null;
-        private Boolean openRestrictionSheet = false;
         @FXML
         private BorderPane restrictionsBP1;
         @FXML
@@ -440,6 +442,8 @@ public class MainSceneController {
         @FXML
         private ComboBox<String> restrictionsCB1;
         @FXML
+        private ComboBox<String> restrictionsDeleteSaveCB;
+        @FXML
         private Pagination restrictionsPG1;
         @FXML
         private FlowPane restrictionsFP1;
@@ -447,7 +451,7 @@ public class MainSceneController {
         private FlowPane restrictionsFP2;
         @FXML
         private FlowPane restrictionsQueueFP;
-        //Controls for DietaryRestrictionsChoiceScene
+        //Controls for Dietary Restrictions Choice Scene
         private HashSet<String> restrictionsSaveSet;
         @FXML
         private ComboBox<String> restrictionsChoiceCB1;
@@ -533,17 +537,18 @@ public class MainSceneController {
             }
         //add all restricted items to this hashset, given by the save names present on the buttons populating searchRestrictionsFP
         HashSet<String> restrictionsHashSet = new HashSet<String>();
+        RestrictionsObject tempObject;
         for (int i = 0; i < searchRestrictionsFP.getChildren().size(); ++i) {
                 String saveKey = (String)((Button)searchRestrictionsFP.getChildren().get(i)).getText();
-                RestrictionsObject tempObject = restrictionsParentMap.get(saveKey);
+                tempObject = restrictionsParentMap.get(saveKey);
                 HashMap <String, String[]> tempHash = (HashMap <String, String[]>)tempObject.getHashMap().clone();
                 for (String[] stringArray : tempHash.values()) {
                     for (String string : stringArray) {
-                        restrictionsHashSet.add(string);
+                        restrictionsHashSet.add(string.toLowerCase().trim());
                     }
                 }
                 for (String string : tempObject.getArrayList()) {
-                    restrictionsHashSet.add(string);
+                    restrictionsHashSet.add(string.toLowerCase().trim());
                 }
             }
         //the loop is named so that the program can continue onto the next iteration using a break statement from an inner loop
@@ -597,14 +602,20 @@ public class MainSceneController {
                 continue outerLoop;
             }
             System.out.println("Test 4");
-            for (String ingredient : restrictionsHashSet) {
-                if (ingredientsSet.contains(ingredient)) {
+            for (String ingredient : ingredientsSet) {
+                if (restrictionsHashSet.contains(ingredient)) {
+                    System.out.println("Recipe contains ingredient " + ingredient);
                     continue outerLoop;
                 }
             }
             currentRecipeBlock.add(controlGenRecBlock[i]);
             System.out.println(currentRecipeBlock.size());
-            
+            System.out.println(ingredientsSet);
+            if (currentRecipeBlock.size() > 50) {
+                restrictionsParentCheck(restrictionsParentMap);
+                System.out.println(restrictionsHashSet.size());
+                return;
+            }
         }
         catch (Exception e) {
             System.out.println("Error occurred while converting controlGenRecBlock to currentRecipeBlock at recipe block number " + i);
@@ -869,6 +880,7 @@ public class MainSceneController {
         if (hashMap.isEmpty()) System.out.println("HashMap<String, String[]> is empty.");
         else {
         System.out.println(hashMap.keySet());
+        System.out.println(hashMap.keySet().size());
         for (String[] stringArray : hashMap.values()) {
             for(String string: stringArray) {
                 System.out.print(string);
@@ -884,9 +896,20 @@ public class MainSceneController {
         restrictionsChoiceCB1.getItems().clear();
         restrictionsChoiceCB1.getItems().addAll(restrictionsSaveSet);
     }
-    @FXML
+    
     //Adds the current restrictions hashmap and observable list to a parent hashmap, 
     //which will get serialized using other methods when the gui is closed.
+    @FXML
+    void restrictionsDeleteSave() {
+        String value = restrictionsDeleteSaveCB.getValue();
+        if (value != null) {
+            restrictionsDeleteSaveCB.setValue(null);
+            restrictionsSaveSet.remove(value);
+            restrictionsDeleteSaveCB.getItems().setAll(restrictionsSaveSet);
+        }
+    }
+    
+    @FXML
     void restrictionsSave() {
         String saveName = restrictionsSaveAsTF.getText();
         ArrayList<String> obRestAL = new ArrayList<String>(obRestrictionsItems);
@@ -1002,25 +1025,33 @@ public class MainSceneController {
             restrictionsHashMapFP.getChildren().clear();
             restrictionsCB1.setValue(null);
             RestrictionsObject tempObject = restrictionsParentMap.get(restrictionsChoiceString);
-            obRestrictionsItems.setAll(tempObject.getArrayList());
-            for (int i = 0; i < obRestrictionsItems.size(); ++i) {
-                String name = obRestrictionsItems.get(i);
-                Button button = new Button(name);
-                restrictionsFP2.getChildren().add(button);
-                button.setOnAction((e) -> {
-                    obRestrictionsItems.remove(button.getText());
-                    restrictionsFP2.getChildren().remove(button);
+            if (tempObject != null) {
+                obRestrictionsItems.setAll(tempObject.getArrayList());
+                for (int i = 0; i < obRestrictionsItems.size(); ++i) {
+                    String name = obRestrictionsItems.get(i);
+                    Button button = new Button(name);
+                    restrictionsFP2.getChildren().add(button);
+                    button.setOnAction((e) -> {
+                        obRestrictionsItems.remove(button.getText());
+                        restrictionsFP2.getChildren().remove(button);
+                    });
+                }
+                restrictionsHashMap = (HashMap<String, String[]>)tempObject.getHashMap().clone();
+                Set<String> restrictionsSet = restrictionsHashMap.keySet();
+                for (String label : restrictionsSet) {
+                    Button button = new Button(label);
+                    restrictionsHashMapFP.getChildren().add(button);
+                    button.setOnAction((e) ->{
+                    restrictionsHashMap.remove(button.getText());
+                    restrictionsHashMapFP.getChildren().remove(button);
                 });
-            }
-            restrictionsHashMap = (HashMap<String, String[]>)tempObject.getHashMap().clone();
-            Set<String> restrictionsSet = restrictionsHashMap.keySet();
-            for (String label : restrictionsSet) {
-                Button button = new Button(label);
-                restrictionsHashMapFP.getChildren().add(button);
-                button.setOnAction((e) ->{
-                restrictionsHashMap.remove(button.getText());
-                restrictionsHashMapFP.getChildren().remove(button);
-            });
+                }
+            } else {
+                //AI null check
+                System.out.println("Warning: Restriction profile '" + restrictionsChoiceString + "' data not found. Clearing invalid data.");
+                restrictionsSaveSet.remove(restrictionsChoiceString);
+                restrictionsChoiceCB1.getItems().remove(restrictionsChoiceString);
+                restrictionsChoiceCB1.setValue(null);
             }
             //openRestrictionSheet = false;
         }
